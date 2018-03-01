@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A620486E1500EB2F69 /* AppDelegate.swift */; };
+		F32DB7A920486E1500EB2F69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A820486E1500EB2F69 /* ViewController.swift */; };
+		F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7AA20486E1500EB2F69 /* Main.storyboard */; };
+		F32DB7AE20486E1500EB2F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7AD20486E1500EB2F69 /* Assets.xcassets */; };
+		F32DB7B120486E1500EB2F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7AF20486E1500EB2F69 /* LaunchScreen.storyboard */; };
+		F32DB7BC20486E1600EB2F69 /* BlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7BB20486E1600EB2F69 /* BlipTests.swift */; };
+		F32DB7C720486E1600EB2F69 /* BlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7C620486E1600EB2F69 /* BlipUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F32DB7B820486E1600EB2F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32DB79B20486E1500EB2F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32DB7A220486E1500EB2F69;
+			remoteInfo = Blip;
+		};
+		F32DB7C320486E1600EB2F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32DB79B20486E1500EB2F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32DB7A220486E1500EB2F69;
+			remoteInfo = Blip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F32DB7A320486E1500EB2F69 /* Blip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32DB7A620486E1500EB2F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F32DB7A820486E1500EB2F69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F32DB7AB20486E1500EB2F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F32DB7AD20486E1500EB2F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F32DB7B020486E1500EB2F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F32DB7B220486E1500EB2F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32DB7B720486E1600EB2F69 /* BlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32DB7BB20486E1600EB2F69 /* BlipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipTests.swift; sourceTree = "<group>"; };
+		F32DB7BD20486E1600EB2F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32DB7C220486E1600EB2F69 /* BlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32DB7C620486E1600EB2F69 /* BlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipUITests.swift; sourceTree = "<group>"; };
+		F32DB7C820486E1600EB2F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F32DB7A020486E1500EB2F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32DB7B420486E1600EB2F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32DB7BF20486E1600EB2F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F32DB79A20486E1500EB2F69 = {
+			isa = PBXGroup;
+			children = (
+				F32DB7A520486E1500EB2F69 /* Blip */,
+				F32DB7BA20486E1600EB2F69 /* BlipTests */,
+				F32DB7C520486E1600EB2F69 /* BlipUITests */,
+				F32DB7A420486E1500EB2F69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F32DB7A420486E1500EB2F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7A320486E1500EB2F69 /* Blip.app */,
+				F32DB7B720486E1600EB2F69 /* BlipTests.xctest */,
+				F32DB7C220486E1600EB2F69 /* BlipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F32DB7A520486E1500EB2F69 /* Blip */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7A620486E1500EB2F69 /* AppDelegate.swift */,
+				F32DB7A820486E1500EB2F69 /* ViewController.swift */,
+				F32DB7AA20486E1500EB2F69 /* Main.storyboard */,
+				F32DB7AD20486E1500EB2F69 /* Assets.xcassets */,
+				F32DB7AF20486E1500EB2F69 /* LaunchScreen.storyboard */,
+				F32DB7B220486E1500EB2F69 /* Info.plist */,
+			);
+			path = Blip;
+			sourceTree = "<group>";
+		};
+		F32DB7BA20486E1600EB2F69 /* BlipTests */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7BB20486E1600EB2F69 /* BlipTests.swift */,
+				F32DB7BD20486E1600EB2F69 /* Info.plist */,
+			);
+			path = BlipTests;
+			sourceTree = "<group>";
+		};
+		F32DB7C520486E1600EB2F69 /* BlipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7C620486E1600EB2F69 /* BlipUITests.swift */,
+				F32DB7C820486E1600EB2F69 /* Info.plist */,
+			);
+			path = BlipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F32DB7A220486E1500EB2F69 /* Blip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32DB7CB20486E1600EB2F69 /* Build configuration list for PBXNativeTarget "Blip" */;
+			buildPhases = (
+				F32DB79F20486E1500EB2F69 /* Sources */,
+				F32DB7A020486E1500EB2F69 /* Frameworks */,
+				F32DB7A120486E1500EB2F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blip;
+			productName = Blip;
+			productReference = F32DB7A320486E1500EB2F69 /* Blip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F32DB7B620486E1600EB2F69 /* BlipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32DB7CE20486E1600EB2F69 /* Build configuration list for PBXNativeTarget "BlipTests" */;
+			buildPhases = (
+				F32DB7B320486E1600EB2F69 /* Sources */,
+				F32DB7B420486E1600EB2F69 /* Frameworks */,
+				F32DB7B520486E1600EB2F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32DB7B920486E1600EB2F69 /* PBXTargetDependency */,
+			);
+			name = BlipTests;
+			productName = BlipTests;
+			productReference = F32DB7B720486E1600EB2F69 /* BlipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F32DB7C120486E1600EB2F69 /* BlipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32DB7D120486E1600EB2F69 /* Build configuration list for PBXNativeTarget "BlipUITests" */;
+			buildPhases = (
+				F32DB7BE20486E1600EB2F69 /* Sources */,
+				F32DB7BF20486E1600EB2F69 /* Frameworks */,
+				F32DB7C020486E1600EB2F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32DB7C420486E1600EB2F69 /* PBXTargetDependency */,
+			);
+			name = BlipUITests;
+			productName = BlipUITests;
+			productReference = F32DB7C220486E1600EB2F69 /* BlipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F32DB79B20486E1500EB2F69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Blip Groceries";
+				TargetAttributes = {
+					F32DB7A220486E1500EB2F69 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F32DB7B620486E1600EB2F69 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F32DB7A220486E1500EB2F69;
+					};
+					F32DB7C120486E1600EB2F69 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F32DB7A220486E1500EB2F69;
+					};
+				};
+			};
+			buildConfigurationList = F32DB79E20486E1500EB2F69 /* Build configuration list for PBXProject "Blip" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F32DB79A20486E1500EB2F69;
+			productRefGroup = F32DB7A420486E1500EB2F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F32DB7A220486E1500EB2F69 /* Blip */,
+				F32DB7B620486E1600EB2F69 /* BlipTests */,
+				F32DB7C120486E1600EB2F69 /* BlipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F32DB7A120486E1500EB2F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32DB7B120486E1500EB2F69 /* LaunchScreen.storyboard in Resources */,
+				F32DB7AE20486E1500EB2F69 /* Assets.xcassets in Resources */,
+				F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32DB7B520486E1600EB2F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32DB7C020486E1600EB2F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F32DB79F20486E1500EB2F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32DB7A920486E1500EB2F69 /* ViewController.swift in Sources */,
+				F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32DB7B320486E1600EB2F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32DB7BC20486E1600EB2F69 /* BlipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32DB7BE20486E1600EB2F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32DB7C720486E1600EB2F69 /* BlipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F32DB7B920486E1600EB2F69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32DB7A220486E1500EB2F69 /* Blip */;
+			targetProxy = F32DB7B820486E1600EB2F69 /* PBXContainerItemProxy */;
+		};
+		F32DB7C420486E1600EB2F69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32DB7A220486E1500EB2F69 /* Blip */;
+			targetProxy = F32DB7C320486E1600EB2F69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F32DB7AA20486E1500EB2F69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32DB7AB20486E1500EB2F69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F32DB7AF20486E1500EB2F69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32DB7B020486E1500EB2F69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F32DB7C920486E1600EB2F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F32DB7CA20486E1600EB2F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F32DB7CC20486E1600EB2F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4HT64LY7;
+				INFOPLIST_FILE = Blip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.Blip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F32DB7CD20486E1600EB2F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4HT64LY7;
+				INFOPLIST_FILE = Blip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.Blip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F32DB7CF20486E1600EB2F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4HT64LY7;
+				INFOPLIST_FILE = BlipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.BlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blip.app/Blip";
+			};
+			name = Debug;
+		};
+		F32DB7D020486E1600EB2F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4HT64LY7;
+				INFOPLIST_FILE = BlipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.BlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blip.app/Blip";
+			};
+			name = Release;
+		};
+		F32DB7D220486E1600EB2F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4HT64LY7;
+				INFOPLIST_FILE = BlipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.BlipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blip;
+			};
+			name = Debug;
+		};
+		F32DB7D320486E1600EB2F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4HT64LY7;
+				INFOPLIST_FILE = BlipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.BlipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F32DB79E20486E1500EB2F69 /* Build configuration list for PBXProject "Blip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32DB7C920486E1600EB2F69 /* Debug */,
+				F32DB7CA20486E1600EB2F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32DB7CB20486E1600EB2F69 /* Build configuration list for PBXNativeTarget "Blip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32DB7CC20486E1600EB2F69 /* Debug */,
+				F32DB7CD20486E1600EB2F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32DB7CE20486E1600EB2F69 /* Build configuration list for PBXNativeTarget "BlipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32DB7CF20486E1600EB2F69 /* Debug */,
+				F32DB7D020486E1600EB2F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32DB7D120486E1600EB2F69 /* Build configuration list for PBXNativeTarget "BlipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32DB7D220486E1600EB2F69 /* Debug */,
+				F32DB7D320486E1600EB2F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F32DB79B20486E1500EB2F69 /* Project object */;
+}
