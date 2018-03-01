@@ -7,13 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005859899EF766301BF26E1D /* Pods_BlipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */; };
+		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
+		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
 		F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A620486E1500EB2F69 /* AppDelegate.swift */; };
-		F32DB7A920486E1500EB2F69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A820486E1500EB2F69 /* ViewController.swift */; };
+		F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */; };
 		F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7AA20486E1500EB2F69 /* Main.storyboard */; };
 		F32DB7AE20486E1500EB2F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7AD20486E1500EB2F69 /* Assets.xcassets */; };
 		F32DB7B120486E1500EB2F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7AF20486E1500EB2F69 /* LaunchScreen.storyboard */; };
 		F32DB7BC20486E1600EB2F69 /* BlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7BB20486E1600EB2F69 /* BlipTests.swift */; };
 		F32DB7C720486E1600EB2F69 /* BlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7C620486E1600EB2F69 /* BlipUITests.swift */; };
+		F32DB7DA20486F3200EB2F69 /* CenturyGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7D820486F3200EB2F69 /* CenturyGothic.ttf */; };
+		F32DB7DB20486F3200EB2F69 /* CenturyGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7D820486F3200EB2F69 /* CenturyGothic.ttf */; };
+		F32DB7DC20486F3200EB2F69 /* CenturyGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7D820486F3200EB2F69 /* CenturyGothic.ttf */; };
+		F32DB7DD20486F3200EB2F69 /* CenturyGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7D920486F3200EB2F69 /* CenturyGothicBold.ttf */; };
+		F32DB7DE20486F3200EB2F69 /* CenturyGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7D920486F3200EB2F69 /* CenturyGothicBold.ttf */; };
+		F32DB7DF20486F3200EB2F69 /* CenturyGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7D920486F3200EB2F69 /* CenturyGothicBold.ttf */; };
+		F32DB7E120486F7600EB2F69 /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7E020486F7600EB2F69 /* check.json */; };
+		F32DB7E220486F7600EB2F69 /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7E020486F7600EB2F69 /* check.json */; };
+		F32DB7E320486F7600EB2F69 /* check.json in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7E020486F7600EB2F69 /* check.json */; };
+		F32DB7E5204879AA00EB2F69 /* PastelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7E4204879AA00EB2F69 /* PastelExtensions.swift */; };
+		F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7E620487AED00EB2F69 /* UIViewExtensions.swift */; };
+		F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7E920487B7C00EB2F69 /* BlipUser.swift */; };
+		F32DB7EC20487CE700EB2F69 /* ShopScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7EB20487CE700EB2F69 /* ShopScreenVC.swift */; };
+		F32DB7EF20487F7400EB2F69 /* Item.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7EE20487F7400EB2F69 /* Item.xib */; };
+		F32DB7F120487FC300EB2F69 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7F020487FC300EB2F69 /* ItemCollectionViewCell.swift */; };
+		F32DB80F2048825E00EB2F69 /* Bindings1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F42048825E00EB2F69 /* Bindings1.jpeg */; };
+		F32DB8102048825E00EB2F69 /* Bindings2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F52048825E00EB2F69 /* Bindings2.jpeg */; };
+		F32DB8112048825E00EB2F69 /* Bindings3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F62048825E00EB2F69 /* Bindings3.jpeg */; };
+		F32DB8122048825E00EB2F69 /* Bindings4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F72048825E00EB2F69 /* Bindings4.jpeg */; };
+		F32DB8132048825E00EB2F69 /* Bindings5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F82048825E00EB2F69 /* Bindings5.jpeg */; };
+		F32DB8142048825E00EB2F69 /* Boots1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7FA2048825E00EB2F69 /* Boots1.jpeg */; };
+		F32DB8152048825E00EB2F69 /* Boots2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7FB2048825E00EB2F69 /* Boots2.jpeg */; };
+		F32DB8162048825E00EB2F69 /* Boots3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7FC2048825E00EB2F69 /* Boots3.jpeg */; };
+		F32DB8172048825E00EB2F69 /* Boots4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7FD2048825E00EB2F69 /* Boots4.jpeg */; };
+		F32DB8182048825E00EB2F69 /* Boots5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7FE2048825E00EB2F69 /* Boots5.jpeg */; };
+		F32DB8192048825E00EB2F69 /* Boots6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7FF2048825E00EB2F69 /* Boots6.jpeg */; };
+		F32DB81A2048825E00EB2F69 /* Boots7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8002048825E00EB2F69 /* Boots7.jpeg */; };
+		F32DB81B2048825E00EB2F69 /* Gloves1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8022048825E00EB2F69 /* Gloves1.jpeg */; };
+		F32DB81C2048825E00EB2F69 /* Gloves2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8032048825E00EB2F69 /* Gloves2.jpeg */; };
+		F32DB81D2048825E00EB2F69 /* Gloves3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8042048825E00EB2F69 /* Gloves3.jpeg */; };
+		F32DB81E2048825E00EB2F69 /* Gloves4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8052048825E00EB2F69 /* Gloves4.jpeg */; };
+		F32DB81F2048825E00EB2F69 /* Gloves5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8062048825E00EB2F69 /* Gloves5.jpeg */; };
+		F32DB8202048825E00EB2F69 /* Gloves6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8072048825E00EB2F69 /* Gloves6.jpeg */; };
+		F32DB8212048825E00EB2F69 /* Hoodie1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB8092048825E00EB2F69 /* Hoodie1.jpeg */; };
+		F32DB8222048825E00EB2F69 /* Hoodie2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB80A2048825E00EB2F69 /* Hoodie2.jpeg */; };
+		F32DB8232048825E00EB2F69 /* Hoodie3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB80B2048825E00EB2F69 /* Hoodie3.jpeg */; };
+		F32DB8242048825E00EB2F69 /* Hoodie4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB80C2048825E00EB2F69 /* Hoodie4.jpeg */; };
+		F32DB8252048825E00EB2F69 /* Hoodie5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB80D2048825E00EB2F69 /* Hoodie5.jpeg */; };
+		F32DB8262048825E00EB2F69 /* Hoodie6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB80E2048825E00EB2F69 /* Hoodie6.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +76,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83073F153649D24442C7B8CC /* Pods_Blip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C57FD4ED646DEBA63B15877 /* Pods-Blip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blip/Pods-Blip.release.xcconfig"; sourceTree = "<group>"; };
+		95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A690F8A13FABDDEE07E43394 /* Pods-BlipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D59B78C38E50AC9D8DE8109D /* Pods-BlipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlipTests/Pods-BlipTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC3FCDE82FC1D672CBF8E5A7 /* Pods-Blip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blip/Pods-Blip.debug.xcconfig"; sourceTree = "<group>"; };
+		E1155A2BCEC1170AF680DF40 /* Pods-BlipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipTests/Pods-BlipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F32DB7A320486E1500EB2F69 /* Blip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32DB7A620486E1500EB2F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F32DB7A820486E1500EB2F69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		F32DB7AB20486E1500EB2F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F32DB7AD20486E1500EB2F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32DB7B020486E1500EB2F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +98,39 @@
 		F32DB7C220486E1600EB2F69 /* BlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32DB7C620486E1600EB2F69 /* BlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipUITests.swift; sourceTree = "<group>"; };
 		F32DB7C820486E1600EB2F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32DB7D820486F3200EB2F69 /* CenturyGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CenturyGothic.ttf; sourceTree = "<group>"; };
+		F32DB7D920486F3200EB2F69 /* CenturyGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CenturyGothicBold.ttf; sourceTree = "<group>"; };
+		F32DB7E020486F7600EB2F69 /* check.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check.json; sourceTree = "<group>"; };
+		F32DB7E4204879AA00EB2F69 /* PastelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelExtensions.swift; sourceTree = "<group>"; };
+		F32DB7E620487AED00EB2F69 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		F32DB7E920487B7C00EB2F69 /* BlipUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipUser.swift; sourceTree = "<group>"; };
+		F32DB7EB20487CE700EB2F69 /* ShopScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopScreenVC.swift; sourceTree = "<group>"; };
+		F32DB7EE20487F7400EB2F69 /* Item.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Item.xib; sourceTree = "<group>"; };
+		F32DB7F020487FC300EB2F69 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		F32DB7F42048825E00EB2F69 /* Bindings1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings1.jpeg; sourceTree = "<group>"; };
+		F32DB7F52048825E00EB2F69 /* Bindings2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings2.jpeg; sourceTree = "<group>"; };
+		F32DB7F62048825E00EB2F69 /* Bindings3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings3.jpeg; sourceTree = "<group>"; };
+		F32DB7F72048825E00EB2F69 /* Bindings4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings4.jpeg; sourceTree = "<group>"; };
+		F32DB7F82048825E00EB2F69 /* Bindings5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings5.jpeg; sourceTree = "<group>"; };
+		F32DB7FA2048825E00EB2F69 /* Boots1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots1.jpeg; sourceTree = "<group>"; };
+		F32DB7FB2048825E00EB2F69 /* Boots2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots2.jpeg; sourceTree = "<group>"; };
+		F32DB7FC2048825E00EB2F69 /* Boots3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots3.jpeg; sourceTree = "<group>"; };
+		F32DB7FD2048825E00EB2F69 /* Boots4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots4.jpeg; sourceTree = "<group>"; };
+		F32DB7FE2048825E00EB2F69 /* Boots5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots5.jpeg; sourceTree = "<group>"; };
+		F32DB7FF2048825E00EB2F69 /* Boots6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots6.jpeg; sourceTree = "<group>"; };
+		F32DB8002048825E00EB2F69 /* Boots7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots7.jpeg; sourceTree = "<group>"; };
+		F32DB8022048825E00EB2F69 /* Gloves1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves1.jpeg; sourceTree = "<group>"; };
+		F32DB8032048825E00EB2F69 /* Gloves2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves2.jpeg; sourceTree = "<group>"; };
+		F32DB8042048825E00EB2F69 /* Gloves3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves3.jpeg; sourceTree = "<group>"; };
+		F32DB8052048825E00EB2F69 /* Gloves4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves4.jpeg; sourceTree = "<group>"; };
+		F32DB8062048825E00EB2F69 /* Gloves5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves5.jpeg; sourceTree = "<group>"; };
+		F32DB8072048825E00EB2F69 /* Gloves6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves6.jpeg; sourceTree = "<group>"; };
+		F32DB8092048825E00EB2F69 /* Hoodie1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie1.jpeg; sourceTree = "<group>"; };
+		F32DB80A2048825E00EB2F69 /* Hoodie2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie2.jpeg; sourceTree = "<group>"; };
+		F32DB80B2048825E00EB2F69 /* Hoodie3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie3.jpeg; sourceTree = "<group>"; };
+		F32DB80C2048825E00EB2F69 /* Hoodie4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie4.jpeg; sourceTree = "<group>"; };
+		F32DB80D2048825E00EB2F69 /* Hoodie5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie5.jpeg; sourceTree = "<group>"; };
+		F32DB80E2048825E00EB2F69 /* Hoodie6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie6.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +154,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005859899EF766301BF26E1D /* Pods_BlipUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15AC927AE059748F64244747 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC3FCDE82FC1D672CBF8E5A7 /* Pods-Blip.debug.xcconfig */,
+				8C57FD4ED646DEBA63B15877 /* Pods-Blip.release.xcconfig */,
+				E1155A2BCEC1170AF680DF40 /* Pods-BlipTests.debug.xcconfig */,
+				D59B78C38E50AC9D8DE8109D /* Pods-BlipTests.release.xcconfig */,
+				4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */,
+				A690F8A13FABDDEE07E43394 /* Pods-BlipUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		369EAAAC65AD9320594A1807 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83073F153649D24442C7B8CC /* Pods_Blip.framework */,
+				95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */,
+				30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F32DB79A20486E1500EB2F69 = {
 			isa = PBXGroup;
 			children = (
+				F32DB7D720486EEC00EB2F69 /* Animations */,
+				F32DB7D620486EE500EB2F69 /* Fonts */,
 				F32DB7A520486E1500EB2F69 /* Blip */,
 				F32DB7BA20486E1600EB2F69 /* BlipTests */,
 				F32DB7C520486E1600EB2F69 /* BlipUITests */,
 				F32DB7A420486E1500EB2F69 /* Products */,
+				15AC927AE059748F64244747 /* Pods */,
+				369EAAAC65AD9320594A1807 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +211,15 @@
 		F32DB7A520486E1500EB2F69 /* Blip */ = {
 			isa = PBXGroup;
 			children = (
+				F32DB7F22048825E00EB2F69 /* Images */,
+				F32DB7ED20487F4500EB2F69 /* CustomXIB */,
+				F32DB7E820487B6C00EB2F69 /* Model */,
+				F32DB7D520486ED800EB2F69 /* CustomClasses */,
+				F32DB7D420486ED000EB2F69 /* ViewControllers */,
 				F32DB7A620486E1500EB2F69 /* AppDelegate.swift */,
-				F32DB7A820486E1500EB2F69 /* ViewController.swift */,
 				F32DB7AA20486E1500EB2F69 /* Main.storyboard */,
-				F32DB7AD20486E1500EB2F69 /* Assets.xcassets */,
 				F32DB7AF20486E1500EB2F69 /* LaunchScreen.storyboard */,
+				F32DB7AD20486E1500EB2F69 /* Assets.xcassets */,
 				F32DB7B220486E1500EB2F69 /* Info.plist */,
 			);
 			path = Blip;
@@ -125,6 +243,121 @@
 			path = BlipUITests;
 			sourceTree = "<group>";
 		};
+		F32DB7D420486ED000EB2F69 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */,
+				F32DB7EB20487CE700EB2F69 /* ShopScreenVC.swift */,
+				F32DB7F020487FC300EB2F69 /* ItemCollectionViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F32DB7D520486ED800EB2F69 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7E4204879AA00EB2F69 /* PastelExtensions.swift */,
+				F32DB7E620487AED00EB2F69 /* UIViewExtensions.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		F32DB7D620486EE500EB2F69 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7D820486F3200EB2F69 /* CenturyGothic.ttf */,
+				F32DB7D920486F3200EB2F69 /* CenturyGothicBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F32DB7D720486EEC00EB2F69 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7E020486F7600EB2F69 /* check.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		F32DB7E820487B6C00EB2F69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7E920487B7C00EB2F69 /* BlipUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F32DB7ED20487F4500EB2F69 /* CustomXIB */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7EE20487F7400EB2F69 /* Item.xib */,
+			);
+			path = CustomXIB;
+			sourceTree = "<group>";
+		};
+		F32DB7F22048825E00EB2F69 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB7F32048825E00EB2F69 /* Bindings */,
+				F32DB7F92048825E00EB2F69 /* Boots */,
+				F32DB8012048825E00EB2F69 /* Gloves */,
+				F32DB8082048825E00EB2F69 /* Hoodie */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F32DB7F32048825E00EB2F69 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		F32DB7F92048825E00EB2F69 /* Boots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Boots;
+			sourceTree = "<group>";
+		};
+		F32DB8012048825E00EB2F69 /* Gloves */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gloves;
+			sourceTree = "<group>";
+		};
+		F32DB8082048825E00EB2F69 /* Hoodie */ = {
+			isa = PBXGroup;
+			children = (
+				F32DB80A2048825E00EB2F69 /* Hoodie2.jpeg */,
+				F32DB7F42048825E00EB2F69 /* Bindings1.jpeg */,
+				F32DB7F52048825E00EB2F69 /* Bindings2.jpeg */,
+				F32DB7F62048825E00EB2F69 /* Bindings3.jpeg */,
+				F32DB7F72048825E00EB2F69 /* Bindings4.jpeg */,
+				F32DB7F82048825E00EB2F69 /* Bindings5.jpeg */,
+				F32DB7FA2048825E00EB2F69 /* Boots1.jpeg */,
+				F32DB7FB2048825E00EB2F69 /* Boots2.jpeg */,
+				F32DB7FC2048825E00EB2F69 /* Boots3.jpeg */,
+				F32DB7FD2048825E00EB2F69 /* Boots4.jpeg */,
+				F32DB7FE2048825E00EB2F69 /* Boots5.jpeg */,
+				F32DB7FF2048825E00EB2F69 /* Boots6.jpeg */,
+				F32DB8002048825E00EB2F69 /* Boots7.jpeg */,
+				F32DB8022048825E00EB2F69 /* Gloves1.jpeg */,
+				F32DB8032048825E00EB2F69 /* Gloves2.jpeg */,
+				F32DB8042048825E00EB2F69 /* Gloves3.jpeg */,
+				F32DB8052048825E00EB2F69 /* Gloves4.jpeg */,
+				F32DB8062048825E00EB2F69 /* Gloves5.jpeg */,
+				F32DB8072048825E00EB2F69 /* Gloves6.jpeg */,
+				F32DB8092048825E00EB2F69 /* Hoodie1.jpeg */,
+				F32DB80B2048825E00EB2F69 /* Hoodie3.jpeg */,
+				F32DB80C2048825E00EB2F69 /* Hoodie4.jpeg */,
+				F32DB80D2048825E00EB2F69 /* Hoodie5.jpeg */,
+				F32DB80E2048825E00EB2F69 /* Hoodie6.jpeg */,
+			);
+			path = Hoodie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +365,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F32DB7CB20486E1600EB2F69 /* Build configuration list for PBXNativeTarget "Blip" */;
 			buildPhases = (
+				CA897039502DF3180263246C /* [CP] Check Pods Manifest.lock */,
 				F32DB79F20486E1500EB2F69 /* Sources */,
 				F32DB7A020486E1500EB2F69 /* Frameworks */,
 				F32DB7A120486E1500EB2F69 /* Resources */,
+				0BCFECFC5B4B0DB2C37C9AF3 /* [CP] Embed Pods Frameworks */,
+				D19A429863D61202226DC7CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F32DB7CE20486E1600EB2F69 /* Build configuration list for PBXNativeTarget "BlipTests" */;
 			buildPhases = (
+				9969F1B947E72F6578EF09B9 /* [CP] Check Pods Manifest.lock */,
 				F32DB7B320486E1600EB2F69 /* Sources */,
 				F32DB7B420486E1600EB2F69 /* Frameworks */,
 				F32DB7B520486E1600EB2F69 /* Resources */,
+				5208540A8C24C38A60439472 /* [CP] Embed Pods Frameworks */,
+				7DCBDD9C4E50A2EE8A91983E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F32DB7D120486E1600EB2F69 /* Build configuration list for PBXNativeTarget "BlipUITests" */;
 			buildPhases = (
+				F803ED5539502B7D8125660E /* [CP] Check Pods Manifest.lock */,
 				F32DB7BE20486E1600EB2F69 /* Sources */,
 				F32DB7BF20486E1600EB2F69 /* Frameworks */,
 				F32DB7C020486E1600EB2F69 /* Resources */,
+				8A7762A7B547096192919DB6 /* [CP] Embed Pods Frameworks */,
+				E9397A4A16A82EB258BD6DDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +474,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32DB81A2048825E00EB2F69 /* Boots7.jpeg in Resources */,
+				F32DB81D2048825E00EB2F69 /* Gloves3.jpeg in Resources */,
+				F32DB7E120486F7600EB2F69 /* check.json in Resources */,
+				F32DB8132048825E00EB2F69 /* Bindings5.jpeg in Resources */,
+				F32DB80F2048825E00EB2F69 /* Bindings1.jpeg in Resources */,
+				F32DB8252048825E00EB2F69 /* Hoodie5.jpeg in Resources */,
 				F32DB7B120486E1500EB2F69 /* LaunchScreen.storyboard in Resources */,
+				F32DB81B2048825E00EB2F69 /* Gloves1.jpeg in Resources */,
 				F32DB7AE20486E1500EB2F69 /* Assets.xcassets in Resources */,
+				F32DB8182048825E00EB2F69 /* Boots5.jpeg in Resources */,
+				F32DB7DD20486F3200EB2F69 /* CenturyGothicBold.ttf in Resources */,
+				F32DB8202048825E00EB2F69 /* Gloves6.jpeg in Resources */,
+				F32DB8232048825E00EB2F69 /* Hoodie3.jpeg in Resources */,
+				F32DB8212048825E00EB2F69 /* Hoodie1.jpeg in Resources */,
+				F32DB8112048825E00EB2F69 /* Bindings3.jpeg in Resources */,
+				F32DB8192048825E00EB2F69 /* Boots6.jpeg in Resources */,
+				F32DB8222048825E00EB2F69 /* Hoodie2.jpeg in Resources */,
+				F32DB7DA20486F3200EB2F69 /* CenturyGothic.ttf in Resources */,
+				F32DB8162048825E00EB2F69 /* Boots3.jpeg in Resources */,
+				F32DB8122048825E00EB2F69 /* Bindings4.jpeg in Resources */,
+				F32DB8172048825E00EB2F69 /* Boots4.jpeg in Resources */,
+				F32DB8262048825E00EB2F69 /* Hoodie6.jpeg in Resources */,
+				F32DB8142048825E00EB2F69 /* Boots1.jpeg in Resources */,
+				F32DB8152048825E00EB2F69 /* Boots2.jpeg in Resources */,
 				F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */,
+				F32DB81E2048825E00EB2F69 /* Gloves4.jpeg in Resources */,
+				F32DB81C2048825E00EB2F69 /* Gloves2.jpeg in Resources */,
+				F32DB81F2048825E00EB2F69 /* Gloves5.jpeg in Resources */,
+				F32DB8242048825E00EB2F69 /* Hoodie4.jpeg in Resources */,
+				F32DB8102048825E00EB2F69 /* Bindings2.jpeg in Resources */,
+				F32DB7EF20487F7400EB2F69 /* Item.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +512,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32DB7E220486F7600EB2F69 /* check.json in Resources */,
+				F32DB7DE20486F3200EB2F69 /* CenturyGothicBold.ttf in Resources */,
+				F32DB7DB20486F3200EB2F69 /* CenturyGothic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,18 +522,238 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32DB7E320486F7600EB2F69 /* check.json in Resources */,
+				F32DB7DF20486F3200EB2F69 /* CenturyGothicBold.ttf in Resources */,
+				F32DB7DC20486F3200EB2F69 /* CenturyGothic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BCFECFC5B4B0DB2C37C9AF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Blip/Pods-Blip-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AZDialogView/AZDialogView.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImagePicker/BSImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CHIPageControl/CHIPageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GlidingCollection/GlidingCollection.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulsator/Pulsator.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SHSearchBar/SHSearchBar.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AZDialogView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGridCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHIPageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlidingCollection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulsator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SHSearchBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImageViewModeScaleAspect.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blip/Pods-Blip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5208540A8C24C38A60439472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlipTests/Pods-BlipTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DCBDD9C4E50A2EE8A91983E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlipTests/Pods-BlipTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A7762A7B547096192919DB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9969F1B947E72F6578EF09B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlipTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA897039502DF3180263246C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D19A429863D61202226DC7CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blip/Pods-Blip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9397A4A16A82EB258BD6DDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F803ED5539502B7D8125660E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlipUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F32DB79F20486E1500EB2F69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F32DB7A920486E1500EB2F69 /* ViewController.swift in Sources */,
+				F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */,
+				F32DB7E5204879AA00EB2F69 /* PastelExtensions.swift in Sources */,
+				F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */,
+				F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */,
+				F32DB7EC20487CE700EB2F69 /* ShopScreenVC.swift in Sources */,
 				F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */,
+				F32DB7F120487FC300EB2F69 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +917,10 @@
 		};
 		F32DB7CC20486E1600EB2F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3FCDE82FC1D672CBF8E5A7 /* Pods-Blip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HK4HT64LY7;
 				INFOPLIST_FILE = Blip/Info.plist;
@@ -433,14 +928,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.Blip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F32DB7CD20486E1600EB2F69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C57FD4ED646DEBA63B15877 /* Pods-Blip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HK4HT64LY7;
 				INFOPLIST_FILE = Blip/Info.plist;
@@ -448,12 +945,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = BlipGroceries.Blip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		F32DB7CF20486E1600EB2F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1155A2BCEC1170AF680DF40 /* Pods-BlipTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +969,7 @@
 		};
 		F32DB7D020486E1600EB2F69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D59B78C38E50AC9D8DE8109D /* Pods-BlipTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +987,7 @@
 		};
 		F32DB7D220486E1600EB2F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +1004,7 @@
 		};
 		F32DB7D320486E1600EB2F69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A690F8A13FABDDEE07E43394 /* Pods-BlipUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

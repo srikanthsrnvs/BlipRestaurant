@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CenturyGothic.ttf">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="x3k-G3-jcZ" customClass="ItemCollectionViewCell" customModule="Blip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="99" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XsA-1E-Une">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="400"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-fx-NRR" customClass="RaisedButton" customModule="Material">
+                        <rect key="frame" x="0.0" y="350" width="250" height="50"/>
+                        <color key="backgroundColor" red="0.084168596959999994" green="0.83425793999999998" blue="0.158696527" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="J1m-pB-aEy"/>
+                            <constraint firstAttribute="height" constant="50" id="w4a-hw-aqr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                        <state key="normal" title="Add to cart">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                <color key="value" red="0.084168596959999994" green="0.83425793999999998" blue="0.158696527" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Add to cart"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrx-C3-iap">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="55"/>
+                        <color key="backgroundColor" white="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="Pjg-pi-agn"/>
+                            <constraint firstAttribute="height" constant="55" id="sY0-Lf-BM7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                        <color key="textColor" red="0.084168596959999994" green="0.83425793999999998" blue="0.158696527" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-Gw-wzA">
+                        <rect key="frame" x="0.0" y="306" width="250" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="fIB-cV-BpX"/>
+                            <constraint firstAttribute="width" constant="250" id="tcC-Wr-dTL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                        <color key="textColor" red="0.084168596959999994" green="0.83425793999999998" blue="0.158696527" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XsA-1E-Une" firstAttribute="width" secondItem="x3k-G3-jcZ" secondAttribute="width" id="JfM-yK-bZM"/>
+                <constraint firstAttribute="bottom" secondItem="Pi8-fx-NRR" secondAttribute="bottom" id="OIK-3A-n8N"/>
+                <constraint firstItem="XsA-1E-Une" firstAttribute="height" secondItem="x3k-G3-jcZ" secondAttribute="height" id="OZT-ov-20f"/>
+                <constraint firstItem="Pi8-fx-NRR" firstAttribute="top" secondItem="gVa-Gw-wzA" secondAttribute="bottom" constant="-1" id="eTH-27-X9D"/>
+                <constraint firstItem="Mrx-C3-iap" firstAttribute="centerX" secondItem="J0v-78-87i" secondAttribute="centerX" id="eyA-nU-mHI"/>
+                <constraint firstItem="Mrx-C3-iap" firstAttribute="top" secondItem="J0v-78-87i" secondAttribute="top" id="nse-jK-kpe"/>
+                <constraint firstItem="Pi8-fx-NRR" firstAttribute="centerX" secondItem="J0v-78-87i" secondAttribute="centerX" id="rcM-No-Th0"/>
+                <constraint firstItem="gVa-Gw-wzA" firstAttribute="centerX" secondItem="J0v-78-87i" secondAttribute="centerX" id="s0Q-vG-Pw6"/>
+                <constraint firstItem="XsA-1E-Une" firstAttribute="centerX" secondItem="J0v-78-87i" secondAttribute="centerX" id="vtJ-wj-AlN"/>
+                <constraint firstItem="XsA-1E-Une" firstAttribute="centerY" secondItem="J0v-78-87i" secondAttribute="centerY" id="xXn-dD-r4y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="J0v-78-87i"/>
+            <size key="customSize" width="160" height="201"/>
+            <connections>
+                <outlet property="imageView" destination="XsA-1E-Une" id="KRO-Gv-GZs"/>
+                <outlet property="priceLabel" destination="gVa-Gw-wzA" id="zUE-In-Iex"/>
+                <outlet property="productLabel" destination="Mrx-C3-iap" id="CjV-AB-dxd"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="104"/>
+        </collectionViewCell>
+    </objects>
+</document>
