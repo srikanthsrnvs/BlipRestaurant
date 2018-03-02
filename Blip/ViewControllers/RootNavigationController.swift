@@ -7,31 +7,30 @@
 //
 
 import UIKit
+import Material
 
-class RootNavigationController: UINavigationController {
+class RootNavigationController: NavigationController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationController?.navigationBar.titleTextAttributes =
-            [NSAttributedStringKey.foregroundColor: UIColor.green,
-             NSAttributedStringKey.font: UIFont(name: "CenturyGothic", size: 22)!]
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    fileprivate var backButton: IconButton!
+    fileprivate var cartButton: IconButton!
+    var userAddress = "156 Enfield Place"
+    
+    open override func prepare() {
+        super.prepare()
+        guard let v = navigationBar as? NavigationBar else {
+            return
+        }
+        prepareNavigationItem()
+        v.depthPreset = .none
+        v.dividerColor = Color.grey.lighten2
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    fileprivate func prepareNavigationItem() {
+        navigationItem.titleLabel.text = "Home"
+        navigationItem.detailLabel.text = "Delivering to \(userAddress)"
+        
+        navigationItem.leftViews = [backButton]
+        navigationItem.rightViews = [cartButton]
     }
-    */
 
 }

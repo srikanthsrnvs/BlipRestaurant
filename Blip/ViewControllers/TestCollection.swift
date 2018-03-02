@@ -12,10 +12,13 @@ import Pastel
 
 class TestCollection: UIViewController {
 
+    
     @IBOutlet var gradientView: PastelView!
     @IBOutlet weak var collectionView: CollectionView!
+    
     fileprivate var items = ["Gloves", "Boots", "Bindings", "Hoodie"]
     var images: [UIImage?] = []
+    var userAddress = "156 Enfield Place"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,16 @@ class TestCollection: UIViewController {
         return images as! [UIImage]
     }
     
+    func prepareBackButton(){
+        
+        
+    }
+    
+    func prepareCartButton(){
+        
+        
+    }
+    
     func imageSizeProvider(at: Int, data: UIImage, collectionSize: CGSize) -> CGSize {
         var imageSize = data.size
         if imageSize.width > collectionSize.width {
@@ -66,16 +79,5 @@ class TestCollection: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
