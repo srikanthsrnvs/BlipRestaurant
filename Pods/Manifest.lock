@@ -12,6 +12,7 @@ PODS:
     - BSGridCollectionViewLayout (~> 1.2.0)
     - UIImageViewModeScaleAspect (= 1.5)
   - CHIPageControl/Fresno (0.1.5)
+  - CollectionKit (1.2.1)
   - Cosmos (15.0.0)
   - DynamicBlurView (2.0.2)
   - FBSDKCoreKit (4.31.0):
@@ -112,6 +113,7 @@ DEPENDENCIES:
   - AZDialogView
   - BSImagePicker
   - CHIPageControl/Fresno
+  - CollectionKit
   - Cosmos
   - FBSDKCoreKit
   - FBSDKLoginKit
@@ -141,6 +143,7 @@ SPEC CHECKSUMS:
   BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
   BSImagePicker: eb12948a6e71b9855c2c37723dfd989b9b4288bd
   CHIPageControl: 79d19a8ee2e35fa3c1da6533adb5364c77b5cfea
+  CollectionKit: 529f21630888b51dfad3e1aa7a2d08e8c28099cb
   Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
   DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   FBSDKCoreKit: 54db4c581123745d25a9f7c1608020b3aeabd118
@@ -176,6 +179,6 @@ SPEC CHECKSUMS:
   Stripe: f8e8feff38ba5caf7b2568c64eab96b0440ecb95
   UIImageViewModeScaleAspect: 11a790a0b9d248a13dc63e3a78991f1463b6d84e
 
-PODFILE CHECKSUM: 72e8e71db3e14f4a549ee34d85928055e4c0eb7d
+PODFILE CHECKSUM: 98d45b3752c65954c8746bfed1241679b2b03910
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.3.1

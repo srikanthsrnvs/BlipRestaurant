@@ -31,6 +31,7 @@ target 'Blip' do
   pod 'AZDialogView'
   pod 'BSImagePicker'
   pod 'GlidingCollection'
+  pod "CollectionKit"
 
   target 'BlipTests' do
     inherit! :search_paths
