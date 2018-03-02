@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		005859899EF766301BF26E1D /* Pods_BlipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */; };
+		3B2102782048E3CD00440A64 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2102772048E3CD00440A64 /* Item.swift */; };
+		3B21027A2048EF0C00440A64 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2102792048EF0C00440A64 /* Cart.swift */; };
 		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
 		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
 		F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A620486E1500EB2F69 /* AppDelegate.swift */; };
@@ -77,6 +79,8 @@
 
 /* Begin PBXFileReference section */
 		30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2102772048E3CD00440A64 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3B2102792048EF0C00440A64 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		83073F153649D24442C7B8CC /* Pods_Blip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C57FD4ED646DEBA63B15877 /* Pods-Blip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blip/Pods-Blip.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,8 +250,8 @@
 		F32DB7D420486ED000EB2F69 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */,
 				F32DB7EB20487CE700EB2F69 /* ShopScreenVC.swift */,
+				F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */,
 				F32DB7F020487FC300EB2F69 /* ItemCollectionViewCell.swift */,
 			);
 			path = ViewControllers;
@@ -283,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				F32DB7E920487B7C00EB2F69 /* BlipUser.swift */,
+				3B2102772048E3CD00440A64 /* Item.swift */,
+				3B2102792048EF0C00440A64 /* Cart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +315,11 @@
 		F32DB7F32048825E00EB2F69 /* Bindings */ = {
 			isa = PBXGroup;
 			children = (
+				F32DB7F42048825E00EB2F69 /* Bindings1.jpeg */,
+				F32DB7F52048825E00EB2F69 /* Bindings2.jpeg */,
+				F32DB7F62048825E00EB2F69 /* Bindings3.jpeg */,
+				F32DB7F72048825E00EB2F69 /* Bindings4.jpeg */,
+				F32DB7F82048825E00EB2F69 /* Bindings5.jpeg */,
 			);
 			path = Bindings;
 			sourceTree = "<group>";
@@ -316,26 +327,6 @@
 		F32DB7F92048825E00EB2F69 /* Boots */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Boots;
-			sourceTree = "<group>";
-		};
-		F32DB8012048825E00EB2F69 /* Gloves */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Gloves;
-			sourceTree = "<group>";
-		};
-		F32DB8082048825E00EB2F69 /* Hoodie */ = {
-			isa = PBXGroup;
-			children = (
-				F32DB80A2048825E00EB2F69 /* Hoodie2.jpeg */,
-				F32DB7F42048825E00EB2F69 /* Bindings1.jpeg */,
-				F32DB7F52048825E00EB2F69 /* Bindings2.jpeg */,
-				F32DB7F62048825E00EB2F69 /* Bindings3.jpeg */,
-				F32DB7F72048825E00EB2F69 /* Bindings4.jpeg */,
-				F32DB7F82048825E00EB2F69 /* Bindings5.jpeg */,
 				F32DB7FA2048825E00EB2F69 /* Boots1.jpeg */,
 				F32DB7FB2048825E00EB2F69 /* Boots2.jpeg */,
 				F32DB7FC2048825E00EB2F69 /* Boots3.jpeg */,
@@ -343,13 +334,28 @@
 				F32DB7FE2048825E00EB2F69 /* Boots5.jpeg */,
 				F32DB7FF2048825E00EB2F69 /* Boots6.jpeg */,
 				F32DB8002048825E00EB2F69 /* Boots7.jpeg */,
+			);
+			path = Boots;
+			sourceTree = "<group>";
+		};
+		F32DB8012048825E00EB2F69 /* Gloves */ = {
+			isa = PBXGroup;
+			children = (
 				F32DB8022048825E00EB2F69 /* Gloves1.jpeg */,
 				F32DB8032048825E00EB2F69 /* Gloves2.jpeg */,
 				F32DB8042048825E00EB2F69 /* Gloves3.jpeg */,
 				F32DB8052048825E00EB2F69 /* Gloves4.jpeg */,
 				F32DB8062048825E00EB2F69 /* Gloves5.jpeg */,
 				F32DB8072048825E00EB2F69 /* Gloves6.jpeg */,
+			);
+			path = Gloves;
+			sourceTree = "<group>";
+		};
+		F32DB8082048825E00EB2F69 /* Hoodie */ = {
+			isa = PBXGroup;
+			children = (
 				F32DB8092048825E00EB2F69 /* Hoodie1.jpeg */,
+				F32DB80A2048825E00EB2F69 /* Hoodie2.jpeg */,
 				F32DB80B2048825E00EB2F69 /* Hoodie3.jpeg */,
 				F32DB80C2048825E00EB2F69 /* Hoodie4.jpeg */,
 				F32DB80D2048825E00EB2F69 /* Hoodie5.jpeg */,
@@ -748,9 +754,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */,
+				3B21027A2048EF0C00440A64 /* Cart.swift in Sources */,
 				F32DB7E5204879AA00EB2F69 /* PastelExtensions.swift in Sources */,
 				F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */,
 				F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */,
+				3B2102782048E3CD00440A64 /* Item.swift in Sources */,
 				F32DB7EC20487CE700EB2F69 /* ShopScreenVC.swift in Sources */,
 				F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */,
 				F32DB7F120487FC300EB2F69 /* ItemCollectionViewCell.swift in Sources */,
