@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import SwiftIcons
+import Material
+import Hero
 
 class CustomCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var imgView: UIImageView!
+
+    @IBOutlet weak var addToCartButton: IconButton!
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellPrice: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-//        self.frame.size.width = 125
+    func prepareBorder(){
+        
+        self.contentView.ApplyCornerRadiusToView()
+        self.addToCartButton.tintColor = UIColor.white
+        self.addToCartButton.image = Icon.cm.add
+        self.addToCartButton.layer.cornerRadius = 12.5
     }
 }

@@ -8,29 +8,48 @@
 
 import UIKit
 import Material
+import SwiftIcons
 
-class RootNavigationController: NavigationController {
+class RootNavigationController: ToolbarController {
 
-    fileprivate var backButton: IconButton!
+    fileprivate var profileButton: IconButton!
     fileprivate var cartButton: IconButton!
-    var userAddress = "156 Enfield Place"
     
     open override func prepare() {
         super.prepare()
-        guard let v = navigationBar as? NavigationBar else {
-            return
-        }
-        prepareNavigationItem()
-        v.depthPreset = .none
-        v.dividerColor = Color.grey.lighten2
+        prepareBackButton()
+        prepareStarButton()
+        prepareStatusBar()
+        prepareToolbar()
+    }
+}
+
+fileprivate extension RootNavigationController {
+    func prepareBackButton() {
+        profileButton = IconButton(title: "")
+        profileButton.tintColor = UIColor.white
+        profileButton.setIcon(icon: .googleMaterialDesign(.face), iconSize: 25, color: UIColor.white, forState: .normal)
+        profileButton.pulseColor = .white
     }
     
-    fileprivate func prepareNavigationItem() {
-        navigationItem.titleLabel.text = "Home"
-        navigationItem.detailLabel.text = "Delivering to \(userAddress)"
-        
-        navigationItem.leftViews = [backButton]
-        navigationItem.rightViews = [cartButton]
+    func prepareStarButton() {
+        cartButton = IconButton(title: "")
+        cartButton.tintColor = UIColor.white
+        cartButton.setIcon(icon: .googleMaterialDesign(.shoppingCart), iconSize: 25, color: UIColor.white, forState: .normal)
+        cartButton.pulseColor = .white
     }
+    
+    
+    func prepareStatusBar() {
+        statusBarStyle = .default
+        statusBar.backgroundColor = #colorLiteral(red: 0, green: 0.8495121598, blue: 0, alpha: 1)
+    }
+     
+    func prepareToolbar() {
 
+        toolbar.backgroundColor = #colorLiteral(red: 0, green: 0.8495121598, blue: 0, alpha: 1)
+        toolbar.leftViews = [profileButton]
+        toolbar.rightViews = [cartButton]
+    }
 }
+

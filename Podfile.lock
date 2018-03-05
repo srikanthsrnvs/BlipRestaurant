@@ -12,7 +12,6 @@ PODS:
     - BSGridCollectionViewLayout (~> 1.2.0)
     - UIImageViewModeScaleAspect (= 1.5)
   - CHIPageControl/Fresno (0.1.5)
-  - CollectionKit (1.2.1)
   - Cosmos (15.0.0)
   - DynamicBlurView (2.0.2)
   - FBSDKCoreKit (4.31.0):
@@ -64,6 +63,16 @@ PODS:
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
   - GlidingCollection (1.1.0)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.6.0):
+    - GoogleMaps (= 2.6.0)
+    - GooglePlaces (= 2.6.0)
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
   - GoogleToolboxForMac/DebugUtils (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GoogleToolboxForMac/Defines (2.1.3)
@@ -77,6 +86,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
   - GTMSessionFetcher/Core (1.1.14)
+  - Hero (1.1.0)
   - IBAnimatable (5.0.0)
   - Kingfisher (4.6.3)
   - leveldb-library (1.20)
@@ -94,7 +104,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - NotificationBannerSwift (1.6.1):
+  - NotificationBannerSwift (1.6.2):
     - MarqueeLabel/Swift
     - SnapKit (~> 4.0)
   - Pastel (0.3.0)
@@ -106,6 +116,7 @@ PODS:
   - SHSearchBar (1.4.1)
   - SnapKit (4.0.0)
   - Stripe (12.1.1)
+  - SwiftIcons (2.0.1)
   - UIImageViewModeScaleAspect (1.5)
 
 DEPENDENCIES:
@@ -113,7 +124,6 @@ DEPENDENCIES:
   - AZDialogView
   - BSImagePicker
   - CHIPageControl/Fresno
-  - CollectionKit
   - Cosmos
   - FBSDKCoreKit
   - FBSDKLoginKit
@@ -124,6 +134,9 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Firebase/Storage
   - GlidingCollection
+  - GooglePlacePicker
+  - GooglePlaces
+  - Hero
   - IBAnimatable
   - Kingfisher
   - lottie-ios
@@ -135,6 +148,7 @@ DEPENDENCIES:
   - RevealingSplashView
   - SHSearchBar
   - Stripe
+  - SwiftIcons
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -143,7 +157,6 @@ SPEC CHECKSUMS:
   BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
   BSImagePicker: eb12948a6e71b9855c2c37723dfd989b9b4288bd
   CHIPageControl: 79d19a8ee2e35fa3c1da6533adb5364c77b5cfea
-  CollectionKit: 529f21630888b51dfad3e1aa7a2d08e8c28099cb
   Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
   DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   FBSDKCoreKit: 54db4c581123745d25a9f7c1608020b3aeabd118
@@ -158,8 +171,12 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 2bafab2d0f3ab3dfd753101c2c32995c2051b5da
   FirebaseStorage: 181bb543d39ee3c53e0558de7ba86b1286a0427f
   GlidingCollection: 2194165075fa7230027049238c9ed724453557e6
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlacePicker: e4488625effb006f59de49e14b7a603e463e4261
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
+  Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
   IBAnimatable: aa2286a9cf8fb4ae2e1be85c5287ae56143b024f
   Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
@@ -168,7 +185,7 @@ SPEC CHECKSUMS:
   Material: ef704dcc1bced32ab7c91ece2ba734da557e3f36
   Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  NotificationBannerSwift: 1fc2955381e6eb26d958ba32160fc41721b9b689
+  NotificationBannerSwift: 4eceb2add9d5eaa0596c63d49690b4d6476e74ec
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
   PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
@@ -177,8 +194,9 @@ SPEC CHECKSUMS:
   SHSearchBar: 1e0cd12f142dc6b902c54fbd026c9a25945c3041
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Stripe: f8e8feff38ba5caf7b2568c64eab96b0440ecb95
+  SwiftIcons: e475a56ae2c2da40672dbf16061ca5dd5cee7dbb
   UIImageViewModeScaleAspect: 11a790a0b9d248a13dc63e3a78991f1463b6d84e
 
-PODFILE CHECKSUM: 98d45b3752c65954c8746bfed1241679b2b03910
+PODFILE CHECKSUM: e83bef81391d424d19a209e7fff85f578561f13b
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

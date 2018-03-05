@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Material
+import Firebase
+import Stripe
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSPlacesClient.provideAPIKey("AIzaSyDLLIOVaWLKykWq7SXeC1mD7jlbvnrAEsg")
+        window = UIWindow(frame: Screen.bounds)
+        window!.rootViewController = RootNavigationController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NavigationRoot"))
+        window!.makeKeyAndVisible()
         return true
     }
 

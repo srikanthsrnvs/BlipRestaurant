@@ -31,8 +31,11 @@ target 'Blip' do
   pod 'AZDialogView'
   pod 'BSImagePicker'
   pod 'GlidingCollection'
-  pod "CollectionKit"
-
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'SwiftIcons'
+  pod "Hero"
+  
   target 'BlipTests' do
     inherit! :search_paths
     # Pods for testing
