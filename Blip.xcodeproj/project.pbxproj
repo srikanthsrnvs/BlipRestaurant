@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		005859899EF766301BF26E1D /* Pods_BlipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */; };
+		3B210287204CFA0300440A64 /* frozen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21027D204CF9F600440A64 /* frozen.jpg */; };
+		3B210288204CFA0300440A64 /* deli-ready-meals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21027E204CF9F800440A64 /* deli-ready-meals.jpg */; };
+		3B210289204CFA0300440A64 /* bakery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B21027F204CF9F900440A64 /* bakery.jpg */; };
+		3B21028A204CFA0300440A64 /* baby-care.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B210280204CF9FB00440A64 /* baby-care.jpg */; };
+		3B21028B204CFA0300440A64 /* drinks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B210281204CF9FC00440A64 /* drinks.jpg */; };
+		3B21028C204CFA0300440A64 /* fruits-vegetables.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B210282204CF9FD00440A64 /* fruits-vegetables.jpg */; };
+		3B21028D204CFA0300440A64 /* natural-organic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B210283204CF9FF00440A64 /* natural-organic.png */; };
+		3B21028E204CFA0300440A64 /* pantry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B210284204CFA0000440A64 /* pantry.jpg */; };
+		3B21028F204CFA0300440A64 /* meat-seafoods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B210285204CFA0200440A64 /* meat-seafoods.jpg */; };
+		3B210290204CFA0300440A64 /* dairy-eggs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B210286204CFA0300440A64 /* dairy-eggs.jpg */; };
 		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
 		5F12F5E12048B4E000DDDA8B /* TestCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F12F5E02048B4E000DDDA8B /* TestCollection.swift */; };
 		5F12F5E32048CB4F00DDDA8B /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F12F5E22048CB4F00DDDA8B /* RootNavigationController.swift */; };
@@ -80,6 +90,16 @@
 
 /* Begin PBXFileReference section */
 		30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B21027D204CF9F600440A64 /* frozen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frozen.jpg; sourceTree = "<group>"; };
+		3B21027E204CF9F800440A64 /* deli-ready-meals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "deli-ready-meals.jpg"; sourceTree = "<group>"; };
+		3B21027F204CF9F900440A64 /* bakery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bakery.jpg; sourceTree = "<group>"; };
+		3B210280204CF9FB00440A64 /* baby-care.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "baby-care.jpg"; sourceTree = "<group>"; };
+		3B210281204CF9FC00440A64 /* drinks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drinks.jpg; sourceTree = "<group>"; };
+		3B210282204CF9FD00440A64 /* fruits-vegetables.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fruits-vegetables.jpg"; sourceTree = "<group>"; };
+		3B210283204CF9FF00440A64 /* natural-organic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "natural-organic.png"; sourceTree = "<group>"; };
+		3B210284204CFA0000440A64 /* pantry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pantry.jpg; sourceTree = "<group>"; };
+		3B210285204CFA0200440A64 /* meat-seafoods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "meat-seafoods.jpg"; sourceTree = "<group>"; };
+		3B210286204CFA0300440A64 /* dairy-eggs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dairy-eggs.jpg"; sourceTree = "<group>"; };
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F12F5E02048B4E000DDDA8B /* TestCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollection.swift; sourceTree = "<group>"; };
 		5F12F5E22048CB4F00DDDA8B /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
@@ -188,6 +208,23 @@
 				30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B21027C204CF9C200440A64 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3B210280204CF9FB00440A64 /* baby-care.jpg */,
+				3B21027F204CF9F900440A64 /* bakery.jpg */,
+				3B210286204CFA0300440A64 /* dairy-eggs.jpg */,
+				3B21027E204CF9F800440A64 /* deli-ready-meals.jpg */,
+				3B210281204CF9FC00440A64 /* drinks.jpg */,
+				3B21027D204CF9F600440A64 /* frozen.jpg */,
+				3B210282204CF9FD00440A64 /* fruits-vegetables.jpg */,
+				3B210285204CFA0200440A64 /* meat-seafoods.jpg */,
+				3B210283204CF9FF00440A64 /* natural-organic.png */,
+				3B210284204CFA0000440A64 /* pantry.jpg */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		F32DB79A20486E1500EB2F69 = {
@@ -307,6 +344,7 @@
 		F32DB7F22048825E00EB2F69 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3B21027C204CF9C200440A64 /* Categories */,
 				F32DB7F32048825E00EB2F69 /* Bindings */,
 				F32DB7F92048825E00EB2F69 /* Boots */,
 				F32DB8012048825E00EB2F69 /* Gloves */,
@@ -483,12 +521,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B21028B204CFA0300440A64 /* drinks.jpg in Resources */,
 				F32DB81A2048825E00EB2F69 /* Boots7.jpeg in Resources */,
 				F32DB81D2048825E00EB2F69 /* Gloves3.jpeg in Resources */,
 				F32DB7E120486F7600EB2F69 /* check.json in Resources */,
 				F32DB8132048825E00EB2F69 /* Bindings5.jpeg in Resources */,
 				F32DB80F2048825E00EB2F69 /* Bindings1.jpeg in Resources */,
 				F32DB8252048825E00EB2F69 /* Hoodie5.jpeg in Resources */,
+				3B21028D204CFA0300440A64 /* natural-organic.png in Resources */,
 				F32DB7B120486E1500EB2F69 /* LaunchScreen.storyboard in Resources */,
 				F32DB81B2048825E00EB2F69 /* Gloves1.jpeg in Resources */,
 				F32DB7AE20486E1500EB2F69 /* Assets.xcassets in Resources */,
@@ -496,20 +536,28 @@
 				F32DB7DD20486F3200EB2F69 /* CenturyGothicBold.ttf in Resources */,
 				F32DB8202048825E00EB2F69 /* Gloves6.jpeg in Resources */,
 				F32DB8232048825E00EB2F69 /* Hoodie3.jpeg in Resources */,
+				3B210287204CFA0300440A64 /* frozen.jpg in Resources */,
+				3B21028F204CFA0300440A64 /* meat-seafoods.jpg in Resources */,
+				3B21028C204CFA0300440A64 /* fruits-vegetables.jpg in Resources */,
 				F32DB8212048825E00EB2F69 /* Hoodie1.jpeg in Resources */,
+				3B21028E204CFA0300440A64 /* pantry.jpg in Resources */,
 				F32DB8112048825E00EB2F69 /* Bindings3.jpeg in Resources */,
 				F32DB8192048825E00EB2F69 /* Boots6.jpeg in Resources */,
+				3B210288204CFA0300440A64 /* deli-ready-meals.jpg in Resources */,
 				F32DB8222048825E00EB2F69 /* Hoodie2.jpeg in Resources */,
+				3B21028A204CFA0300440A64 /* baby-care.jpg in Resources */,
 				F32DB7DA20486F3200EB2F69 /* CenturyGothic.ttf in Resources */,
 				F32DB8162048825E00EB2F69 /* Boots3.jpeg in Resources */,
 				F32DB8122048825E00EB2F69 /* Bindings4.jpeg in Resources */,
 				F32DB8172048825E00EB2F69 /* Boots4.jpeg in Resources */,
 				F32DB8262048825E00EB2F69 /* Hoodie6.jpeg in Resources */,
 				F32DB8142048825E00EB2F69 /* Boots1.jpeg in Resources */,
+				3B210290204CFA0300440A64 /* dairy-eggs.jpg in Resources */,
 				F32DB8152048825E00EB2F69 /* Boots2.jpeg in Resources */,
 				F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */,
 				F32DB81E2048825E00EB2F69 /* Gloves4.jpeg in Resources */,
 				F32DB81C2048825E00EB2F69 /* Gloves2.jpeg in Resources */,
+				3B210289204CFA0300440A64 /* bakery.jpg in Resources */,
 				F32DB81F2048825E00EB2F69 /* Gloves5.jpeg in Resources */,
 				F32DB8242048825E00EB2F69 /* Hoodie4.jpeg in Resources */,
 				F32DB8102048825E00EB2F69 /* Bindings2.jpeg in Resources */,
