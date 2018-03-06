@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		005859899EF766301BF26E1D /* Pods_BlipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */; };
 		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
-		5F12F5E32048CB4F00DDDA8B /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F12F5E22048CB4F00DDDA8B /* RootNavigationController.swift */; };
-		5FA2FC072049E86100C18F15 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2FC062049E86100C18F15 /* CustomCollectionViewCell.swift */; };
 		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
 		F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A620486E1500EB2F69 /* AppDelegate.swift */; };
 		F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */; };
@@ -31,9 +29,7 @@
 		F32DB7E5204879AA00EB2F69 /* PastelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7E4204879AA00EB2F69 /* PastelExtensions.swift */; };
 		F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7E620487AED00EB2F69 /* UIViewExtensions.swift */; };
 		F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7E920487B7C00EB2F69 /* BlipUser.swift */; };
-		F32DB7EC20487CE700EB2F69 /* ShopScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7EB20487CE700EB2F69 /* ShopScreenVC.swift */; };
 		F32DB7EF20487F7400EB2F69 /* Item.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7EE20487F7400EB2F69 /* Item.xib */; };
-		F32DB7F120487FC300EB2F69 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7F020487FC300EB2F69 /* ItemCollectionViewCell.swift */; };
 		F32DB80F2048825E00EB2F69 /* Bindings1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F42048825E00EB2F69 /* Bindings1.jpeg */; };
 		F32DB8102048825E00EB2F69 /* Bindings2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F52048825E00EB2F69 /* Bindings2.jpeg */; };
 		F32DB8112048825E00EB2F69 /* Bindings3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7F62048825E00EB2F69 /* Bindings3.jpeg */; };
@@ -81,8 +77,6 @@
 /* Begin PBXFileReference section */
 		30101185DA53E62214CB4B80 /* Pods_BlipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5F12F5E22048CB4F00DDDA8B /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
-		5FA2FC062049E86100C18F15 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		83073F153649D24442C7B8CC /* Pods_Blip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C57FD4ED646DEBA63B15877 /* Pods-Blip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blip/Pods-Blip.release.xcconfig"; sourceTree = "<group>"; };
 		95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,9 +103,7 @@
 		F32DB7E4204879AA00EB2F69 /* PastelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelExtensions.swift; sourceTree = "<group>"; };
 		F32DB7E620487AED00EB2F69 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		F32DB7E920487B7C00EB2F69 /* BlipUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipUser.swift; sourceTree = "<group>"; };
-		F32DB7EB20487CE700EB2F69 /* ShopScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopScreenVC.swift; sourceTree = "<group>"; };
 		F32DB7EE20487F7400EB2F69 /* Item.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Item.xib; sourceTree = "<group>"; };
-		F32DB7F020487FC300EB2F69 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		F32DB7F42048825E00EB2F69 /* Bindings1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings1.jpeg; sourceTree = "<group>"; };
 		F32DB7F52048825E00EB2F69 /* Bindings2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings2.jpeg; sourceTree = "<group>"; };
 		F32DB7F62048825E00EB2F69 /* Bindings3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings3.jpeg; sourceTree = "<group>"; };
@@ -253,9 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */,
-				F32DB7EB20487CE700EB2F69 /* ShopScreenVC.swift */,
-				F32DB7F020487FC300EB2F69 /* ItemCollectionViewCell.swift */,
-				5F12F5E22048CB4F00DDDA8B /* RootNavigationController.swift */,
 				F3FC70E8204CD26100A73940 /* HomePage.swift */,
 			);
 			path = ViewControllers;
@@ -266,7 +255,6 @@
 			children = (
 				F32DB7E4204879AA00EB2F69 /* PastelExtensions.swift */,
 				F32DB7E620487AED00EB2F69 /* UIViewExtensions.swift */,
-				5FA2FC062049E86100C18F15 /* CustomCollectionViewCell.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -768,15 +756,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */,
-				5FA2FC072049E86100C18F15 /* CustomCollectionViewCell.swift in Sources */,
 				F32DB7E5204879AA00EB2F69 /* PastelExtensions.swift in Sources */,
-				5F12F5E32048CB4F00DDDA8B /* RootNavigationController.swift in Sources */,
 				F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */,
 				F3FC70E9204CD26100A73940 /* HomePage.swift in Sources */,
 				F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */,
-				F32DB7EC20487CE700EB2F69 /* ShopScreenVC.swift in Sources */,
 				F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */,
-				F32DB7F120487FC300EB2F69 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
