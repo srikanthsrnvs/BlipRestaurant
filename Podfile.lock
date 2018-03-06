@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.7.0)
   - AZDialogView (1.2.1)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -94,7 +94,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - NotificationBannerSwift (1.6.1):
+  - NotificationBannerSwift (1.6.2):
     - MarqueeLabel/Swift
     - SnapKit (~> 4.0)
   - Pastel (0.3.0)
@@ -137,7 +137,7 @@ DEPENDENCIES:
   - Stripe
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   AZDialogView: 75a481ef11e78b047e9d7d212a83b76a8d91627f
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
@@ -168,7 +168,7 @@ SPEC CHECKSUMS:
   Material: ef704dcc1bced32ab7c91ece2ba734da557e3f36
   Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  NotificationBannerSwift: 1fc2955381e6eb26d958ba32160fc41721b9b689
+  NotificationBannerSwift: 4eceb2add9d5eaa0596c63d49690b4d6476e74ec
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
   PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03

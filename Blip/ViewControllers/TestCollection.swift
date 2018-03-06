@@ -9,6 +9,7 @@
 import UIKit
 import CollectionKit
 import Pastel
+import Firebase
 
 class TestCollection: UIViewController {
 
@@ -22,6 +23,7 @@ class TestCollection: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         gradientView.prepareDefaultPastelView()
         let x = loadImages()
         collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10)
