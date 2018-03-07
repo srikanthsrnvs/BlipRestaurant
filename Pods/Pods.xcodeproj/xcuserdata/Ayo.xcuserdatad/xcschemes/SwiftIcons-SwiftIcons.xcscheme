@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F826461B52606C7D5462591CB6483B51'
-               BlueprintName = 'RevealingSplashView'
+               BlueprintIdentifier = '3BAD08C40777920536C9DAAA15E25DB9'
+               BlueprintName = 'SwiftIcons-SwiftIcons'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RevealingSplashView.framework'>
+               BuildableName = 'SwiftIcons.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -14,7 +14,7 @@ import PopupDialog
 import SwiftIcons
 
 class HomePage: UIViewController, UIScrollViewDelegate {
-
+    
 
     @IBOutlet weak var alphaView: UIView!
     @IBOutlet weak var storeBackground: UIImageView!
@@ -22,7 +22,7 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var storeBackgroundToTop: NSLayoutConstraint!
     
-    fileprivate var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
+    var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
     fileprivate var tileStrings = [
         "produce",
         "Dairy",
@@ -38,12 +38,17 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         "Household goods"]
     var userAddress: String?
     let locationManager = CLLocationManager()
+    let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    let itemsPerRow: CGFloat = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareLogo()
         prepareNavigationBar()
         handleLocations()
+        prepareScrollView()
+        scrollView.isScrollEnabled = true
+        scrollView.contentSize = CGSize(width: 375, height: 800)
         // Do any additional setup after loading the view.
     }
     
@@ -62,9 +67,36 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         // THIS IS FOR ANIMATION
     }
     
+    
+    
     func prepareScrollView(){
         
         // DO THIS TO LOAD THE SCROLLVIEW WITH 10 TILES, 2 IN EACH ROW
+        let xibWidth:CGFloat = 365
+        let xibHeight:CGFloat = 116
+        var yPosition:CGFloat = 60
+        var scrollViewContentSize:CGFloat=0
+        var i = 0
+        for _ in 0 ..< (tileImages.count/2){
+            
+            let xibFileView = Bundle.main.loadNibNamed("CustomScrollItem", owner: self, options: nil)?.first as! CustomScrollItem
+            
+            xibFileView.image_one.image = tileImages[i]
+            xibFileView.image_two.image = tileImages[i+1]
+            
+            xibFileView.frame.size.width = xibWidth
+            xibFileView.frame.size.height = xibHeight
+            xibFileView.center = view.center
+            xibFileView.frame.origin.y = yPosition
+            scrollView.addSubview(xibFileView)
+            
+            let spacer:CGFloat = 20
+            yPosition+=xibHeight + spacer
+            scrollViewContentSize+=xibHeight + spacer
+            
+            scrollView.contentSize = CGSize(width: xibWidth, height: scrollViewContentSize)
+            i = i+2
+        }
     }
     
     func prepareNavigationBar(){

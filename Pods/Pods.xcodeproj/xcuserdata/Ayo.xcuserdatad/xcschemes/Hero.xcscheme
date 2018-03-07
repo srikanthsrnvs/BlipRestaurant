@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6F13E6764C0D9B66C4CFBD610EC326AC'
-               BlueprintName = 'CollectionKit'
+               BlueprintIdentifier = '9C13CF7F13B883769BA440C16F9FFD00'
+               BlueprintName = 'Hero'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'CollectionKit.framework'>
+               BuildableName = 'Hero.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

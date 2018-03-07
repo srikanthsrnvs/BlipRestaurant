@@ -160,39 +160,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcs-QI-6nk">
-                                <rect key="frame" x="-0.5" y="0.0" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1b-kc-6H7">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geI-O5-LRT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loblaws-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nyp-WG-yl3">
-                                        <rect key="frame" x="147" y="25" width="80" height="80"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loblaws-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="jsH-yK-I7Y">
+                                        <rect key="frame" x="147" y="72" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="HFJ-As-Eoi"/>
-                                            <constraint firstAttribute="height" constant="80" id="t4A-0I-PCD"/>
-                                        </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="nyp-WG-yl3" firstAttribute="centerX" secondItem="T1b-kc-6H7" secondAttribute="centerX" id="SPJ-gA-XZo"/>
-                                    <constraint firstItem="nyp-WG-yl3" firstAttribute="top" secondItem="T1b-kc-6H7" secondAttribute="top" constant="25" id="jK6-c2-YeN"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sod-AL-UMf" firstAttribute="bottom" secondItem="T1b-kc-6H7" secondAttribute="bottom" id="BAs-rL-1Qp"/>
                             <constraint firstItem="Z8h-IW-jNa" firstAttribute="top" secondItem="3Cs-AV-tNz" secondAttribute="top" id="Cmy-TR-xR5"/>
-                            <constraint firstItem="T1b-kc-6H7" firstAttribute="top" secondItem="sod-AL-UMf" secondAttribute="top" id="Mpg-z1-5Pc"/>
                             <constraint firstItem="Jcs-QI-6nk" firstAttribute="centerY" secondItem="Z8h-IW-jNa" secondAttribute="centerY" id="PpW-Rn-ibj"/>
-                            <constraint firstItem="sod-AL-UMf" firstAttribute="trailing" secondItem="T1b-kc-6H7" secondAttribute="trailing" id="SxK-A1-GqF"/>
                             <constraint firstItem="Z8h-IW-jNa" firstAttribute="height" secondItem="3Cs-AV-tNz" secondAttribute="height" multiplier="250/667" id="ae7-87-Jj8"/>
                             <constraint firstItem="Jcs-QI-6nk" firstAttribute="width" secondItem="Z8h-IW-jNa" secondAttribute="width" id="bdc-Sv-C2V"/>
                             <constraint firstItem="Z8h-IW-jNa" firstAttribute="centerX" secondItem="sod-AL-UMf" secondAttribute="centerX" id="cXi-AS-Iwz"/>
-                            <constraint firstItem="T1b-kc-6H7" firstAttribute="leading" secondItem="sod-AL-UMf" secondAttribute="leading" id="fge-kc-Mdq"/>
                             <constraint firstItem="Z8h-IW-jNa" firstAttribute="width" secondItem="3Cs-AV-tNz" secondAttribute="width" id="n74-6A-d3c"/>
                             <constraint firstItem="Jcs-QI-6nk" firstAttribute="centerX" secondItem="Z8h-IW-jNa" secondAttribute="centerX" id="zFs-vX-s0b"/>
                             <constraint firstItem="Jcs-QI-6nk" firstAttribute="height" secondItem="Z8h-IW-jNa" secondAttribute="height" id="zk0-Ai-Rwy"/>
@@ -203,17 +192,18 @@
                         <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="1"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="bKA-kE-Q1k"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="alphaView" destination="Jcs-QI-6nk" id="Vlo-Bp-fRO"/>
-                        <outlet property="scrollView" destination="T1b-kc-6H7" id="Xan-sw-Rid"/>
+                        <outlet property="scrollView" destination="geI-O5-LRT" id="aOI-tV-ojH"/>
                         <outlet property="storeBackground" destination="Z8h-IW-jNa" id="1E9-S7-AbJ"/>
                         <outlet property="storeBackgroundToTop" destination="Cmy-TR-xR5" id="dnn-HC-1hn"/>
-                        <outlet property="storeLogo" destination="nyp-WG-yl3" id="y3z-0i-bao"/>
+                        <outlet property="storeLogo" destination="jsH-yK-I7Y" id="XvW-IG-ugE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRZ-JX-iKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="-653"/>
+            <point key="canvasLocation" x="716" y="-655.32233883058473"/>
         </scene>
     </scenes>
     <resources>
