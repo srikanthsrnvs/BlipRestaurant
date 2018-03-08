@@ -29,13 +29,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nnq-Iy-s4Z">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="0.1792743919" blue="0.14408267050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="1" green="0.1792743919" blue="0.14408267050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="9dA-eU-5Ni" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3s5-5x-F1F"/>
                 <constraint firstAttribute="bottom" secondItem="9dA-eU-5Ni" secondAttribute="bottom" id="5a5-tB-yfC"/>
