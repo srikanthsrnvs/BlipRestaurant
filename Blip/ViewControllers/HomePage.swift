@@ -14,15 +14,18 @@ import PopupDialog
 import SwiftIcons
 
 class HomePage: UIViewController, UIScrollViewDelegate {
+    
 
-
+    @IBOutlet weak var scrollViewContent: UIView!
     @IBOutlet weak var alphaView: UIView!
     @IBOutlet weak var storeBackground: UIImageView!
     @IBOutlet weak var storeLogo: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var storeBackgroundToTop: NSLayoutConstraint!
+    @IBOutlet weak var storeBackgroundHeight: NSLayoutConstraint!
     
-    fileprivate var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
+    var navAlphaComponent = CGFloat(0)
+    var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
     fileprivate var tileStrings = [
         "produce",
         "Dairy",
@@ -38,12 +41,17 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         "Household goods"]
     var userAddress: String?
     let locationManager = CLLocationManager()
+    let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    let itemsPerRow: CGFloat = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareLogo()
         prepareNavigationBar()
         handleLocations()
+        
+        scrollView.isScrollEnabled = true
+        scrollView.contentSize = CGSize(width: 375, height: 800)
         // Do any additional setup after loading the view.
     }
     
@@ -59,12 +67,56 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        // THIS IS FOR ANIMATION
+        let percentageScrolledForAlphas = (scrollView.contentOffset.y/(self.storeBackground.frame.size.height - ((self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height))))
+        
+        self.storeBackground.alpha = (1 - percentageScrolledForAlphas)
+        self.alphaView.alpha = (1 - percentageScrolledForAlphas)
+        
+        self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
+        
+        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
+        
+        if (scrollView.contentOffset.y <= 0) {
+            
+            self.storeBackgroundHeight.constant = (-scrollView.contentOffset.y)
+            let translate = CGAffineTransform(translationX: 0, y: scrollView.contentOffset.y/2.0)
+            let orgHeight = storeBackgroundHeight.constant
+            let scaleFactor = (self.storeBackground.frame.size.height - scrollView.contentOffset.y) / self.storeBackground.frame.size.height
+            let translateAndZoom = translate.scaledBy(x: scaleFactor, y: scaleFactor)
+            storeBackground.transform = translateAndZoom
+            alphaView.transform = translateAndZoom
+        }
+        else if (scrollView.contentOffset.y > 0){
+            
+            
+            let offset = -scrollView.contentOffset.y
+            self.storeBackgroundToTop.constant = offset
+        }
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        prepareScrollView()
     }
     
     func prepareScrollView(){
         
-        // DO THIS TO LOAD THE SCROLLVIEW WITH 10 TILES, 2 IN EACH ROW
+        self.scrollView.delegate = self
+        var yPosition:CGFloat = self.storeBackground.frame.size.height - 60
+
+        for x in 1 ... 5{
+            
+            let xibFileView = Bundle.main.loadNibNamed("CustomScrollItem", owner: self, options: nil)?.first as! CustomScrollItem
+            
+            xibFileView.categoryImage.image = tileImages[x]
+            xibFileView.categoryLabel.text = tileStrings[x]
+            xibFileView.frame = CGRect(x: (self.view.frame.size.width - 350)/2, y: yPosition, width: 350, height: 190)
+            self.scrollViewContent.addSubview(xibFileView)
+
+            yPosition += (210)
+        
+        }
+        self.scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: yPosition)
     }
     
     func prepareNavigationBar(){
@@ -74,7 +126,7 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         cartButton.setIcon(icon: .googleMaterialDesign(.shoppingCart), color: UIColor.white, forState: .normal)
         let cartBarButton = UIBarButtonItem(customView: cartButton)
         self.navigationItem.rightBarButtonItem = cartBarButton
-        self.navigationController?.setColorToNavBar(color: UIColor.clear)
+        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
         self.setTitleForNavBar(title: "Loading", subtitle: "Tap to change location", gesture: tap)
     }
 }

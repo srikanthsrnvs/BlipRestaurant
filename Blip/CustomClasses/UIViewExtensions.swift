@@ -55,7 +55,7 @@ extension UIImage{
 extension UIViewController{
     
     
-    func blend(from: UIColor, to: UIColor, percent: Double) -> UIColor {
+    func blend(from: UIColor, to: UIColor, percent: Double) -> UIColor? {
         var fR : CGFloat = 0.0
         var fG : CGFloat = 0.0
         var fB : CGFloat = 0.0
@@ -69,31 +69,38 @@ extension UIViewController{
         let dR = tR - fR
         let dG = tG - fG
         let dB = tB - fB
-        
-        let rR = fR + dR * CGFloat(percent)
-        let rG = fG + dG * CGFloat(percent)
-        let rB = fB + dB * CGFloat(percent)
-        
-        return UIColor(red: rR, green: rG, blue: rB, alpha: 1.0)
+        if percent == 0{
+            return UIColor.clear
+        }
+        else if percent < 1.0{
+
+            let rR = fR + dR * CGFloat(percent)
+            let rG = fG + dG * CGFloat(percent)
+            let rB = fB + dB * CGFloat(percent)
+            
+            return UIColor(red: rR, green: rG, blue: rB, alpha: 1.0)
+        }
+        return nil
+
     }
     
     // Pass in the scroll percentage to get the appropriate color    
     func scrollColor(percent: Double) -> UIColor {
-        var start = #colorLiteral(red: 0, green: 0.8495121598, blue: 0, alpha: 1)
-        var end = UIColor.clear
+        var start = UIColor.clear
+        var end = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         var perc = percent
-        if percent < 0.5 {
-            // If the scroll percentage is 0.0..<0.5 blend between yellow and green
-            start = UIColor.yellow
-            end = UIColor.green
-        } else {
-            // If the scroll percentage is 0.5..1.0 blend between green and blue
-            start = UIColor.green
-            end = UIColor.blue
-            perc -= 0.5
-        }
+//        if percent < 0.5 {
+//            // If the scroll percentage is 0.0..<0.5 blend between yellow and green
+//            start = UIColor.yellow
+//            end = UIColor.green
+//        } else {
+//            // If the scroll percentage is 0.5..1.0 blend between green and blue
+//            start = UIColor.green
+//            end = UIColor.blue
+//            perc -= 0.5
+//        }
         
-        return blend(from: start, to: end, percent: perc * 2.0)
+        return blend(from: start, to: end, percent: perc * 2.0)!
     }
     
     func setTitleForNavBar(title:String, subtitle:String, gesture: UIGestureRecognizer?) {

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EEB602FB9D575B60E3B50B34F93A9EB"
+               BlueprintIdentifier = "E38288D4CFF860F370A3EA4980EC923B"
                BuildableName = "SHSearchBar.bundle"
                BlueprintName = "SHSearchBar-SHSearchBar"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EEB602FB9D575B60E3B50B34F93A9EB"
+            BlueprintIdentifier = "E38288D4CFF860F370A3EA4980EC923B"
             BuildableName = "SHSearchBar.bundle"
             BlueprintName = "SHSearchBar-SHSearchBar"
             ReferencedContainer = "container:Pods.xcodeproj">
