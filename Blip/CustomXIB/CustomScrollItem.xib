@@ -17,19 +17,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomScrollItem" customModule="Blip" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="350" height="190"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CustomCell" id="iN0-l3-epB" customClass="CustomScrollItem" customModule="Blip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BKX-ES-ZDa">
-                    <rect key="frame" x="0.0" y="-0.5" width="350" height="190"/>
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbg-6u-RA6">
-                    <rect key="frame" x="0.0" y="-0.5" width="350" height="190"/>
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                     <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvx-iF-ft4">
-                    <rect key="frame" x="107.5" y="62" width="135" height="65"/>
+                    <rect key="frame" x="-7.5" y="27.5" width="135" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="8dm-6j-1OA"/>
                         <constraint firstAttribute="width" constant="135" id="I7c-mZ-S9f"/>

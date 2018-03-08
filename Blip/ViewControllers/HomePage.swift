@@ -13,7 +13,8 @@ import GooglePlaces
 import PopupDialog
 import SwiftIcons
 
-class HomePage: UIViewController, UIScrollViewDelegate {
+class HomePage: UIViewController, UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     
 
     @IBOutlet weak var scrollViewContent: UIView!
@@ -67,32 +68,33 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        let percentageScrolledForAlphas = (scrollView.contentOffset.y/(self.storeBackground.frame.size.height - ((self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height))))
-        
-        self.storeBackground.alpha = (1 - percentageScrolledForAlphas)
-        self.alphaView.alpha = (1 - percentageScrolledForAlphas)
-        
-        self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
-        
-        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
-        
-        if (scrollView.contentOffset.y <= 0) {
+        if scrollView.frame.size.height > 200{
+            let percentageScrolledForAlphas = (scrollView.contentOffset.y/(self.storeBackground.frame.size.height - ((self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height))))
             
-            self.storeBackgroundHeight.constant = (-scrollView.contentOffset.y)
-            let translate = CGAffineTransform(translationX: 0, y: scrollView.contentOffset.y/2.0)
-            let orgHeight = storeBackgroundHeight.constant
-            let scaleFactor = (self.storeBackground.frame.size.height - scrollView.contentOffset.y) / self.storeBackground.frame.size.height
-            let translateAndZoom = translate.scaledBy(x: scaleFactor, y: scaleFactor)
-            storeBackground.transform = translateAndZoom
-            alphaView.transform = translateAndZoom
+            self.storeBackground.alpha = (1 - percentageScrolledForAlphas)
+            self.alphaView.alpha = (1 - percentageScrolledForAlphas)
+            
+            self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
+            
+            self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
+            
+            if (scrollView.contentOffset.y <= 0) {
+                
+                self.storeBackgroundHeight.constant = (-scrollView.contentOffset.y)
+                let translate = CGAffineTransform(translationX: 0, y: scrollView.contentOffset.y/2.0)
+                let orgHeight = storeBackgroundHeight.constant
+                let scaleFactor = (self.storeBackground.frame.size.height - scrollView.contentOffset.y) / self.storeBackground.frame.size.height
+                let translateAndZoom = translate.scaledBy(x: scaleFactor, y: scaleFactor)
+                storeBackground.transform = translateAndZoom
+                alphaView.transform = translateAndZoom
+            }
+            else if (scrollView.contentOffset.y > 0){
+                
+                
+                let offset = -scrollView.contentOffset.y
+                self.storeBackgroundToTop.constant = offset
+            }
         }
-        else if (scrollView.contentOffset.y > 0){
-            
-            
-            let offset = -scrollView.contentOffset.y
-            self.storeBackgroundToTop.constant = offset
-        }
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -106,19 +108,36 @@ class HomePage: UIViewController, UIScrollViewDelegate {
 
         for x in 1 ... 5{
             
-            let xibFileView = Bundle.main.loadNibNamed("CustomScrollItem", owner: self, options: nil)?.first as! CustomScrollItem
+            let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+            layout.scrollDirection = .horizontal
+            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            layout.itemSize = CGSize(width: 120, height: 120)
             
-            xibFileView.categoryImage.image = tileImages[x]
-            xibFileView.categoryLabel.text = tileStrings[x]
-            xibFileView.frame = CGRect(x: (self.view.frame.size.width - 350)/2, y: yPosition, width: 350, height: 190)
-            self.scrollViewContent.addSubview(xibFileView)
-
+            let myCollectionView:UICollectionView = UICollectionView(frame: CGRect(x: 0, y: yPosition, width: self.view.frame.size.width, height: 190), collectionViewLayout: layout)
+            myCollectionView.dataSource = self
+            myCollectionView.delegate = self
+            myCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CustomCell")
+            myCollectionView.backgroundColor = UIColor.white
+            myCollectionView.contentSize = CGSize(width: 700, height: 190)
+            self.scrollViewContent.addSubview(myCollectionView)
+            
+            print(myCollectionView)
             yPosition += (210)
         
         }
         self.scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: yPosition)
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath as IndexPath)
+        myCell.backgroundColor = UIColor.blue
+        return myCell
+    }
+
     func prepareNavigationBar(){
         
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))

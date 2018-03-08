@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomScrollItem: UIView {
+class CustomScrollItem: UICollectionViewCell {
     
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
