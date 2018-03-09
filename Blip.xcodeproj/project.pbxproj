@@ -24,8 +24,10 @@
 		3B3B9A7A2051117D00EFF47F /* ServiceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A792051117D00EFF47F /* ServiceCalls.swift */; };
 		3B3B9A812051E76800EFF47F /* TwoDirectionScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A802051E76800EFF47F /* TwoDirectionScroll.swift */; };
 		3B3B9A832051E92500EFF47F /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A822051E92500EFF47F /* CategoryRow.swift */; };
-		3B3B9A8A2051F2F000EFF47F /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A882051F2F000EFF47F /* CustomCollectionViewCell.swift */; };
-		3B3B9A8B2051F2F000EFF47F /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3B9A892051F2F000EFF47F /* CustomCollectionViewCell.xib */; };
+		3B412C402052D25200BB8501 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C3F2052D25200BB8501 /* CustomCollectionCell.swift */; };
+		3B412C4220533B2600BB8501 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C4120533B2600BB8501 /* CartVC.swift */; };
+		3B412C442053417000BB8501 /* CartTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C432053417000BB8501 /* CartTableViewCellView.swift */; };
+		3B412C462053442C00BB8501 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C452053442C00BB8501 /* ItemRow.swift */; };
 		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
 		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
 		F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A620486E1500EB2F69 /* AppDelegate.swift */; };
@@ -113,8 +115,10 @@
 		3B3B9A7B205122C100EFF47F /* Blip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blip-Bridging-Header.h"; sourceTree = "<group>"; };
 		3B3B9A802051E76800EFF47F /* TwoDirectionScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDirectionScroll.swift; sourceTree = "<group>"; };
 		3B3B9A822051E92500EFF47F /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
-		3B3B9A882051F2F000EFF47F /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
-		3B3B9A892051F2F000EFF47F /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomCollectionViewCell.xib; path = ../CustomClasses/CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B412C3F2052D25200BB8501 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
+		3B412C4120533B2600BB8501 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		3B412C432053417000BB8501 /* CartTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCellView.swift; sourceTree = "<group>"; };
+		3B412C452053442C00BB8501 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		83073F153649D24442C7B8CC /* Pods_Blip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C57FD4ED646DEBA63B15877 /* Pods-Blip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blip/Pods-Blip.release.xcconfig"; sourceTree = "<group>"; };
@@ -308,6 +312,8 @@
 				3B3B9A772050FAB300EFF47F /* SignUpVC.swift */,
 				3B3B9A802051E76800EFF47F /* TwoDirectionScroll.swift */,
 				3B3B9A822051E92500EFF47F /* CategoryRow.swift */,
+				3B412C4120533B2600BB8501 /* CartVC.swift */,
+				3B412C452053442C00BB8501 /* ItemRow.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -317,7 +323,8 @@
 			children = (
 				F32DB7E4204879AA00EB2F69 /* PastelExtensions.swift */,
 				F32DB7E620487AED00EB2F69 /* UIViewExtensions.swift */,
-				3B3B9A882051F2F000EFF47F /* CustomCollectionViewCell.swift */,
+				3B412C3F2052D25200BB8501 /* CustomCollectionCell.swift */,
+				3B412C432053417000BB8501 /* CartTableViewCellView.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -354,7 +361,6 @@
 			isa = PBXGroup;
 			children = (
 				F32DB7EE20487F7400EB2F69 /* Item.xib */,
-				3B3B9A892051F2F000EFF47F /* CustomCollectionViewCell.xib */,
 			);
 			path = CustomXIB;
 			sourceTree = "<group>";
@@ -570,7 +576,6 @@
 				F32DB8172048825E00EB2F69 /* Boots4.jpeg in Resources */,
 				F32DB8262048825E00EB2F69 /* Hoodie6.jpeg in Resources */,
 				F32DB8142048825E00EB2F69 /* Boots1.jpeg in Resources */,
-				3B3B9A8B2051F2F000EFF47F /* CustomCollectionViewCell.xib in Resources */,
 				3B210290204CFA0300440A64 /* dairy-eggs.jpg in Resources */,
 				F32DB8152048825E00EB2F69 /* Boots2.jpeg in Resources */,
 				F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */,
@@ -836,14 +841,17 @@
 				3B3B9A812051E76800EFF47F /* TwoDirectionScroll.swift in Sources */,
 				F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */,
 				3B3B9A782050FAB300EFF47F /* SignUpVC.swift in Sources */,
-				3B3B9A8A2051F2F000EFF47F /* CustomCollectionViewCell.swift in Sources */,
 				F32DB7E5204879AA00EB2F69 /* PastelExtensions.swift in Sources */,
+				3B412C4220533B2600BB8501 /* CartVC.swift in Sources */,
 				3B3B9A762050F8A500EFF47F /* LoginVC.swift in Sources */,
 				3B3B9A7A2051117D00EFF47F /* ServiceCalls.swift in Sources */,
 				F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */,
 				F3FC70E9204CD26100A73940 /* HomePage.swift in Sources */,
+				3B412C402052D25200BB8501 /* CustomCollectionCell.swift in Sources */,
 				F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */,
 				3B3B9A832051E92500EFF47F /* CategoryRow.swift in Sources */,
+				3B412C462053442C00BB8501 /* ItemRow.swift in Sources */,
+				3B412C442053417000BB8501 /* CartTableViewCellView.swift in Sources */,
 				F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,16 +7,19 @@
 //
 
 import Foundation
+import Firebase
 
 /*
-     Cart dictionary of productID key and Item as value
+     Singleton class Cart which has a dictionary of productID key and Item as value
  */
 class Cart{
     
-
+    private static let shared = Cart()
     var items:[Int:[Item:Int]] = [:]
 
-    init() {
+    private init() {
+        //Do some firebase calls to get all items in user's cart
+        
     }
 /*
      Remove the specified Item from the Cart

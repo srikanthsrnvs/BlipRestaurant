@@ -15,7 +15,7 @@ class CategoryRow: UITableViewCell{
         super.awakeFromNib()
         // Initialization code
 //        self.collectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "categoryCell")
-        self.collectionView.register(UINib(nibName:"CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categoryCell")
+//        self.collectionView.register(UINib(nibName:"CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "categoryCell")
         
     }
 
@@ -45,8 +45,8 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
 //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CustomCollectionViewCell
         //        let jobViewFromNib = Bundle.main.loadNibNamed("PopUpJobView", owner: self, options: nil)?.first as! PopUpJobViewVC
 //        let cell = Bundle.main.loadNibNamed("CustomCollectionViewCell", owner: self, options: nil)?.first as! CustomCollectionViewCell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CustomCollectionViewCell
-//        cell.frame.size = CGSize(width: CGFloat(120), height: CGFloat(120))
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CustomCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CustomCollectionCell
         return cell
     }
     
