@@ -11,18 +11,26 @@ import UIKit
 class CartVC: UIViewController{
 
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var checkoutButton: UIButton!
     var categories = ["Action", "Drama", "Science Fiction", "Kids", "Horror"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.checkoutButton.addTarget(self, action: #selector(checkout), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @objc func checkout(){
+        //TO-DO
     }
     
 }

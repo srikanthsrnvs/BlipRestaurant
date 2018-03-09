@@ -506,6 +506,7 @@
                         <viewLayoutGuide key="safeArea" id="A3h-ry-rQk"/>
                     </view>
                     <connections>
+                        <outlet property="checkoutButton" destination="JoE-73-Ofo" id="PHq-Oc-kIo"/>
                         <outlet property="tableView" destination="Auf-Rr-xSf" id="FE5-Wn-5ov"/>
                     </connections>
                 </viewController>
