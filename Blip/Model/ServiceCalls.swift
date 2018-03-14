@@ -14,6 +14,7 @@ typealias CreateUserCompletion = (_ errorMsg: String?, _ data: AnyObject?) ->Voi
 /*
     Singleton Class that interacts with Firebase Services
  */
+
 class ServiceCalls{
     
     private static let _instance = ServiceCalls()
@@ -22,6 +23,7 @@ class ServiceCalls{
     static var instance: ServiceCalls{
         return _instance
     }
+    
 /*
      Create User in Firebase Authentication
 */

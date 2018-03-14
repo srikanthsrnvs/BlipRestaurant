@@ -16,7 +16,6 @@ class Cart{
     
     private static let shared = Cart()
     var items:[Int:[Item:Int]] = [:]
-    
     private init() {
         //Do some firebase calls to get all items in user's cart
         
@@ -43,7 +42,6 @@ class Cart{
         }
         return total
     }
-    
     
 }
 

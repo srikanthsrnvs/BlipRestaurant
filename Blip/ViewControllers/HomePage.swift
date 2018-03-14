@@ -12,7 +12,6 @@ import Hero
 import GooglePlaces
 import PopupDialog
 import SwiftIcons
-import ParallaxHeader
 
 class HomePage: UIViewController, UIScrollViewDelegate {
     
@@ -23,7 +22,6 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var tableHeader: UIView!
     private let tableHeaderHeight: CGFloat = 250.0
     var headerView: UIView!
-    
     var navAlphaComponent = CGFloat(0)
     var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
     fileprivate var tileStrings = [
@@ -43,6 +41,9 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     let locationManager = CLLocationManager()
     let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     let itemsPerRow: CGFloat = 2
+    var categoriesStrings = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC"]
+    var categories:[Category] = []
+    var itemsByCategory: [String:[Item]] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,15 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         prepareSearch()
         // Do any additional setup after loading the view.
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        if segue.identifier == "toItem"{
+//            
+//            let dest = segue.destination as! ItemViewController
+//            dest.itemImage.image = 
+//        }
+//    }
     
     func prepareSearch(){
         
@@ -79,9 +89,25 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         
         let percentageScrolledForAlphas = (250 + scrollView.contentOffset.y)/(250 - topHeight)
         self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
-        print(navAlphaComponent)
         self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
         self.tableHeader.alpha = 1 - self.navAlphaComponent
+        
+    }
+    
+
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        let topHeight = CGFloat(-250)
+        if targetContentOffset.pointee.y < 0 && targetContentOffset.pointee.y < topHeight/2{
+            
+            let path = IndexPath(row: 0, section: 0)
+            tableView.scrollToRow(at: path, at: .top, animated: true)
+            print("Came here")
+        }
+        else if tableView.contentOffset.y < 0 && tableView.contentOffset.y > topHeight/2{
+            
+            tableView.setContentOffset(CGPoint(x: 0, y: -((self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height))), animated: true)
+        }
     }
     
     func updateHeaderView(){
@@ -96,7 +122,6 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         headerView.frame = headerRect
     }
 
-    
     func prepareTableView(){
 
         self.tableHeaderBackground.image = UIImage(named: "C-Loblaws-produce-320x200")
@@ -146,11 +171,10 @@ extension HomePage: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
+        cell.dataSource = tileImages as! [UIImage]
         return cell
     }
-    
-    
-    
+
 }
 
 extension HomePage: CLLocationManagerDelegate, GMSAutocompleteViewControllerDelegate{
