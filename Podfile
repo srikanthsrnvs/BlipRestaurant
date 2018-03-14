@@ -20,21 +20,18 @@ target 'Blip' do
   pod 'FBSDKShareKit'
   pod 'PopupDialog'
   pod 'Stripe'
-  pod 'SHSearchBar'
   pod 'Kingfisher'
-  pod 'RevealingSplashView'
   pod 'Firebase/Storage'
   pod 'CHIPageControl/Fresno'
   pod 'NotificationBannerSwift'
-  pod 'Pulsator'
   pod 'Cosmos'
   pod 'AZDialogView'
   pod 'BSImagePicker'
-  pod 'GlidingCollection'
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'SwiftIcons'
   pod "Hero"
+  pod 'ParallaxHeader', '~> 2.0.0'
   
   target 'BlipTests' do
     inherit! :search_paths

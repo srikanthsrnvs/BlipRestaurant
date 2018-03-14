@@ -62,7 +62,6 @@ PODS:
     - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GlidingCollection (1.1.0)
   - GoogleMaps (2.6.0):
     - GoogleMaps/Maps (= 2.6.0)
   - GoogleMaps/Base (2.6.0)
@@ -107,13 +106,11 @@ PODS:
   - NotificationBannerSwift (1.6.2):
     - MarqueeLabel/Swift
     - SnapKit (~> 4.0)
+  - ParallaxHeader (2.0.0)
   - Pastel (0.3.0)
   - PopupDialog (0.7.1):
     - DynamicBlurView (~> 2.0)
   - Protobuf (3.5.0)
-  - Pulsator (0.4.1)
-  - RevealingSplashView (0.4.0)
-  - SHSearchBar (1.4.1)
   - SnapKit (4.0.0)
   - Stripe (12.1.1)
   - SwiftIcons (2.0.1)
@@ -133,7 +130,6 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Messaging
   - Firebase/Storage
-  - GlidingCollection
   - GooglePlacePicker
   - GooglePlaces
   - Hero
@@ -142,11 +138,9 @@ DEPENDENCIES:
   - lottie-ios
   - Material
   - NotificationBannerSwift
+  - ParallaxHeader (~> 2.0.0)
   - Pastel
   - PopupDialog
-  - Pulsator
-  - RevealingSplashView
-  - SHSearchBar
   - Stripe
   - SwiftIcons
 
@@ -170,7 +164,6 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
   FirebaseMessaging: db0e01c52ef7e1f42846431273558107d084ede4
   FirebaseStorage: 9a863a2bb96c406958eeff7c2f1dfa9f44c44a13
-  GlidingCollection: 2194165075fa7230027049238c9ed724453557e6
   GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
   GooglePlacePicker: e4488625effb006f59de49e14b7a603e463e4261
   GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
@@ -186,17 +179,15 @@ SPEC CHECKSUMS:
   Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   NotificationBannerSwift: 4eceb2add9d5eaa0596c63d49690b4d6476e74ec
+  ParallaxHeader: fb6ee97915626454f3c029a97b424f79a777c642
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
   PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
-  Pulsator: 89a18d0e0ee2f642bb83cb9dfb6b7eebc1dc6241
-  RevealingSplashView: 72be158ad5e1bc72713e8f78383dc3e1803ce4d1
-  SHSearchBar: 1e0cd12f142dc6b902c54fbd026c9a25945c3041
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Stripe: f8e8feff38ba5caf7b2568c64eab96b0440ecb95
   SwiftIcons: e475a56ae2c2da40672dbf16061ca5dd5cee7dbb
   UIImageViewModeScaleAspect: 11a790a0b9d248a13dc63e3a78991f1463b6d84e
 
-PODFILE CHECKSUM: e83bef81391d424d19a209e7fff85f578561f13b
+PODFILE CHECKSUM: a7e9850184ed1cd05b4ecf1c451ef3cfaf30a9ac
 
 COCOAPODS: 1.3.1

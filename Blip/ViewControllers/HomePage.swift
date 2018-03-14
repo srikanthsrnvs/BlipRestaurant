@@ -12,23 +12,22 @@ import Hero
 import GooglePlaces
 import PopupDialog
 import SwiftIcons
+import ParallaxHeader
 
-class HomePage: UIViewController, UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class HomePage: UIViewController, UIScrollViewDelegate {
     
-    
-
-    @IBOutlet weak var scrollViewContent: UIView!
-    @IBOutlet weak var alphaView: UIView!
-    @IBOutlet weak var storeBackground: UIImageView!
-    @IBOutlet weak var storeLogo: UIImageView!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var storeBackgroundToTop: NSLayoutConstraint!
-    @IBOutlet weak var storeBackgroundHeight: NSLayoutConstraint!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var tableHeaderBackground: UIImageView!
+    @IBOutlet weak var storeIcon: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableHeader: UIView!
+    private let tableHeaderHeight: CGFloat = 250.0
+    var headerView: UIView!
     
     var navAlphaComponent = CGFloat(0)
     var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
     fileprivate var tileStrings = [
-        "produce",
+        "Produce",
         "Dairy",
         "Chips & Snacks",
         "Beverages",
@@ -47,19 +46,26 @@ class HomePage: UIViewController, UIScrollViewDelegate, UICollectionViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareLogo()
+        setTableHeaderVariable()
         prepareNavigationBar()
         handleLocations()
-        
-        scrollView.isScrollEnabled = true
-        scrollView.contentSize = CGSize(width: 375, height: 800)
+        prepareTableView()
+        prepareSearch()
         // Do any additional setup after loading the view.
     }
     
-    func prepareLogo(){
+    func prepareSearch(){
         
-        self.storeLogo.layer.cornerRadius = self.storeLogo.frame.size.width/2
-        self.storeLogo.clipsToBounds = true
+        let searchImage = UIImage(icon: .googleMaterialDesign(.search), size: CGSize(width: 35, height: 35)).withRenderingMode(.alwaysTemplate)
+        searchImage.tint(with: UIColor.white)
+        self.searchButton.setImage(searchImage, for: .normal)
+    }
+    
+    func setTableHeaderVariable(){
+        
+        self.headerView = self.tableView.tableHeaderView
+        self.tableView.tableHeaderView = nil
+        self.tableView.addSubview(headerView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,74 +74,37 @@ class HomePage: UIViewController, UIScrollViewDelegate, UICollectionViewDelegate
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        if scrollView.frame.size.height > 200{
-            let percentageScrolledForAlphas = (scrollView.contentOffset.y/(self.storeBackground.frame.size.height - ((self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height))))
-            
-            self.storeBackground.alpha = (1 - percentageScrolledForAlphas)
-            self.alphaView.alpha = (1 - percentageScrolledForAlphas)
-            
-            self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
-            
-            self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
-            
-            if (scrollView.contentOffset.y <= 0) {
-                
-                self.storeBackgroundHeight.constant = (-scrollView.contentOffset.y)
-                let translate = CGAffineTransform(translationX: 0, y: scrollView.contentOffset.y/2.0)
-                let orgHeight = storeBackgroundHeight.constant
-                let scaleFactor = (self.storeBackground.frame.size.height - scrollView.contentOffset.y) / self.storeBackground.frame.size.height
-                let translateAndZoom = translate.scaledBy(x: scaleFactor, y: scaleFactor)
-                storeBackground.transform = translateAndZoom
-                alphaView.transform = translateAndZoom
-            }
-            else if (scrollView.contentOffset.y > 0){
-                
-                
-                let offset = -scrollView.contentOffset.y
-                self.storeBackgroundToTop.constant = offset
-            }
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        prepareScrollView()
-    }
-    
-    func prepareScrollView(){
+        updateHeaderView()
+        let topHeight = (self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height)
         
-        self.scrollView.delegate = self
-        var yPosition:CGFloat = self.storeBackground.frame.size.height - 60
+        let percentageScrolledForAlphas = (250 + scrollView.contentOffset.y)/(250 - topHeight)
+        self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
+        print(navAlphaComponent)
+        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
+        self.tableHeader.alpha = 1 - self.navAlphaComponent
+    }
+    
+    func updateHeaderView(){
+        
+        var headerRect = CGRect(x: 0, y: -tableHeaderHeight, width: tableView.bounds.width, height: tableHeaderHeight)
+        
+        if tableView.contentOffset.y < -tableHeaderHeight {
+            
+            headerRect.origin.y = tableView.contentOffset.y
+            headerRect.size.height = -tableView.contentOffset.y
+        }
+        headerView.frame = headerRect
+    }
 
-        for x in 1 ... 5{
-            
-            let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .horizontal
-            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-            layout.itemSize = CGSize(width: 120, height: 120)
-            
-            let myCollectionView:UICollectionView = UICollectionView(frame: CGRect(x: 0, y: yPosition, width: self.view.frame.size.width, height: 190), collectionViewLayout: layout)
-            myCollectionView.dataSource = self
-            myCollectionView.delegate = self
-            myCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CustomCell")
-            myCollectionView.backgroundColor = UIColor.white
-            myCollectionView.contentSize = CGSize(width: 700, height: 190)
-            self.scrollViewContent.addSubview(myCollectionView)
-            
-            print(myCollectionView)
-            yPosition += (210)
-        
-        }
-        self.scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: yPosition)
-    }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath as IndexPath)
-        myCell.backgroundColor = UIColor.blue
-        return myCell
+    func prepareTableView(){
+
+        self.tableHeaderBackground.image = UIImage(named: "C-Loblaws-produce-320x200")
+        self.storeIcon.layer.cornerRadius = storeIcon.frame.size.width/2
+        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        self.tableView.contentInset = UIEdgeInsetsMake(250 - (navBarHeight! + statusBarHeight), 0, 0, 0)
+        self.tableView.contentOffset = CGPoint(x: 0, y: -tableHeaderHeight)
     }
 
     func prepareNavigationBar(){
@@ -145,9 +114,43 @@ class HomePage: UIViewController, UIScrollViewDelegate, UICollectionViewDelegate
         cartButton.setIcon(icon: .googleMaterialDesign(.shoppingCart), color: UIColor.white, forState: .normal)
         let cartBarButton = UIBarButtonItem(customView: cartButton)
         self.navigationItem.rightBarButtonItem = cartBarButton
-        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
+        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(2))
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         self.setTitleForNavBar(title: "Loading", subtitle: "Tap to change location", gesture: tap)
     }
+}
+
+extension HomePage: UITableViewDataSource, UITableViewDelegate{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+    
+        return tileStrings.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return tileStrings[section]
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 185
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
+        return cell
+    }
+    
+    
+    
 }
 
 extension HomePage: CLLocationManagerDelegate, GMSAutocompleteViewControllerDelegate{

@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Material
+import SwiftIcons
 
 class CustomScrollItem: UICollectionViewCell {
     
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var addToCartButton: IconButton!
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -23,7 +26,9 @@ class CustomScrollItem: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.ApplyOuterShadowToView()
+        self.addToCartButton.layer.cornerRadius = self.addToCartButton.frame.size.height/2
+        self.addToCartButton.setIcon(icon: .googleMaterialDesign(.add), color: UIColor.white, forState: .normal)
+        self.addToCartButton.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
         self.ApplyCornerRadiusToView()
     }
 
