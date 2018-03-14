@@ -28,6 +28,11 @@
 		3B412C4220533B2600BB8501 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C4120533B2600BB8501 /* CartVC.swift */; };
 		3B412C442053417000BB8501 /* CartTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C432053417000BB8501 /* CartTableViewCellView.swift */; };
 		3B412C462053442C00BB8501 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C452053442C00BB8501 /* ItemRow.swift */; };
+		3B412C8C20586B7800BB8501 /* categories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3B412C8B20586B7800BB8501 /* categories.txt */; };
+		3B412C9020587ED600BB8501 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C8F20587ED600BB8501 /* Category.swift */; };
+		3B412C9220588D5900BB8501 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C9120588D5900BB8501 /* Cart.swift */; };
+		3B412C9420588D9700BB8501 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C9320588D9700BB8501 /* Item.swift */; };
+		3B412C962058918A00BB8501 /* LoblawsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C952058918A00BB8501 /* LoblawsResponse.swift */; };
 		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
 		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
 		F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A620486E1500EB2F69 /* AppDelegate.swift */; };
@@ -107,8 +112,6 @@
 		3B210285204CFA0200440A64 /* meat-seafoods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "meat-seafoods.jpg"; sourceTree = "<group>"; };
 		3B210286204CFA0300440A64 /* dairy-eggs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dairy-eggs.jpg"; sourceTree = "<group>"; };
 		3B210291204E580F00440A64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3B210293204E591100440A64 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		3B210295204E592500440A64 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3B3B9A752050F8A500EFF47F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3B3B9A772050FAB300EFF47F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		3B3B9A792051117D00EFF47F /* ServiceCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalls.swift; sourceTree = "<group>"; };
@@ -119,6 +122,11 @@
 		3B412C4120533B2600BB8501 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		3B412C432053417000BB8501 /* CartTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCellView.swift; sourceTree = "<group>"; };
 		3B412C452053442C00BB8501 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		3B412C8B20586B7800BB8501 /* categories.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = categories.txt; sourceTree = "<group>"; };
+		3B412C8F20587ED600BB8501 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3B412C9120588D5900BB8501 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		3B412C9320588D9700BB8501 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3B412C952058918A00BB8501 /* LoblawsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoblawsResponse.swift; sourceTree = "<group>"; };
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		83073F153649D24442C7B8CC /* Pods_Blip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C57FD4ED646DEBA63B15877 /* Pods-Blip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blip/Pods-Blip.release.xcconfig"; sourceTree = "<group>"; };
@@ -281,6 +289,7 @@
 				F32DB7B220486E1500EB2F69 /* Info.plist */,
 				3B210291204E580F00440A64 /* GoogleService-Info.plist */,
 				3B3B9A7B205122C100EFF47F /* Blip-Bridging-Header.h */,
+				3B412C8B20586B7800BB8501 /* categories.txt */,
 			);
 			path = Blip;
 			sourceTree = "<group>";
@@ -350,9 +359,11 @@
 			isa = PBXGroup;
 			children = (
 				F32DB7E920487B7C00EB2F69 /* BlipUser.swift */,
-				3B210295204E592500440A64 /* Item.swift */,
-				3B210293204E591100440A64 /* Cart.swift */,
+				3B412C8F20587ED600BB8501 /* Category.swift */,
+				3B412C952058918A00BB8501 /* LoblawsResponse.swift */,
 				3B3B9A792051117D00EFF47F /* ServiceCalls.swift */,
+				3B412C9120588D5900BB8501 /* Cart.swift */,
+				3B412C9320588D9700BB8501 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -550,6 +561,7 @@
 				F32DB81D2048825E00EB2F69 /* Gloves3.jpeg in Resources */,
 				F32DB7E120486F7600EB2F69 /* check.json in Resources */,
 				F32DB8132048825E00EB2F69 /* Bindings5.jpeg in Resources */,
+				3B412C8C20586B7800BB8501 /* categories.txt in Resources */,
 				F32DB80F2048825E00EB2F69 /* Bindings1.jpeg in Resources */,
 				F32DB8252048825E00EB2F69 /* Hoodie5.jpeg in Resources */,
 				3B21028D204CFA0300440A64 /* natural-organic.png in Resources */,
@@ -650,6 +662,7 @@
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftIcons/SwiftIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 				"${BUILT_PRODUCTS_DIR}/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
@@ -687,6 +700,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImageViewModeScaleAspect.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
@@ -845,10 +859,14 @@
 				3B412C4220533B2600BB8501 /* CartVC.swift in Sources */,
 				3B3B9A762050F8A500EFF47F /* LoginVC.swift in Sources */,
 				3B3B9A7A2051117D00EFF47F /* ServiceCalls.swift in Sources */,
+				3B412C962058918A00BB8501 /* LoblawsResponse.swift in Sources */,
+				3B412C9020587ED600BB8501 /* Category.swift in Sources */,
 				F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */,
 				F3FC70E9204CD26100A73940 /* HomePage.swift in Sources */,
+				3B412C9420588D9700BB8501 /* Item.swift in Sources */,
 				3B412C402052D25200BB8501 /* CustomCollectionCell.swift in Sources */,
 				F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */,
+				3B412C9220588D5900BB8501 /* Cart.swift in Sources */,
 				3B3B9A832051E92500EFF47F /* CategoryRow.swift in Sources */,
 				3B412C462053442C00BB8501 /* ItemRow.swift in Sources */,
 				3B412C442053417000BB8501 /* CartTableViewCellView.swift in Sources */,

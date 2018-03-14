@@ -34,7 +34,8 @@ target 'Blip' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'SwiftIcons'
-  pod "Hero"
+  pod 'Hero'
+  pod 'SwiftSoup'
   
   target 'BlipTests' do
     inherit! :search_paths

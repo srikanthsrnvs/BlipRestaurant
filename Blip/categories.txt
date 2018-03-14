@@ -1,0 +1,424 @@
+FRUITS AND VEGETABLES\FRUIT\APPLES AND PEARS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Apples-%26-Pears/plp/LSL001001001001
+FRUITS AND VEGETABLES\FRUIT\AVOCADO AND TROPICAL\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Avocado-%26-Tropical/plp/LSL001001001002
+FRUITS AND VEGETABLES\FRUIT\BANANAS AND PLANTAINS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Bananas-%26-Plantains/plp/LSL001001001003
+FRUITS AND VEGETABLES\FRUIT\BERRIES AND CHERRIES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Berries-%26-Cherries/plp/LSL001001001004
+FRUITS AND VEGETABLES\FRUIT\GRAPES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Grapes/plp/LSL001001001007
+FRUITS AND VEGETABLES\FRUIT\LEMONS AND LIMES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Lemons-%26-Limes/plp/LSL001001001005
+FRUITS AND VEGETABLES\FRUIT\ORANGES AND CITRUS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Oranges-%26-Citrus/plp/LSL001001001006
+FRUITS AND VEGETABLES\FRUIT\PEACHES, NECTARINES AND STONE-FRUIT\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Peaches%2C-Nectarines-%26-Stone-Fruit/plp/LSL001001001009
+FRUITS AND VEGETABLES\FRUIT\WATERMELONS AND MELONS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fruit/Watermelons-%26-Melons/plp/LSL001001001008
+FRUITS AND VEGETABLES\VEGETABLES\LOCAL-PRODUCE\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Local-Produce/plp/LSL001001001011
+FRUITS AND VEGETABLES\VEGETABLES\ASPARAGUS, EGGPLANT AND ZUCCHINI\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Asparagus%2C-Eggplant-%26-Zucchini/plp/LSL001001002004
+FRUITS AND VEGETABLES\VEGETABLES\BROCCOLI, CABBAGES AND CAULIFLOWER\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Broccoli%2C-Cabbages-%26-Cauliflower/plp/LSL001001002003
+FRUITS AND VEGETABLES\VEGETABLES\GINGER, GARLIC AND SPROUT\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Ginger%2C-Garlic-%26-Sprout/plp/LSL001001002010
+FRUITS AND VEGETABLES\VEGETABLES\MUSHROOMS AND TRUFFLES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Mushrooms-%26-Truffles/plp/LSL001001002006
+FRUITS AND VEGETABLES\VEGETABLES\LEEKS, CUCUMBERS AND CELERY\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Leeks%2C-Cucumbers-%26-Celery/plp/LSL001001002007
+FRUITS AND VEGETABLES\VEGETABLES\LETTUCE AND LEAFY-VEGETABLES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Lettuce-%26-Leafy-Vegetables/plp/LSL001001002008
+FRUITS AND VEGETABLES\VEGETABLES\PEAS, BEANS AND CORN\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Peas%2C-Beans-%26-Corn/plp/LSL001001002005
+FRUITS AND VEGETABLES\VEGETABLES\PEPPERS AND TOMATOES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Peppers-%26-Tomatoes/plp/LSL001001002009
+FRUITS AND VEGETABLES\VEGETABLES\POTATO, ONIONS AND CARROTS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Potato%2C-Onions-%26-Carrots/plp/LSL001001002001
+FRUITS AND VEGETABLES\VEGETABLES\SQUASH AND PUMPKINS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Vegetables/Squash-%26-Pumpkins/plp/LSL001001002002
+FRUITS AND VEGETABLES\FRESH-CUT-FRUIT AND VEG\FRESH-CUT-FRUIT AND VEG\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fresh-Cut-Fruit-%26-Veg/plp/LSL001001007000
+FRUITS AND VEGETABLES\SALADS\SALADS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Salads/plp/LSL001001003000
+FRUITS AND VEGETABLES\FRESH-HERBS\FRESH-HERBS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fresh-Herbs/plp/LSL001001004000
+FRUITS AND VEGETABLES\FRESH-JUICES\FRESH-JUICES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Fresh-Juices/plp/LSL001001012000
+FRUITS AND VEGETABLES\ORGANIC-FRUIT\ORGANIC-FRUIT\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Organic-Fruit/plp/LSL001001005000
+FRUITS AND VEGETABLES\ORGANIC-VEGETABLES\ORGANIC-VEGETABLES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Organic-Vegetables/plp/LSL001001006000
+FRUITS AND VEGETABLES\ETHNIC-VEGETABLES\ETHNIC-VEGETABLES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Ethnic-Vegetables/plp/LSL001001008000
+FRUITS AND VEGETABLES\SNACKING-FRUIT AND NUTS\SNACKING-FRUIT AND NUTS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Snacking-fruit-%26-nuts/plp/LSL001001010000
+FRUITS AND VEGETABLES\BEST-IN-SEASON\FRUITS\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Best-in-season/Fruits/plp/LSL001001011001
+FRUITS AND VEGETABLES\BEST-IN-SEASON\VEGETABLES\https://www.loblaws.ca/Food/Fruits-%26-Vegetables/Best-in-season/Vegetables/plp/LSL001001011002
+-newCategory
+DELI AND READY-MEALS\DELI-MEATS\BEEF\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Beef/plp/LSL001002001002
+DELI AND READY-MEALS\DELI-MEATS\TURKEY\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Turkey/plp/LSL001002001001
+DELI AND READY-MEALS\DELI-MEATS\CHICKEN\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Chicken/plp/LSL001002001003
+DELI AND READY-MEALS\DELI-MEATS\HAM AND PORK\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Ham-%26-Pork/plp/LSL001002001004
+DELI AND READY-MEALS\DELI-MEATS\BOLOGNA, LIVERWURST AND PASTRAMI\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Bologna%2C-Liverwurst-%26-Pastrami/plp/LSL001002001007
+DELI AND READY-MEALS\DELI-MEATS\SALAMI AND PEPPERONI\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Salami-%26-Pepperoni/plp/LSL001002001005
+DELI AND READY-MEALS\DELI-MEATS\MORTADELLA AND PROSCIUTTO\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Mortadella-%26-Prosciutto/plp/LSL001002001006
+DELI AND READY-MEALS\DELI-MEATS\SMOKED AND CURED-FISH\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Smoked-%26-Cured-Fish/plp/LSL001002001010
+DELI AND READY-MEALS\DELI-MEATS\SPECIALTY-COLD-CUTS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Meats/Specialty-Cold-Cuts/plp/LSL001002001008
+DELI AND READY-MEALS\DELI-CHEESE\SOFT AND SPREADABLE\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Soft-%26-Spreadable/plp/LSL001002002008
+DELI AND READY-MEALS\DELI-CHEESE\FIRM-CHEESES\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Firm-Cheeses/plp/LSL001002002010
+DELI AND READY-MEALS\DELI-CHEESE\PARMASEANS AND GRATING\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Parmaseans-%26-Grating/plp/LSL001002002005
+DELI AND READY-MEALS\DELI-CHEESE\BLUE-CHEESE\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Blue-Cheese/plp/LSL001002002001
+DELI AND READY-MEALS\DELI-CHEESE\CHEDDARS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Cheddars/plp/LSL001002002002
+DELI AND READY-MEALS\DELI-CHEESE\GOAT AND SHEEP\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Goat-%26-Sheep/plp/LSL001002002007
+DELI AND READY-MEALS\DELI-CHEESE\MOZZARELLA AND SEMI-SOFT\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Mozzarella-%26-Semi-Soft/plp/LSL001002002009
+DELI AND READY-MEALS\DELI-CHEESE\GOUDA AND OTHER-SWISS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Gouda-%26-Other-Swiss/plp/LSL001002002003
+DELI AND READY-MEALS\DELI-CHEESE\GRATED AND SLICED\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Deli-Cheese/Grated-%26-Sliced/plp/LSL001002002006
+DELI AND READY-MEALS\ANTIPASTOS, DIPS AND SPREADS\DIPS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Antipastos%2C-Dips-%26-Spreads/Dips/plp/LSL001002003002
+DELI AND READY-MEALS\ANTIPASTOS, DIPS AND SPREADS\HUMMUS AND SPREADS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Antipastos%2C-Dips-%26-Spreads/Hummus-%26-Spreads/plp/LSL001002003001
+DELI AND READY-MEALS\ANTIPASTOS, DIPS AND SPREADS\OLIVES AND ANTIPASTO\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Antipastos%2C-Dips-%26-Spreads/Olives-%26-Antipasto/plp/LSL001002003003
+DELI AND READY-MEALS\VEGAN AND VEGETARIAN\MEAT-ALTERNATIVES\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Vegan-%26-Vegetarian/Meat-Alternatives/plp/LSL001002004002
+DELI AND READY-MEALS\VEGAN AND VEGETARIAN\TOFU\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Vegan-%26-Vegetarian/Tofu/plp/LSL001002004003
+DELI AND READY-MEALS\VEGAN AND VEGETARIAN\VEGAN-OR-VEGETARIAN-CHEESE\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Vegan-%26-Vegetarian/Vegan-or-Vegetarian-Cheese/plp/LSL001002004001
+DELI AND READY-MEALS\READY-MEALS AND SIDES\CHICKEN AND TURKEY-MEALS-%28HOT-FOODS-FOR-PICKUP-AFTER-12PM%29\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Chicken-%26-Turkey-Meals-%28hot-foods-for-pickup-after-12PM%29/plp/LSL001002005001
+DELI AND READY-MEALS\READY-MEALS AND SIDES\PASTA AND RICE-MEALS-%28HOT-FOODS-FOR-PICKUP-AFTER-12PM%29\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Pasta-%26-Rice-Meals-%28hot-foods-for-pickup-after-12PM%29/plp/LSL001002005003
+DELI AND READY-MEALS\READY-MEALS AND SIDES\APPETIZERS AND SIDES-%28HOT-FOODS-FOR-PICKUP-AFTER-12PM%29\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Appetizers-%26-Sides-%28hot-foods-for-pickup-after-12pm%29/plp/LSL001002005004
+DELI AND READY-MEALS\READY-MEALS AND SIDES\SALADS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Salads/plp/LSL001002005010
+DELI AND READY-MEALS\READY-MEALS AND SIDES\SOUPS AND STEWS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Soups-%26-Stews/plp/LSL001002005007
+DELI AND READY-MEALS\READY-MEALS AND SIDES\BEEF AND PORK-MEALS-%28HOT-FOODS-FOR-PICKUP-AFTER-12PM%29\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Beef-%26-Pork-Meals-%28hot-foods-for-pickup-after-12PM%29/plp/LSL001002005002
+DELI AND READY-MEALS\READY-MEALS AND SIDES\SANDWICHES AND LUNCH-KITS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Sandwiches-%26-Lunch-Kits/plp/LSL001002005011
+DELI AND READY-MEALS\READY-MEALS AND SIDES\SUSHI AND BENTO\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Sushi-%26-Bento/plp/LSL001002005012
+DELI AND READY-MEALS\READY-MEALS AND SIDES\QUICHE AND PIES\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Quiche-%26-Pies/plp/LSL001002005005
+DELI AND READY-MEALS\READY-MEALS AND SIDES\BREAKFAST\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Ready-Meals-%26-Sides/Breakfast/plp/LSL001002005008
+DELI AND READY-MEALS\FRESH-PIZZA, PASTA AND SAUCES\FRESH-PASTA\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Fresh-Pizza%2C-Pasta-%26-Sauces/Fresh-Pasta/plp/LSL001002006001
+DELI AND READY-MEALS\FRESH-PIZZA, PASTA AND SAUCES\FRESH-PIZZAS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Fresh-Pizza%2C-Pasta-%26-Sauces/Fresh-Pizzas/plp/LSL001002006004
+DELI AND READY-MEALS\FRESH-PIZZA, PASTA AND SAUCES\FRESH-PASTA-SAUCES\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Fresh-Pizza%2C-Pasta-%26-Sauces/Fresh-Pasta-Sauces/plp/LSL001002006003
+DELI AND READY-MEALS\PARTY-TRAYS\PARTY-TRAYS\https://www.loblaws.ca/Food/Deli-%26-Ready-Meals/Party-Trays/plp/LSL001002007000
+-newCategory
+BAKERY\FRESHLY-BAKED-BREADS\WHITE, WHEAT AND GRAIN\https://www.loblaws.ca/Food/Bakery/Freshly-Baked-Breads/White%2C-Wheat-%26-Grain/plp/LSL001003001001
+BAKERY\FRESHLY-BAKED-BREADS\RYE AND PUMPERNICKEL\https://www.loblaws.ca/Food/Bakery/Freshly-Baked-Breads/Rye-%26-Pumpernickel/plp/LSL001003001004
+BAKERY\FRESHLY-BAKED-BREADS\CRUSTY AND EUROPEAN\https://www.loblaws.ca/Food/Bakery/Freshly-Baked-Breads/Crusty-%26-European/plp/LSL001003001003
+BAKERY\FRESHLY-BAKED-BREADS\CHEESE AND SPECIALTY\https://www.loblaws.ca/Food/Bakery/Freshly-Baked-Breads/Cheese-%26-Specialty/plp/LSL001003001002
+BAKERY\PACKAGED-BREADS\WHITE, WHEAT AND GRAIN\https://www.loblaws.ca/Food/Bakery/Packaged-Breads/White%2C-Wheat-%26-Grain/plp/LSL001003002001
+BAKERY\PACKAGED-BREADS\RYE AND PUMPERNICKEL\https://www.loblaws.ca/Food/Bakery/Packaged-Breads/Rye-%26-Pumpernickel/plp/LSL001003002004
+BAKERY\PACKAGED-BREADS\CRUSTY AND EUROPEAN\https://www.loblaws.ca/Food/Bakery/Packaged-Breads/Crusty-%26-European/plp/LSL001003002003
+BAKERY\PACKAGED-BREADS\RAISIN AND SPECIALTY\https://www.loblaws.ca/Food/Bakery/Packaged-Breads/Raisin-%26-Specialty/plp/LSL001003002002
+BAKERY\PACKAGED-BREADS\DIETARY\https://www.loblaws.ca/Food/Bakery/Packaged-Breads/Dietary/plp/LSL001003002005
+BAKERY\BAGUETTES, BUNS AND ROLLS\BAGELS\https://www.loblaws.ca/Food/Bakery/Baguettes%2C-Buns-%26-Rolls/Bagels/plp/LSL001003004004
+BAKERY\BAGUETTES, BUNS AND ROLLS\BAGUETTES\https://www.loblaws.ca/Food/Bakery/Baguettes%2C-Buns-%26-Rolls/Baguettes/plp/LSL001003004001
+BAKERY\BAGUETTES, BUNS AND ROLLS\DINNER-ROLLS\https://www.loblaws.ca/Food/Bakery/Baguettes%2C-Buns-%26-Rolls/Dinner-Rolls/plp/LSL001003004005
+BAKERY\BAGUETTES, BUNS AND ROLLS\HOTDOG AND HAMBURGER\https://www.loblaws.ca/Food/Bakery/Baguettes%2C-Buns-%26-Rolls/Hotdog-%26-Hamburger/plp/LSL001003004003
+BAKERY\BAGUETTES, BUNS AND ROLLS\CHEESE AND FLAVOURED\https://www.loblaws.ca/Food/Bakery/Baguettes%2C-Buns-%26-Rolls/Cheese-%26-Flavoured/plp/LSL001003004007
+BAKERY\BAGUETTES, BUNS AND ROLLS\SANDWICH-ROLLS\https://www.loblaws.ca/Food/Bakery/Baguettes%2C-Buns-%26-Rolls/Sandwich-Rolls/plp/LSL001003004006
+BAKERY\BAGUETTES, BUNS AND ROLLS\DIETARY\https://www.loblaws.ca/Food/Bakery/Baguettes%2C-Buns-%26-Rolls/Dietary/plp/LSL001003004002
+BAKERY\TORTILLAS, WRAPS AND PITA\TORTILLAS AND WRAPS\https://www.loblaws.ca/Food/Bakery/Tortillas%2C-Wraps-%26-Pita/Tortillas-%26-Wraps/plp/LSL001003005002
+BAKERY\TORTILLAS, WRAPS AND PITA\PIZZA-DOUGH AND BASES\https://www.loblaws.ca/Food/Bakery/Tortillas%2C-Wraps-%26-Pita/Pizza-Dough-%26-Bases/plp/LSL001003005001
+BAKERY\TORTILLAS, WRAPS AND PITA\NAAN\https://www.loblaws.ca/Food/Bakery/Tortillas%2C-Wraps-%26-Pita/Naan/plp/LSL001003005004
+BAKERY\TORTILLAS, WRAPS AND PITA\PITA\https://www.loblaws.ca/Food/Bakery/Tortillas%2C-Wraps-%26-Pita/Pita/plp/LSL001003005003
+BAKERY\BAGELS AND MUFFINS\BAGELS\https://www.loblaws.ca/Food/Bakery/Bagels-%26-Muffins/Bagels/plp/LSL001003006007
+BAKERY\BAGELS AND MUFFINS\MUFFINS\https://www.loblaws.ca/Food/Bakery/Bagels-%26-Muffins/Muffins/plp/LSL001003006001
+BAKERY\BAGELS AND MUFFINS\CROISSANTS\https://www.loblaws.ca/Food/Bakery/Bagels-%26-Muffins/Croissants/plp/LSL001003006006
+BAKERY\BAGELS AND MUFFINS\DONUTS\https://www.loblaws.ca/Food/Bakery/Bagels-%26-Muffins/Donuts/plp/LSL001003006008
+BAKERY\BAGELS AND MUFFINS\ENGLISH-MUFFINS\https://www.loblaws.ca/Food/Bakery/Bagels-%26-Muffins/English-Muffins/plp/LSL001003006004
+BAKERY\BAGELS AND MUFFINS\CRUMPETS\https://www.loblaws.ca/Food/Bakery/Bagels-%26-Muffins/Crumpets/plp/LSL001003006003
+BAKERY\BAGELS AND MUFFINS\SCONES AND BISCUITS\https://www.loblaws.ca/Food/Bakery/Bagels-%26-Muffins/Scones-%26-Biscuits/plp/LSL001003006005
+BAKERY\DESSERTS AND PASTRIES\BROWNIES AND SLICES\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Brownies-%26-Slices/plp/LSL001003007001
+BAKERY\DESSERTS AND PASTRIES\CAKES\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Cakes/plp/LSL001003007002
+BAKERY\DESSERTS AND PASTRIES\COOKIES\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Cookies/plp/LSL001003007003
+BAKERY\DESSERTS AND PASTRIES\CUPCAKES\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Cupcakes/plp/LSL001003007004
+BAKERY\DESSERTS AND PASTRIES\FROZEN-CAKES AND PIES\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Frozen-Cakes-%26-Pies/plp/LSL001003007009
+BAKERY\DESSERTS AND PASTRIES\PASTRIES AND DANISHES\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Pastries-%26-Danishes/plp/LSL001003007005
+BAKERY\DESSERTS AND PASTRIES\PIE-SHELLS AND CRUSTS\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Pie-Shells-%26-Crusts/plp/LSL001003007006
+BAKERY\DESSERTS AND PASTRIES\PIES AND TARTS\https://www.loblaws.ca/Food/Bakery/Desserts-%26-Pastries/Pies-%26-Tarts/plp/LSL001003007007
+BAKERY\BREAD-CRUMBS AND STUFFING\BREAD-CRUMBS AND STUFFING\https://www.loblaws.ca/Food/Bakery/Bread-Crumbs-%26-Stuffing/plp/LSL001003003000
+BAKERY\GLUTEN-FREE\SWEET-TREATS\https://www.loblaws.ca/Food/Bakery/Gluten-Free/Sweet-Treats/plp/LSL001003008002
+BAKERY\GLUTEN-FREE\BREAD, BUNS AND ROLLS\https://www.loblaws.ca/Food/Bakery/Gluten-Free/Bread%2C-Buns-%26-Rolls/plp/LSL001003008001
+-newCategory
+MEAT AND SEAFOOD\BEEF AND VEAL\STEAK-CUTS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Beef-%26-Veal/Steak-Cuts/plp/LSL001004001002
+MEAT AND SEAFOOD\BEEF AND VEAL\ROASTS AND RIBS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Beef-%26-Veal/Roasts-%26-Ribs/plp/LSL001004001003
+MEAT AND SEAFOOD\BEEF AND VEAL\STEW, CUBES AND STRIPS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Beef-%26-Veal/Stew%2C-Cubes-%26-Strips/plp/LSL001004001004
+MEAT AND SEAFOOD\BEEF AND VEAL\VEAL-CUTS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Beef-%26-Veal/Veal-Cuts/plp/LSL001004001008
+MEAT AND SEAFOOD\BEEF AND VEAL\GROUND-BEEF AND BURGERS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Beef-%26-Veal/Ground-Beef-%26-Burgers/plp/LSL001004001001
+MEAT AND SEAFOOD\BEEF AND VEAL\OFFAL AND OTHER-CUTS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Beef-%26-Veal/Offal-%26-Other-Cuts/plp/LSL001004001005
+MEAT AND SEAFOOD\CHICKEN AND TURKEY\BREASTS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Chicken-%26-Turkey/Breasts/plp/LSL001004002001
+MEAT AND SEAFOOD\CHICKEN AND TURKEY\GROUND-AND-OFFAL\https://www.loblaws.ca/Food/Meat-%26-Seafood/Chicken-%26-Turkey/Ground-and-Offal/plp/LSL001004002004
+MEAT AND SEAFOOD\CHICKEN AND TURKEY\STRIPS, CUBES AND BACON\https://www.loblaws.ca/Food/Meat-%26-Seafood/Chicken-%26-Turkey/Strips%2C-Cubes-%26-Bacon/plp/LSL001004002007
+MEAT AND SEAFOOD\CHICKEN AND TURKEY\WHOLE AND HALVED\https://www.loblaws.ca/Food/Meat-%26-Seafood/Chicken-%26-Turkey/Whole-%26-Halved/plp/LSL001004002003
+MEAT AND SEAFOOD\CHICKEN AND TURKEY\DRUMSTICKS AND WINGS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Chicken-%26-Turkey/Drumsticks-%26-Wings/plp/LSL001004002005
+MEAT AND SEAFOOD\CHICKEN AND TURKEY\THIGHS AND LEGS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Chicken-%26-Turkey/Thighs-%26-Legs/plp/LSL001004002002
+MEAT AND SEAFOOD\PORK\HAM\https://www.loblaws.ca/Food/Meat-%26-Seafood/Pork/Ham/plp/LSL001004003001
+MEAT AND SEAFOOD\PORK\GROUND-PORK\https://www.loblaws.ca/Food/Meat-%26-Seafood/Pork/Ground-Pork/plp/LSL001004003006
+MEAT AND SEAFOOD\PORK\CHOPS AND STEAKS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Pork/Chops-%26-Steaks/plp/LSL001004003004
+MEAT AND SEAFOOD\PORK\BACON\https://www.loblaws.ca/Food/Meat-%26-Seafood/Pork/Bacon/plp/LSL001004003007
+MEAT AND SEAFOOD\PORK\RIBS AND ROASTS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Pork/Ribs-%26-Roasts/plp/LSL001004003002
+MEAT AND SEAFOOD\PORK\TENDERLOIN\https://www.loblaws.ca/Food/Meat-%26-Seafood/Pork/Tenderloin/plp/LSL001004003003
+MEAT AND SEAFOOD\PORK\OFFAL\https://www.loblaws.ca/Food/Meat-%26-Seafood/Pork/Offal/plp/LSL001004003005
+MEAT AND SEAFOOD\LAMB AND GOAT\GROUND-AND-OFFAL\https://www.loblaws.ca/Food/Meat-%26-Seafood/Lamb-%26-Goat/Ground-and-Offal/plp/LSL001004004001
+MEAT AND SEAFOOD\LAMB AND GOAT\ROASTS AND RIBS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Lamb-%26-Goat/Roasts-%26-Ribs/plp/LSL001004004002
+MEAT AND SEAFOOD\LAMB AND GOAT\STEAKS AND LOINS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Lamb-%26-Goat/Steaks-%26-Loins/plp/LSL001004004003
+MEAT AND SEAFOOD\FISH AND SEAFOOD\SALMON AND TROUT\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Salmon-%26-Trout/plp/LSL001600100019
+MEAT AND SEAFOOD\FISH AND SEAFOOD\TUNA, SWORDFISH AND MARLIN\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Tuna%2C-Swordfish-%26-Marlin/plp/LSL001600100030
+MEAT AND SEAFOOD\FISH AND SEAFOOD\COD AND HADDOCK\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Cod-%26-Haddock/plp/LSL001600100004
+MEAT AND SEAFOOD\FISH AND SEAFOOD\TILAPIA, SOLE AND BASA\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Tilapia%2C-Sole-%26-Basa/plp/LSL001600100028
+MEAT AND SEAFOOD\FISH AND SEAFOOD\HALIBUT, MONKFISH AND SEABASS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Halibut%2C-Monkfish-%26-Seabass/plp/LSL001600100007
+MEAT AND SEAFOOD\FISH AND SEAFOOD\PICKEREL, ROCKFISH AND PERCH\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Pickerel%2C-Rockfish-%26-Perch/plp/LSL001600100015
+MEAT AND SEAFOOD\FISH AND SEAFOOD\LOBSTER AND CRAB\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Lobster-%26-Crab/plp/LSL001600100009
+MEAT AND SEAFOOD\FISH AND SEAFOOD\MUSSELS AND OYSTERS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Mussels-%26-Oysters/plp/LSL001600100012
+MEAT AND SEAFOOD\FISH AND SEAFOOD\HERRING, ANCHOVIES AND SARDINES\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Herring%2C-Anchovies-%26-Sardines/plp/LSL001600100001
+MEAT AND SEAFOOD\FISH AND SEAFOOD\SALTED-FISH AND CAVIAR\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Salted-Fish-%26-Caviar/plp/LSL001600100020
+MEAT AND SEAFOOD\FISH AND SEAFOOD\OTHER-FRESH-FISH\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Other-Fresh-Fish/plp/LSL001600100043
+MEAT AND SEAFOOD\FISH AND SEAFOOD\READY-TO-COOK\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fish-%26-Seafood/Ready-to-Cook/plp/LSL001600100017
+MEAT AND SEAFOOD\GAME-MEATS AND FOWL\DUCK\https://www.loblaws.ca/Food/Meat-%26-Seafood/Game-Meats-%26-Fowl/Duck/plp/LSL001004010002
+MEAT AND SEAFOOD\PREPPED AND MARINATED\KEBABS AND SKEWERS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Prepped-%26-Marinated/Kebabs-%26-Skewers/plp/LSL001004009005
+MEAT AND SEAFOOD\PREPPED AND MARINATED\MARINATED-SEAFOOD\https://www.loblaws.ca/Food/Meat-%26-Seafood/Prepped-%26-Marinated/Marinated-Seafood/plp/LSL001004009002
+MEAT AND SEAFOOD\PREPPED AND MARINATED\BURGERS AND MEATBALLS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Prepped-%26-Marinated/Burgers-%26-Meatballs/plp/LSL001004009008
+MEAT AND SEAFOOD\PREPPED AND MARINATED\SMOKED-FISH AND MEATS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Prepped-%26-Marinated/Smoked-Fish-%26-Meats/plp/LSL001004009004
+MEAT AND SEAFOOD\PREPPED AND MARINATED\MARINATED-CUBES AND STEAKS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Prepped-%26-Marinated/Marinated-Cubes-%26-Steaks/plp/LSL001004009006
+MEAT AND SEAFOOD\PREPPED AND MARINATED\SAUSAGES AND HOT-DOGS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Prepped-%26-Marinated/Sausages-%26-Hot-Dogs/plp/LSL001004009009
+MEAT AND SEAFOOD\FREE-FROM-MEATS\FREE-FROM-MEATS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Free-From-Meats/plp/LSL001004005000
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\CHICKEN-BREASTS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Chicken-Breasts/plp/LSL001004015002
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\CHICKEN-STRIPS, NUGGETS AND MORE\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Chicken-Strips%2C-Nuggets-%26-More/plp/LSL001004015003
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\CHICKEN-WINGS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Chicken-Wings/plp/LSL001004015004
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\BURGERS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Burgers/plp/LSL001004015005
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\HORS D'OEUVRES AND MEATBALLS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Hors-D%27Oeuvres-%26-Meatballs/plp/LSL001004015007
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\PIES AND DINNERS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Pies-%26-Dinners/plp/LSL001004015008
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\RIBS AND SAUSAGE\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Ribs-%26-Sausage/plp/LSL001004015009
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\SHRIMP\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Shrimp/plp/LSL001600200024
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\BOXED AND BAGGED-FILLETS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Boxed-%26-Bagged-Fillets/plp/LSL001600200019
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\LOBSTER, CRAB AND SCALLOPS\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Lobster%2C-Crab-%26-Scallops/plp/LSL001600200009
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\SMOKED-FISH\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Smoked-Fish/plp/LSL001600200021
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\READY-TO-COOK\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Ready-to-Cook/plp/LSL001600200015
+MEAT AND SEAFOOD\FROZEN-MEATS AND SEAFOOD\FROZEN-SEAFOOD\https://www.loblaws.ca/Food/Meat-%26-Seafood/Frozen-Meats-%26-Seafood/Frozen-Seafood/plp/LSL001004015010
+MEAT AND SEAFOOD\FRESH-MEAT-COUNTER\FRESH-MEAT-COUNTER\https://www.loblaws.ca/Food/Meat-%26-Seafood/Fresh-Meat-Counter/plp/LSL001004007000
+-newCategory
+DAIRY-AND-EGGS\MILK AND CREAM\2%25 AND WHOLE-MILK\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/2%25-%26-Whole-Milk/plp/LSL001005005005
+DAIRY-AND-EGGS\MILK AND CREAM\1%25 AND SKIM-MILK\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/1%25-%26-Skim-Milk/plp/LSL001005005006
+DAIRY-AND-EGGS\MILK AND CREAM\HEAVY-CREAM\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/Heavy-Cream/plp/LSL001005005003
+DAIRY-AND-EGGS\MILK AND CREAM\CREAMERS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/Creamers/plp/LSL001005005001
+DAIRY-AND-EGGS\MILK AND CREAM\FLAVOURED-MILK\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/Flavoured-Milk/plp/LSL001005005009
+DAIRY-AND-EGGS\MILK AND CREAM\LACTOSE-FREE-MILKS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/Lactose-Free-Milks/plp/LSL001005005011
+DAIRY-AND-EGGS\MILK AND CREAM\GOAT AND BUFFALO-MILK\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/Goat-%26-Buffalo-Milk/plp/LSL001005005007
+DAIRY-AND-EGGS\MILK AND CREAM\LONG-LIFE-MILK\https://www.loblaws.ca/Food/Dairy-and-Eggs/Milk-%26-Cream/Long-Life-Milk/plp/LSL001005005010
+DAIRY-AND-EGGS\PACKAGED-CHEESES\CHEESE-BLOCKS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Packaged-Cheeses/Cheese-Blocks/plp/LSL001005007001
+DAIRY-AND-EGGS\PACKAGED-CHEESES\SHREDDED-CHEESE\https://www.loblaws.ca/Food/Dairy-and-Eggs/Packaged-Cheeses/Shredded-Cheese/plp/LSL001005007006
+DAIRY-AND-EGGS\PACKAGED-CHEESES\STRING AND SNACK\https://www.loblaws.ca/Food/Dairy-and-Eggs/Packaged-Cheeses/String-%26-Snack/plp/LSL001005007002
+DAIRY-AND-EGGS\PACKAGED-CHEESES\SLICED-CHEESE\https://www.loblaws.ca/Food/Dairy-and-Eggs/Packaged-Cheeses/Sliced-Cheese/plp/LSL001005007007
+DAIRY-AND-EGGS\PACKAGED-CHEESES\CREAM-CHEESE\https://www.loblaws.ca/Food/Dairy-and-Eggs/Packaged-Cheeses/Cream-Cheese/plp/LSL001005007003
+DAIRY-AND-EGGS\PACKAGED-CHEESES\COTTAGE-CHEESE\https://www.loblaws.ca/Food/Dairy-and-Eggs/Packaged-Cheeses/Cottage-Cheese/plp/LSL001005007004
+DAIRY-AND-EGGS\PACKAGED-CHEESES\VEGAN AND LACTOSE-FREE\https://www.loblaws.ca/Food/Dairy-and-Eggs/Packaged-Cheeses/Vegan-%26-Lactose-Free/plp/LSL001005007005
+DAIRY-AND-EGGS\BUTTER AND SPREADS\BUTTER\https://www.loblaws.ca/Food/Dairy-and-Eggs/Butter-%26-Spreads/Butter/plp/LSL001005001001
+DAIRY-AND-EGGS\BUTTER AND SPREADS\MARGARINE AND SPREADS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Butter-%26-Spreads/Margarine-%26-Spreads/plp/LSL001005001002
+DAIRY-AND-EGGS\EGG AND EGG-SUBSTITUTES\WHOLE-EGGS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Egg-%26-Egg-Substitutes/Whole-Eggs/plp/LSL001005003001
+DAIRY-AND-EGGS\EGG AND EGG-SUBSTITUTES\LIQUID-EGGS AND WHITES\https://www.loblaws.ca/Food/Dairy-and-Eggs/Egg-%26-Egg-Substitutes/Liquid-Eggs-%26-Whites/plp/LSL001005003002
+DAIRY-AND-EGGS\YOGURT\GREEK-TUB-YOGURT\https://www.loblaws.ca/Food/Dairy-and-Eggs/Yogurt/Greek-Tub-Yogurt/plp/LSL001005009010
+DAIRY-AND-EGGS\YOGURT\GREEK-MULTI-PACK-YOGURT\https://www.loblaws.ca/Food/Dairy-and-Eggs/Yogurt/Greek-Multi-Pack-Yogurt/plp/LSL001005009012
+DAIRY-AND-EGGS\YOGURT\YOGURT-TUBS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Yogurt/Yogurt-Tubs/plp/LSL001005009005
+DAIRY-AND-EGGS\YOGURT\MULTIPACKS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Yogurt/Multipacks/plp/LSL001005009006
+DAIRY-AND-EGGS\YOGURT\DRINKABLE AND SMOOTHIES\https://www.loblaws.ca/Food/Dairy-and-Eggs/Yogurt/Drinkable-%26-Smoothies/plp/LSL001005009003
+DAIRY-AND-EGGS\YOGURT\PROBIOTIC\https://www.loblaws.ca/Food/Dairy-and-Eggs/Yogurt/Probiotic/plp/LSL001005009007
+DAIRY-AND-EGGS\YOGURT\GREEK-YOGURT\https://www.loblaws.ca/Food/Dairy-and-Eggs/Yogurt/Greek-Yogurt/plp/LSL001005009001
+DAIRY-AND-EGGS\SOUR-CREAMS AND CHIP-DIPS\SOUR-CREAM\https://www.loblaws.ca/Food/Dairy-and-Eggs/Sour-Creams-%26-Chip-Dips/Sour-Cream/plp/LSL001005008001
+DAIRY-AND-EGGS\SOUR-CREAMS AND CHIP-DIPS\CHILLED-CHIP-DIPS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Sour-Creams-%26-Chip-Dips/Chilled-Chip-Dips/plp/LSL001005008002
+DAIRY-AND-EGGS\CHILLED-DESSERTS AND DOUGHS\PUDDINGS AND MOUSSE\https://www.loblaws.ca/Food/Dairy-and-Eggs/Chilled-Desserts-%26-Doughs/Puddings-%26-Mousse/plp/LSL001005002001
+DAIRY-AND-EGGS\CHILLED-DESSERTS AND DOUGHS\CHILLED-DOUGHS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Chilled-Desserts-%26-Doughs/Chilled-Doughs/plp/LSL001005002004
+DAIRY-AND-EGGS\CHILLED-DESSERTS AND DOUGHS\WHIPPED-CREAM\https://www.loblaws.ca/Food/Dairy-and-Eggs/Chilled-Desserts-%26-Doughs/Whipped-Cream/plp/LSL001005002003
+DAIRY-AND-EGGS\ORGANIC-DAIRY\ORGANIC-DAIRY\https://www.loblaws.ca/Food/Dairy-and-Eggs/Organic-Dairy/plp/LSL001005006000
+DAIRY-AND-EGGS\LACTOSE-FREE-DAIRY\SOY-BEVERAGES\https://www.loblaws.ca/Food/Dairy-and-Eggs/Lactose-Free-Dairy/Soy-Beverages/plp/LSL001005004001
+DAIRY-AND-EGGS\LACTOSE-FREE-DAIRY\GRAIN, SEED AND NUT-DRINKS\https://www.loblaws.ca/Food/Dairy-and-Eggs/Lactose-Free-Dairy/Grain%2C-Seed-%26-Nut-Drinks/plp/LSL001005004002
+-newCategory
+DRINKS\COFFEE\INSTANT-COFFEE\https://www.loblaws.ca/Food/Drinks/Coffee/Instant-Coffee/plp/LSL001006001007
+DRINKS\COFFEE\COFFEE-PODS\https://www.loblaws.ca/Food/Drinks/Coffee/Coffee-Pods/plp/LSL001006001002
+DRINKS\COFFEE\COFFEE-WHITENERS\https://www.loblaws.ca/Food/Drinks/Coffee/Coffee-Whiteners/plp/LSL001006001003
+DRINKS\COFFEE\GROUND-COFFEE\https://www.loblaws.ca/Food/Drinks/Coffee/Ground-Coffee/plp/LSL001006001004
+DRINKS\COFFEE\FILTERS AND ACCESSORIES\https://www.loblaws.ca/Food/Drinks/Coffee/Filters-%26-Accessories/plp/LSL001006001009
+DRINKS\COFFEE\WHOLE-BEAN\https://www.loblaws.ca/Food/Drinks/Coffee/Whole-Bean/plp/LSL001006001008
+DRINKS\COFFEE\COFFEE, TEA AND ESPRESSO-ACCESSORIES\https://www.loblaws.ca/Food/Drinks/Coffee/Coffee%2C-Tea-%26-Espresso-Accessories/plp/LSL001006001010
+DRINKS\DRINK-MIXES\LIQUID-DRINK-MIX\https://www.loblaws.ca/Food/Drinks/Drink-Mixes/Liquid-Drink-Mix/plp/LSL001006002001
+DRINKS\DRINK-MIXES\POWDERED-DRINK-MIXES\https://www.loblaws.ca/Food/Drinks/Drink-Mixes/Powdered-Drink-Mixes/plp/LSL001006002002
+DRINKS\DRINK-MIXES\COCKTAIL-MIXES\https://www.loblaws.ca/Food/Drinks/Drink-Mixes/Cocktail-Mixes/plp/LSL001006002005
+DRINKS\ICED-TEAS AND COFFEES\ICED-COFFEE\https://www.loblaws.ca/Food/Drinks/Iced-Teas-%26-Coffees/Iced-Coffee/plp/LSL001006003002
+DRINKS\ICED-TEAS AND COFFEES\ICED-TEA-MIX AND DRINKS\https://www.loblaws.ca/Food/Drinks/Iced-Teas-%26-Coffees/Iced-Tea-Mix-%26-Drinks/plp/LSL001006003001
+DRINKS\JUICE\CHILLED-JUICES\https://www.loblaws.ca/Food/Drinks/Juice/Chilled-Juices/plp/LSL001006004002
+DRINKS\JUICE\JUICE-BOXES\https://www.loblaws.ca/Food/Drinks/Juice/Juice-Boxes/plp/LSL001006004005
+DRINKS\JUICE\COCONUT-WATER\https://www.loblaws.ca/Food/Drinks/Juice/Coconut-Water/plp/LSL001006004001
+DRINKS\JUICE\SHELF-STABLE-JUICES\https://www.loblaws.ca/Food/Drinks/Juice/Shelf-Stable-Juices/plp/LSL001006004006
+DRINKS\JUICE\SPARKLING-JUICES\https://www.loblaws.ca/Food/Drinks/Juice/Sparkling-Juices/plp/LSL001006004011
+DRINKS\JUICE\CRANBERRY-JUICES\https://www.loblaws.ca/Food/Drinks/Juice/Cranberry-Juices/plp/LSL001006004003
+DRINKS\JUICE\VEGETABLE-JUICES\https://www.loblaws.ca/Food/Drinks/Juice/Vegetable-Juices/plp/LSL001006004010
+DRINKS\SOFT-DRINKS\1-LITER AND LESS\https://www.loblaws.ca/Food/Drinks/Soft-Drinks/1-Liter-%26-Less/plp/LSL001006005001
+DRINKS\SOFT-DRINKS\1-5---2-LITER\https://www.loblaws.ca/Food/Drinks/Soft-Drinks/1-5---2-Liter/plp/LSL001006005002
+DRINKS\SOFT-DRINKS\4---6-PACKS\https://www.loblaws.ca/Food/Drinks/Soft-Drinks/4---6-Packs/plp/LSL001006005003
+DRINKS\SOFT-DRINKS\8---12-PACKS\https://www.loblaws.ca/Food/Drinks/Soft-Drinks/8---12-Packs/plp/LSL001006005004
+DRINKS\SOFT-DRINKS\18 AND UP-PACKS\https://www.loblaws.ca/Food/Drinks/Soft-Drinks/18-%26-Up-Packs/plp/LSL001006005005
+DRINKS\SOFT-DRINKS\SPECIALTY-SOFT-DRINKS\https://www.loblaws.ca/Food/Drinks/Soft-Drinks/Specialty-Soft-Drinks/plp/LSL001006005008
+DRINKS\SOY, RICE AND ALMOND-DRINKS\RICE-MILK\https://www.loblaws.ca/Food/Drinks/Soy%2C-Rice-%26-Almond-Drinks/Rice-Milk/plp/LSL001006006003
+DRINKS\SOY, RICE AND ALMOND-DRINKS\NUT AND SEED-MILKS\https://www.loblaws.ca/Food/Drinks/Soy%2C-Rice-%26-Almond-Drinks/Nut-%26-Seed-Milks/plp/LSL001006006002
+DRINKS\SOY, RICE AND ALMOND-DRINKS\SOY-MILK\https://www.loblaws.ca/Food/Drinks/Soy%2C-Rice-%26-Almond-Drinks/Soy-Milk/plp/LSL001006006001
+DRINKS\SPORTS-AND-ENERGY-DRINKS\ENERGY-DRINKS\https://www.loblaws.ca/Food/Drinks/Sports-and-Energy-Drinks/Energy-Drinks/plp/LSL001006007001
+DRINKS\SPORTS-AND-ENERGY-DRINKS\SPORTS-DRINKS\https://www.loblaws.ca/Food/Drinks/Sports-and-Energy-Drinks/Sports-Drinks/plp/LSL001006007003
+DRINKS\SPORTS-AND-ENERGY-DRINKS\MEAL-REPLACEMENTS\https://www.loblaws.ca/Food/Drinks/Sports-and-Energy-Drinks/Meal-Replacements/plp/LSL001006007004
+DRINKS\TEA AND HOT-DRINKS\BLACK\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Black/plp/LSL001006008001
+DRINKS\TEA AND HOT-DRINKS\GREEN\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Green/plp/LSL001006008003
+DRINKS\TEA AND HOT-DRINKS\HERBAL-TEAS\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Herbal-Teas/plp/LSL001006008009
+DRINKS\TEA AND HOT-DRINKS\SPECIALTY-TEAS\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Specialty-Teas/plp/LSL001006008005
+DRINKS\TEA AND HOT-DRINKS\HOT-CIDER\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Hot-Cider/plp/LSL001006008004
+DRINKS\TEA AND HOT-DRINKS\HOT-CHOCOLATE\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Hot-Chocolate/plp/LSL001006008002
+DRINKS\TEA AND HOT-DRINKS\VARIETY-PACKS\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Variety-Packs/plp/LSL001006008007
+DRINKS\TEA AND HOT-DRINKS\TEA-PODS\https://www.loblaws.ca/Food/Drinks/Tea-%26-Hot-Drinks/Tea-Pods/plp/LSL001006008008
+DRINKS\WATER\UP-TO-1-5L-BOTTLED-WATER\https://www.loblaws.ca/Food/Drinks/Water/Up-to-1-5L-Bottled-Water/plp/LSL001006009006
+DRINKS\WATER\4L AND UP-BOTTLED-WATER\https://www.loblaws.ca/Food/Drinks/Water/4L-%26-Up-Bottled-Water/plp/LSL001006009007
+DRINKS\WATER\4---6-PACK-BOTTLED-WATER\https://www.loblaws.ca/Food/Drinks/Water/4---6-Pack-Bottled-Water/plp/LSL001006009008
+DRINKS\WATER\8---15-PACK-BOTTLED-WATER\https://www.loblaws.ca/Food/Drinks/Water/8---15-Pack-Bottled-Water/plp/LSL001006009009
+DRINKS\WATER\18-PACK AND UP-BOTTLED-WATER\https://www.loblaws.ca/Food/Drinks/Water/18-Pack-%26-Up-Bottled-Water/plp/LSL001006009010
+DRINKS\WATER\SPARKLING-WATER\https://www.loblaws.ca/Food/Drinks/Water/Sparkling-Water/plp/LSL001006009001
+DRINKS\WATER\TONIC-WATER\https://www.loblaws.ca/Food/Drinks/Water/Tonic-Water/plp/LSL001006009004
+DRINKS\WATER\COCONUT-WATER\https://www.loblaws.ca/Food/Drinks/Water/Coconut-Water/plp/LSL001006009002
+DRINKS\WATER\FLAVOURED-WATER\https://www.loblaws.ca/Food/Drinks/Water/Flavoured-Water/plp/LSL001006009005
+DRINKS\WATER\BOTTLED-WATER\https://www.loblaws.ca/Food/Drinks/Water/Bottled-Water/plp/LSL001006009003
+DRINKS\ALCOHOL-FREE-DRINKS\ALCOHOL-FREE-DRINKS\https://www.loblaws.ca/Food/Drinks/Alcohol-Free-Drinks/Alcohol-Free-Drinks/plp/LSL001006010006
+-newCategory
+FROZEN\APPETIZERS AND SNACKS\HORS D'OEUVRES\https://www.loblaws.ca/Food/Frozen/Appetizers-%26-Snacks/Hors-d%E2%80%99oeuvres/plp/LSL001007001003
+FROZEN\APPETIZERS AND SNACKS\POCKETS AND PIES\https://www.loblaws.ca/Food/Frozen/Appetizers-%26-Snacks/Pockets-%26-Pies/plp/LSL001007001004
+FROZEN\APPETIZERS AND SNACKS\CORN-DOGS AND BURRITOS\https://www.loblaws.ca/Food/Frozen/Appetizers-%26-Snacks/Corn-Dogs-%26-Burritos/plp/LSL001007001002
+FROZEN\BAKERY AND FRUIT\FRUIT\https://www.loblaws.ca/Food/Frozen/Bakery-%26-Fruit/Fruit/plp/LSL001007002007
+FROZEN\BAKERY AND FRUIT\BREAD AND BAKED\https://www.loblaws.ca/Food/Frozen/Bakery-%26-Fruit/Bread-%26-Baked/plp/LSL001007002004
+FROZEN\BAKERY AND FRUIT\CHEESECAKES AND PIES\https://www.loblaws.ca/Food/Frozen/Bakery-%26-Fruit/Cheesecakes-%26-Pies/plp/LSL001007002001
+FROZEN\BAKERY AND FRUIT\FROZEN-CAKES\https://www.loblaws.ca/Food/Frozen/Bakery-%26-Fruit/Frozen-Cakes/plp/LSL001007002002
+FROZEN\BAKERY AND FRUIT\DAIRY-FREE-DESSERTS\https://www.loblaws.ca/Food/Frozen/Bakery-%26-Fruit/Dairy-Free-Desserts/plp/LSL001007002006
+FROZEN\BAKERY AND FRUIT\PIE-SHELLS AND DOUGH\https://www.loblaws.ca/Food/Frozen/Bakery-%26-Fruit/Pie-Shells-%26-Dough/plp/LSL001007002003
+FROZEN\BAKERY AND FRUIT\DESSERT-TOPPINGS\https://www.loblaws.ca/Food/Frozen/Bakery-%26-Fruit/Dessert-Toppings/plp/LSL001007002005
+FROZEN\BEVERAGES AND ICE\JUICES\https://www.loblaws.ca/Food/Frozen/Beverages-%26-Ice/Juices/plp/LSL001007003001
+FROZEN\BEVERAGES AND ICE\ICE\https://www.loblaws.ca/Food/Frozen/Beverages-%26-Ice/Ice/plp/LSL001007003003
+FROZEN\BREAKFAST-FOODS\WAFFLES, PANCAKES AND FRENCH-TOAST\https://www.loblaws.ca/Food/Frozen/Breakfast-Foods/Waffles%2C-Pancakes-%26-French-Toast/plp/LSL001007004001
+FROZEN\BREAKFAST-FOODS\HASHBROWNS\https://www.loblaws.ca/Food/Frozen/Breakfast-Foods/Hashbrowns/plp/LSL001007004005
+FROZEN\BREAKFAST-FOODS\TOASTER-PASTRIES AND MUFFINS\https://www.loblaws.ca/Food/Frozen/Breakfast-Foods/Toaster-Pastries-%26-Muffins/plp/LSL001007004002
+FROZEN\BREAKFAST-FOODS\BREAKFAST-SANDWICHES\https://www.loblaws.ca/Food/Frozen/Breakfast-Foods/Breakfast-Sandwiches/plp/LSL001007004003
+FROZEN\FISH AND SEAFOOD\BURGERS AND FISH-CAKES\https://www.loblaws.ca/Food/Frozen/Fish-%26-Seafood/Burgers-%26-Fish-Cakes/plp/LSL001600200017
+FROZEN\FISH AND SEAFOOD\HOR-D%27OEUVRES\https://www.loblaws.ca/Food/Frozen/Fish-%26-Seafood/Hor-D%27oeuvres/plp/LSL001600200035
+FROZEN\ICE-CREAM AND TREATS\ICE-CREAM-TUBS AND TREATS\https://www.loblaws.ca/Food/Frozen/Ice-Cream-%26-Treats/Ice-Cream-Tubs-%26-Treats/plp/LSL001007006006
+FROZEN\ICE-CREAM AND TREATS\FROZEN-YOGURT AND GELATO\https://www.loblaws.ca/Food/Frozen/Ice-Cream-%26-Treats/Frozen-Yogurt-%26-Gelato/plp/LSL001007006003
+FROZEN\ICE-CREAM AND TREATS\SHERBERT AND SORBET\https://www.loblaws.ca/Food/Frozen/Ice-Cream-%26-Treats/Sherbert-%26-Sorbet/plp/LSL001007006002
+FROZEN\ICE-CREAM AND TREATS\ICE-CREAM-BARS AND TREATS\https://www.loblaws.ca/Food/Frozen/Ice-Cream-%26-Treats/Ice-Cream-Bars-%26-Treats/plp/LSL001007006005
+FROZEN\ICE-CREAM AND TREATS\POPSICLES AND FRUIT-BARS\https://www.loblaws.ca/Food/Frozen/Ice-Cream-%26-Treats/Popsicles-%26-Fruit-Bars/plp/LSL001007006004
+FROZEN\MEALS\SOUPS AND SIDES\https://www.loblaws.ca/Food/Frozen/Meals/Soups-%26-Sides/plp/LSL001007007009
+FROZEN\MEALS\BEEF AND VEAL-MEALS\https://www.loblaws.ca/Food/Frozen/Meals/Beef-%26-Veal-Meals/plp/LSL001007007001
+FROZEN\MEALS\CHICKEN AND TURKEY-MEALS\https://www.loblaws.ca/Food/Frozen/Meals/Chicken-%26-Turkey-Meals/plp/LSL001007007003
+FROZEN\MEALS\PORK AND LAMB-MEALS\https://www.loblaws.ca/Food/Frozen/Meals/Pork-%26-Lamb-Meals/plp/LSL001007007002
+FROZEN\MEALS\FISH AND SEAFOOD-MEALS\https://www.loblaws.ca/Food/Frozen/Meals/Fish-%26-Seafood-Meals/plp/LSL001007007004
+FROZEN\MEALS\VEGETARIAN-MEALS\https://www.loblaws.ca/Food/Frozen/Meals/Vegetarian-Meals/plp/LSL001007007008
+FROZEN\MEAT AND POULTRY\CHICKEN AND TURKEY\https://www.loblaws.ca/Food/Frozen/Meat-%26-Poultry/Chicken-%26-Turkey/plp/LSL001007008001
+FROZEN\MEAT AND POULTRY\PORK\https://www.loblaws.ca/Food/Frozen/Meat-%26-Poultry/Pork/plp/LSL001007008003
+FROZEN\MEAT AND POULTRY\BURGERS AND MEATBALLS\https://www.loblaws.ca/Food/Frozen/Meat-%26-Poultry/Burgers-%26-Meatballs/plp/LSL001007008005
+FROZEN\MEAT AND POULTRY\SAUSAGES AND BACON\https://www.loblaws.ca/Food/Frozen/Meat-%26-Poultry/Sausages-%26-Bacon/plp/LSL001007008004
+FROZEN\MEAT AND POULTRY\MEATLESS-MEAT-OPTIONS\https://www.loblaws.ca/Food/Frozen/Meat-%26-Poultry/Meatless-Meat-Options/plp/LSL001007008009
+FROZEN\PIZZA, PASTA AND PEROGIES\MEAT-PIZZAS\https://www.loblaws.ca/Food/Frozen/Pizza%2C-Pasta-%26-Perogies/Meat-Pizzas/plp/LSL001007009002
+FROZEN\PIZZA, PASTA AND PEROGIES\CHICKEN AND SEAFOOD-PIZZAS\https://www.loblaws.ca/Food/Frozen/Pizza%2C-Pasta-%26-Perogies/Chicken-%26-Seafood-Pizzas/plp/LSL001007009004
+FROZEN\PIZZA, PASTA AND PEROGIES\VEGETARIAN-PIZZAS\https://www.loblaws.ca/Food/Frozen/Pizza%2C-Pasta-%26-Perogies/Vegetarian-Pizzas/plp/LSL001007009003
+FROZEN\PIZZA, PASTA AND PEROGIES\CHEESE-PIZZAS\https://www.loblaws.ca/Food/Frozen/Pizza%2C-Pasta-%26-Perogies/Cheese-Pizzas/plp/LSL001007009001
+FROZEN\PIZZA, PASTA AND PEROGIES\SNACK AND HANDHELD-PIZZAS\https://www.loblaws.ca/Food/Frozen/Pizza%2C-Pasta-%26-Perogies/Snack-%26-Handheld-Pizzas/plp/LSL001007009006
+FROZEN\PIZZA, PASTA AND PEROGIES\PEROGIES\https://www.loblaws.ca/Food/Frozen/Pizza%2C-Pasta-%26-Perogies/Perogies/plp/LSL001007009007
+FROZEN\PIZZA, PASTA AND PEROGIES\FROZEN-PASTA\https://www.loblaws.ca/Food/Frozen/Pizza%2C-Pasta-%26-Perogies/Frozen-Pasta/plp/LSL001007009005
+FROZEN\VEGETABLES\VEGETABLE-BAGS\https://www.loblaws.ca/Food/Frozen/Vegetables/Vegetable-Bags/plp/LSL001007010004
+FROZEN\VEGETABLES\HASHBROWNS AND PATTIES\https://www.loblaws.ca/Food/Frozen/Vegetables/Hashbrowns-%26-Patties/plp/LSL001007010003
+FROZEN\VEGETABLES\STIRFRY-BLENDS AND EDAMAME\https://www.loblaws.ca/Food/Frozen/Vegetables/Stirfry-Blends-%26-Edamame/plp/LSL001007010006
+FROZEN\VEGETABLES\FRENCH-FRIES AND ONION-RINGS\https://www.loblaws.ca/Food/Frozen/Vegetables/French-Fries-%26-Onion-Rings/plp/LSL001007010002
+FROZEN\VEGETABLES\BROCCOLI AND CAULIFLOWER\https://www.loblaws.ca/Food/Frozen/Vegetables/Broccoli-%26-Cauliflower/plp/LSL001007010005
+FROZEN\VEGETABLES\SPINACH AND KALE\https://www.loblaws.ca/Food/Frozen/Vegetables/Spinach-%26-Kale/plp/LSL001007010001
+-newCategory
+PANTRY\BABY-FOOD AND FORMULA\BABY-FORMULAS\https://www.loblaws.ca/Food/Pantry/Baby-Food-%26-Formula/Baby-Formulas/plp/LSL001008001001
+PANTRY\BABY-FOOD AND FORMULA\DRY-BABY-FOOD\https://www.loblaws.ca/Food/Pantry/Baby-Food-%26-Formula/Dry-Baby-Food/plp/LSL001008001005
+PANTRY\BABY-FOOD AND FORMULA\TODDLER-FOOD\https://www.loblaws.ca/Food/Pantry/Baby-Food-%26-Formula/Toddler-Food/plp/LSL001008001006
+PANTRY\BABY-FOOD AND FORMULA\SNACKS AND BISCUITS\https://www.loblaws.ca/Food/Pantry/Baby-Food-%26-Formula/Snacks-%26-Biscuits/plp/LSL001008001007
+PANTRY\BABY-FOOD AND FORMULA\BIBS AND BOTTLES\https://www.loblaws.ca/Food/Pantry/Baby-Food-%26-Formula/Bibs-%26-Bottles/plp/LSL001008001008
+PANTRY\BABY-FOOD AND FORMULA\ORGANIC-BABY-FOOD AND FORMULA\https://www.loblaws.ca/Food/Pantry/Baby-Food-%26-Formula/Organic-Baby-Food-%26-Formula/plp/LSL001008001009
+PANTRY\BAKING-INGREDIENTS\CANNED AND POWDERED-MILK\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Canned-%26-Powdered-Milk/plp/LSL001008002011
+PANTRY\BAKING-INGREDIENTS\CHOCOLATE AND COCOA\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Chocolate-%26-Cocoa/plp/LSL001008002003
+PANTRY\BAKING-INGREDIENTS\DECORATIONS AND FROSTING\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Decorations-%26-Frosting/plp/LSL001008002002
+PANTRY\BAKING-INGREDIENTS\DOUGHS AND CRUSTS\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Doughs-%26-Crusts/plp/LSL001008002007
+PANTRY\BAKING-INGREDIENTS\EXTRACTS AND COLOURING\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Extracts-%26-Colouring/plp/LSL001008002008
+PANTRY\BAKING-INGREDIENTS\FLOUR AND BAKING-AIDES\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Flour-%26-Baking-Aides/plp/LSL001008002009
+PANTRY\BAKING-INGREDIENTS\FRUIT, SEEDS AND NUTS\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Fruit%2C-Seeds-%26-Nuts/plp/LSL001008002010
+PANTRY\BAKING-INGREDIENTS\KITS, MIXES AND FILLING\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Kits%2C-Mixes-%26-Filling/plp/LSL001008002001
+PANTRY\BAKING-INGREDIENTS\MEALS AND GRAINS\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Meals-%26-Grains/plp/LSL001008002006
+PANTRY\BAKING-INGREDIENTS\SHORTENING AND FATS\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Shortening-%26-Fats/plp/LSL001008002004
+PANTRY\BAKING-INGREDIENTS\SUGAR AND SWEETENERS\https://www.loblaws.ca/Food/Pantry/Baking-Ingredients/Sugar-%26-Sweeteners/plp/LSL001008002005
+PANTRY\CANNED AND JARRED\BEANS AND LEGUMES\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Beans-%26-Legumes/plp/LSL001008003001
+PANTRY\CANNED AND JARRED\COOKING-SAUCES\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Cooking-Sauces/plp/LSL001008003011
+PANTRY\CANNED AND JARRED\FISH AND SEAFOOD\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Fish-%26-Seafood/plp/LSL001008003006
+PANTRY\CANNED AND JARRED\FRUIT\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Fruit/plp/LSL001008003005
+PANTRY\CANNED AND JARRED\MEATS\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Meats/plp/LSL001008003007
+PANTRY\CANNED AND JARRED\PASTA AND PASTA-SAUCE\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Pasta-%26-Pasta-Sauce/plp/LSL001008003002
+PANTRY\CANNED AND JARRED\CONDENSED-SOUP\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Condensed-Soup/plp/LSL001008003003
+PANTRY\CANNED AND JARRED\STEWS AND CHILI\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Stews-%26-Chili/plp/LSL001008003004
+PANTRY\CANNED AND JARRED\TOMATOES AND PASTE\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Tomatoes-%26-Paste/plp/LSL001008003009
+PANTRY\CANNED AND JARRED\VEGETABLES\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Vegetables/plp/LSL001008003008
+PANTRY\CANNED AND JARRED\READY-TO-SERVE-SOUP\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Ready-To-Serve-Soup/plp/LSL001008003012
+PANTRY\CANNED AND JARRED\BROTH\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Broth/plp/LSL001008003013
+PANTRY\CANNED AND JARRED\DRY-SOUP-MIX\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Dry-Soup-Mix/plp/LSL001008003014
+PANTRY\CANNED AND JARRED\INSTANT-SOUPS AND NOODLES\https://www.loblaws.ca/Food/Pantry/Canned-%26-Jarred/Instant-Soups-%26-Noodles/plp/LSL001008003015
+PANTRY\BREAKFAST\FAMILY-CEREALS\https://www.loblaws.ca/Food/Pantry/Breakfast/Family-Cereals/plp/LSL001008004009
+PANTRY\BREAKFAST\ADULT-CEREALS\https://www.loblaws.ca/Food/Pantry/Breakfast/Adult-Cereals/plp/LSL001008004008
+PANTRY\BREAKFAST\KIDS-CEREALS\https://www.loblaws.ca/Food/Pantry/Breakfast/Kids-Cereals/plp/LSL001008004007
+PANTRY\BREAKFAST\MUESLI AND GRANOLA\https://www.loblaws.ca/Food/Pantry/Breakfast/Muesli-%26-Granola/plp/LSL001008004006
+PANTRY\BREAKFAST\OATMEAL AND HOT-CEREALS\https://www.loblaws.ca/Food/Pantry/Breakfast/Oatmeal-%26-Hot-Cereals/plp/LSL001008004010
+PANTRY\BREAKFAST\BREAKFAST-BARS AND PASTRIES\https://www.loblaws.ca/Food/Pantry/Breakfast/Breakfast-Bars-%26-Pastries/plp/LSL001008004011
+PANTRY\BREAKFAST\HONEY AND SYRUPS\https://www.loblaws.ca/Food/Pantry/Breakfast/Honey-%26-Syrups/plp/LSL001008004002
+PANTRY\BREAKFAST\NUT AND SEED-BUTTERS\https://www.loblaws.ca/Food/Pantry/Breakfast/Nut-%26-Seed-Butters/plp/LSL001008004004
+PANTRY\BREAKFAST\JAMS, JELLIES AND PRESERVES\https://www.loblaws.ca/Food/Pantry/Breakfast/Jams%2C-Jellies-%26-Preserves/plp/LSL001008004003
+PANTRY\BREAKFAST\CHOCOLATE AND SWEET-SPREADS\https://www.loblaws.ca/Food/Pantry/Breakfast/Chocolate-%26-Sweet-Spreads/plp/LSL001008004005
+PANTRY\BREAKFAST\CHEESE AND SAVORY-SPREADS\https://www.loblaws.ca/Food/Pantry/Breakfast/Cheese-%26-Savory-Spreads/plp/LSL001008004001
+PANTRY\CONDIMENTS AND TOPPINGS\MUSTARD AND KETCHUP\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Mustard-%26-Ketchup/plp/LSL001008005001
+PANTRY\CONDIMENTS AND TOPPINGS\BBQ AND STEAK-SAUCES\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/BBQ-%26-Steak-Sauces/plp/LSL001008005004
+PANTRY\CONDIMENTS AND TOPPINGS\MAYONNAISE AND SANDWICH-SPREADS\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Mayonnaise-%26-Sandwich-Spreads/plp/LSL001008005003
+PANTRY\CONDIMENTS AND TOPPINGS\RELISH, CHUTNEY AND FRUIT-SAUCES\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Relish%2C-Chutney-%26-Fruit-Sauces/plp/LSL001008005005
+PANTRY\CONDIMENTS AND TOPPINGS\HOT AND CHILI-SAUCES\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Hot-%26-Chili-Sauces/plp/LSL001008005007
+PANTRY\CONDIMENTS AND TOPPINGS\SALAD-DRESSING\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Salad-Dressing/plp/LSL001008005002
+PANTRY\CONDIMENTS AND TOPPINGS\CROUTONS AND SALAD-TOPPINGS\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Croutons-%26-Salad-Toppings/plp/LSL001008005010
+PANTRY\CONDIMENTS AND TOPPINGS\PICKLES AND ANTIPASTO\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Pickles-%26-Antipasto/plp/LSL001008005008
+PANTRY\CONDIMENTS AND TOPPINGS\SALSA AND GUACAMOLE\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Salsa-%26-Guacamole/plp/LSL001008005009
+PANTRY\CONDIMENTS AND TOPPINGS\TARTARE AND SEAFOOD-SAUCES\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/Tartare-%26-Seafood-Sauces/plp/LSL001008005006
+PANTRY\CONDIMENTS AND TOPPINGS\WORLD-CONDIMENTS\https://www.loblaws.ca/Food/Pantry/Condiments-%26-Toppings/World-Condiments/plp/LSL001008005011
+PANTRY\HERBS, SPICES AND SAUCES\SPICES\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Spices/plp/LSL001008006002
+PANTRY\HERBS, SPICES AND SAUCES\HERB AND SPICE-BLENDS\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Herb-%26-Spice-Blends/plp/LSL001008006004
+PANTRY\HERBS, SPICES AND SAUCES\SALT AND PEPPERS\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Salt-%26-Peppers/plp/LSL001008006001
+PANTRY\HERBS, SPICES AND SAUCES\GRAVY, STOCK AND STUFFING\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Gravy%2C-Stock-%26-Stuffing/plp/LSL001008006007
+PANTRY\HERBS, SPICES AND SAUCES\COOKING-PASTES AND MARINADES\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Cooking-Pastes-%26-Marinades/plp/LSL001008006008
+PANTRY\HERBS, SPICES AND SAUCES\COOKING-SAUCES\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Cooking-Sauces/plp/LSL001008006009
+PANTRY\HERBS, SPICES AND SAUCES\PACKET-SAUCES AND SEASONINGS\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Packet-Sauces-%26-Seasonings/plp/LSL001008006005
+PANTRY\HERBS, SPICES AND SAUCES\BREADINGS, BATTERS AND COATINGS\https://www.loblaws.ca/Food/Pantry/Herbs%2C-Spices-%26-Sauces/Breadings%2C-Batters-%26-Coatings/plp/LSL001008006006
+PANTRY\OIL, VINEGARS AND COOKING-WINE\OLIVE-OILS\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Olive-Oils/plp/LSL001008007002
+PANTRY\OIL, VINEGARS AND COOKING-WINE\VEGETABLE-OILS\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Vegetable-Oils/plp/LSL001008007001
+PANTRY\OIL, VINEGARS AND COOKING-WINE\NUT AND SEED-OILS\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Nut-%26-Seed-Oils/plp/LSL001008007003
+PANTRY\OIL, VINEGARS AND COOKING-WINE\INFUSED-OILS\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Infused-Oils/plp/LSL001008007004
+PANTRY\OIL, VINEGARS AND COOKING-WINE\COOKING-SPRAYS\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Cooking-Sprays/plp/LSL001008007006
+PANTRY\OIL, VINEGARS AND COOKING-WINE\WHITE-VINEGAR\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/White-Vinegar/plp/LSL001008007007
+PANTRY\OIL, VINEGARS AND COOKING-WINE\BALSAMIC-VINEGAR\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Balsamic-Vinegar/plp/LSL001008007008
+PANTRY\OIL, VINEGARS AND COOKING-WINE\CIDER-VINEGAR\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Cider-Vinegar/plp/LSL001008007009
+PANTRY\OIL, VINEGARS AND COOKING-WINE\SPECIALTY-VINEGARS\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Specialty-Vinegars/plp/LSL001008007010
+PANTRY\OIL, VINEGARS AND COOKING-WINE\COOKING-WINE\https://www.loblaws.ca/Food/Pantry/Oil%2C-Vinegars-%26-Cooking-Wine/Cooking-Wine/plp/LSL001008007005
+PANTRY\PACKAGED-MEALS AND KITS\ASIAN-KITS AND MIXES\https://www.loblaws.ca/Food/Pantry/Packaged-Meals-%26-Kits/Asian-Kits-%26-Mixes/plp/LSL001008008003
+PANTRY\PACKAGED-MEALS AND KITS\INDIAN-KITS AND MIXES\https://www.loblaws.ca/Food/Pantry/Packaged-Meals-%26-Kits/Indian-Kits-%26-Mixes/plp/LSL001008008002
+PANTRY\PACKAGED-MEALS AND KITS\MEXICAN-KITS AND MIXES\https://www.loblaws.ca/Food/Pantry/Packaged-Meals-%26-Kits/Mexican-Kits-%26-Mixes/plp/LSL001008008001
+PANTRY\PACKAGED-MEALS AND KITS\PASTA-KITS\https://www.loblaws.ca/Food/Pantry/Packaged-Meals-%26-Kits/Pasta-Kits/plp/LSL001008008004
+PANTRY\PACKAGED-MEALS AND KITS\POTATO AND RICE-SIDE-KITS\https://www.loblaws.ca/Food/Pantry/Packaged-Meals-%26-Kits/Potato-%26-Rice-Side-Kits/plp/LSL001008008005
+PANTRY\PACKAGED-MEALS AND KITS\SLOW-COOKER-PACKETS\https://www.loblaws.ca/Food/Pantry/Packaged-Meals-%26-Kits/Slow-Cooker-Packets/plp/LSL001008008007
+PANTRY\PACKAGED-MEALS AND KITS\SUSHI-KITS AND INGREDIENTS\https://www.loblaws.ca/Food/Pantry/Packaged-Meals-%26-Kits/Sushi-Kits-%26-Ingredients/plp/LSL001008008006
+PANTRY\PASTA, RICE AND BEANS\DRIED-BEANS\https://www.loblaws.ca/Food/Pantry/Pasta%2C-Rice-%26-Beans/Dried-Beans/plp/LSL001008009008
+PANTRY\PASTA, RICE AND BEANS\NOODLES\https://www.loblaws.ca/Food/Pantry/Pasta%2C-Rice-%26-Beans/Noodles/plp/LSL001008009003
+PANTRY\PASTA, RICE AND BEANS\PASTA\https://www.loblaws.ca/Food/Pantry/Pasta%2C-Rice-%26-Beans/Pasta/plp/LSL001008009001
+PANTRY\PASTA, RICE AND BEANS\POLENTA AND COUSCOUS\https://www.loblaws.ca/Food/Pantry/Pasta%2C-Rice-%26-Beans/Polenta-%26-Couscous/plp/LSL001008009006
+PANTRY\PASTA, RICE AND BEANS\QUINOA\https://www.loblaws.ca/Food/Pantry/Pasta%2C-Rice-%26-Beans/Quinoa/plp/LSL001008009007
+PANTRY\PASTA, RICE AND BEANS\RICE\https://www.loblaws.ca/Food/Pantry/Pasta%2C-Rice-%26-Beans/Rice/plp/LSL001008009004
+PANTRY\PASTA, RICE AND BEANS\SPECIALTY-GRAINS\https://www.loblaws.ca/Food/Pantry/Pasta%2C-Rice-%26-Beans/Specialty-Grains/plp/LSL001008009005
+PANTRY\CHIPS AND SALTY-SNACKS\POTATO-CHIPS\https://www.loblaws.ca/Food/Pantry/Chips-%26-Salty-Snacks/Potato-Chips/plp/LSL001008010001
+PANTRY\CHIPS AND SALTY-SNACKS\PRETZELS AND SNACK-MIXES\https://www.loblaws.ca/Food/Pantry/Chips-%26-Salty-Snacks/Pretzels-%26-Snack-Mixes/plp/LSL001008011009
+PANTRY\CHIPS AND SALTY-SNACKS\TORTILLA-CHIPS\https://www.loblaws.ca/Food/Pantry/Chips-%26-Salty-Snacks/Tortilla-Chips/plp/LSL001008011008
+PANTRY\CHIPS AND SALTY-SNACKS\FLATBREADS AND RICE-CRISPS\https://www.loblaws.ca/Food/Pantry/Chips-%26-Salty-Snacks/Flatbreads-%26-Rice-Crisps/plp/LSL001008011006
+PANTRY\CHIPS AND SALTY-SNACKS\MICROWAVE-POPCORN\https://www.loblaws.ca/Food/Pantry/Chips-%26-Salty-Snacks/Microwave-Popcorn/plp/LSL001008011007
+PANTRY\CHIPS AND SALTY-SNACKS\JERKY, NUTS AND SEEDS\https://www.loblaws.ca/Food/Pantry/Chips-%26-Salty-Snacks/Jerky%2C-Nuts-%26-Seeds/plp/LSL001008010007
+PANTRY\COOKIES, CRACKERS AND CANDY\COOKIES\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Cookies/plp/LSL001008010008
+PANTRY\COOKIES, CRACKERS AND CANDY\CRACKERS\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Crackers/plp/LSL001008010009
+PANTRY\COOKIES, CRACKERS AND CANDY\GRANOLA AND SNACK-BARS\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Granola-%26-Snack-Bars/plp/LSL001008010003
+PANTRY\COOKIES, CRACKERS AND CANDY\CHOCOLATE-BARS\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Chocolate-Bars/plp/LSL001008010004
+PANTRY\COOKIES, CRACKERS AND CANDY\PACKAGED-CHOCOLATE\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Packaged-Chocolate/plp/LSL001008010018
+PANTRY\COOKIES, CRACKERS AND CANDY\CANDY AND GUM\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Candy-%26-Gum/plp/LSL001008010005
+PANTRY\COOKIES, CRACKERS AND CANDY\PUDDING AND JELLY\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Pudding-%26-Jelly/plp/LSL001008010010
+PANTRY\COOKIES, CRACKERS AND CANDY\ICE-CREAM-TOPPINGS AND CONES\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Ice-Cream-Toppings-%26-Cones/plp/LSL001008010012
+PANTRY\COOKIES, CRACKERS AND CANDY\SINGLE-SERVE-SNACKS\https://www.loblaws.ca/Food/Pantry/Cookies%2C-Crackers-%26-Candy/Single-Serve-Snacks/plp/LSL001008010011
+PANTRY\BULK-FOODS\PACKAGED-BULK\https://www.loblaws.ca/Food/Pantry/Bulk-Foods/Packaged-Bulk/plp/LSL001008012001
+PANTRY\BULK-FOODS\LOOSE-BULK\https://www.loblaws.ca/Food/Pantry/Bulk-Foods/Loose-Bulk/plp/LSL001008012002
+-newCategory
+NATURAL AND ORGANIC\FRUITS AND VEGETABLES\FRUIT\https://www.loblaws.ca/Food/Natural-%26-Organic/Fruits-%26-Vegetables/Fruit/plp/LSL001009001001
+NATURAL AND ORGANIC\FRUITS AND VEGETABLES\VEGETABLE\https://www.loblaws.ca/Food/Natural-%26-Organic/Fruits-%26-Vegetables/Vegetable/plp/LSL001009001002
+NATURAL AND ORGANIC\DELI\DELI-MEATS\https://www.loblaws.ca/Food/Natural-%26-Organic/Deli/Deli-Meats/plp/LSL001009002001
+NATURAL AND ORGANIC\DELI\VEGAN AND VEGETARIAN\https://www.loblaws.ca/Food/Natural-%26-Organic/Deli/Vegan-%26-Vegetarian/plp/LSL001009002003
+NATURAL AND ORGANIC\READY-MEALS AND SIDES\READY-MEALS AND SIDES\https://www.loblaws.ca/Food/Natural-%26-Organic/Ready-Meals-%26-Sides/Ready-Meals-%26-Sides/plp/LSL-001009003002
+NATURAL AND ORGANIC\BAKERY\PACKAGED-BREADS\https://www.loblaws.ca/Food/Natural-%26-Organic/Bakery/Packaged-Breads/plp/LSL001009004006
+NATURAL AND ORGANIC\BAKERY\DESSERTS AND PASTRIES\https://www.loblaws.ca/Food/Natural-%26-Organic/Bakery/Desserts-%26-Pastries/plp/LSL001009004003
+NATURAL AND ORGANIC\BAKERY\BREAKFAST, MUFFINS%2C AND SCONES\https://www.loblaws.ca/Food/Natural-%26-Organic/Bakery/Breakfast%2C-Muffins%2C-%26-Scones/plp/LSL001009004002
+NATURAL AND ORGANIC\BAKERY\WRAPS, PITA AND FLAT-BREADS\https://www.loblaws.ca/Food/Natural-%26-Organic/Bakery/Wraps%2C-Pita-%26-Flat-Breads/plp/LSL001009004004
+NATURAL AND ORGANIC\BAKERY\BAGUETTES, BUNS AND ROLLS\https://www.loblaws.ca/Food/Natural-%26-Organic/Bakery/Baguettes%2C-Buns-%26-Rolls/plp/LSL001009004007
+NATURAL AND ORGANIC\BAKERY\BREAD-CRUMBS AND STUFFING\https://www.loblaws.ca/Food/Natural-%26-Organic/Bakery/Bread-Crumbs-%26-Stuffing/plp/LSL001009004001
+NATURAL AND ORGANIC\MEAT AND SEAFOOD\BEEF AND VEAL\https://www.loblaws.ca/Food/Natural-%26-Organic/Meat-%26-Seafood/Beef-%26-Veal/plp/LSL001009005001
+NATURAL AND ORGANIC\MEAT AND SEAFOOD\CHICKEN AND TURKEY\https://www.loblaws.ca/Food/Natural-%26-Organic/Meat-%26-Seafood/Chicken-%26-Turkey/plp/LSL001009005002
+NATURAL AND ORGANIC\MEAT AND SEAFOOD\PORK\https://www.loblaws.ca/Food/Natural-%26-Organic/Meat-%26-Seafood/Pork/plp/LSL001009005005
+NATURAL AND ORGANIC\MEAT AND SEAFOOD\FISH AND SEAFOOD\https://www.loblaws.ca/Food/Natural-%26-Organic/Meat-%26-Seafood/Fish-%26-Seafood/plp/LSL001009005006
+NATURAL AND ORGANIC\MEAT AND SEAFOOD\FREE-FROM-MEATS\https://www.loblaws.ca/Food/Natural-%26-Organic/Meat-%26-Seafood/Free-From-Meats/plp/LSL001009005011
+NATURAL AND ORGANIC\DAIRY-AND-EGGS\MILK AND CREAM\https://www.loblaws.ca/Food/Natural-%26-Organic/Dairy-and-Eggs/Milk-%26-Cream/plp/LSL001009006002
+NATURAL AND ORGANIC\DAIRY-AND-EGGS\BUTTER AND SPREADS\https://www.loblaws.ca/Food/Natural-%26-Organic/Dairy-and-Eggs/Butter-%26-Spreads/plp/LSL001009006001
+NATURAL AND ORGANIC\DAIRY-AND-EGGS\PACKAGED-CHEESES\https://www.loblaws.ca/Food/Natural-%26-Organic/Dairy-and-Eggs/Packaged-Cheeses/plp/LSL001009006003
+NATURAL AND ORGANIC\DAIRY-AND-EGGS\EGG AND EGG-SUBSTITUTES\https://www.loblaws.ca/Food/Natural-%26-Organic/Dairy-and-Eggs/Egg-%26-Egg-Substitutes/plp/LSL001009006004
+NATURAL AND ORGANIC\DAIRY-AND-EGGS\YOGURT\https://www.loblaws.ca/Food/Natural-%26-Organic/Dairy-and-Eggs/Yogurt/plp/LSL001009006006
