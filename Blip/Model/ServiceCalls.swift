@@ -18,7 +18,7 @@ class ServiceCalls{
     
     private static let _instance = ServiceCalls()
     private let NORMAL_USER_REFERENCE_STRING = "BlipUsers"
-    //makes it only a get value so that no hacker could set its value to something else
+    //makes it only a get value so that no hacker could set its value to something else lol
     static var instance: ServiceCalls{
         return _instance
     }
@@ -95,8 +95,11 @@ class ServiceCalls{
             }
         }
     }
-    
-    
+
+
+/*
+    Hash function
+*/
     func MD5(string: String) -> String {
         let messageData = string.data(using:.utf8)!
         var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))

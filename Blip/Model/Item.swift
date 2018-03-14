@@ -8,12 +8,12 @@
 
 import Foundation
 /*
-    An Item has a name, price, picture, quantity and productID
+ An Item has a name, price, picture, quantity and productID
  */
 class Item: Hashable {
     
     var name:String?
-    var price: Float?
+    var price: Double?
     var picture: URL?
     var quantity: Float?
     var productID: Int?
@@ -22,18 +22,19 @@ class Item: Hashable {
         return (productID?.hashValue)!
     }
     
-    init(name: String, price: Float, picUrlString: String, quantity:Float?) {
+    init(name: String, price: Double, picUrlString: String, productID: Int, quantity:Float?) {
         self.name = name
         self.price = price
         self.picture = URL(string: picUrlString)
+        self.productID = productID
         if quantity != nil {
             self.quantity = quantity
         }
     }
     
-/*
+    /*
      Adds this item to the specified cart
-*/
+     */
     func addToCart(quantity: Int, cart: Cart){
         cart.items[self.productID!] = [self:quantity]
     }
@@ -45,3 +46,4 @@ extension Item: Equatable {
         return lhs.productID == rhs.productID
     }
 }
+

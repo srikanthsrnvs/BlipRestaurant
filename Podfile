@@ -31,7 +31,7 @@ target 'Blip' do
   pod 'GooglePlacePicker'
   pod 'SwiftIcons'
   pod "Hero"
-  pod 'ParallaxHeader', '~> 2.0.0'
+  pod 'SwiftSoup'
   
   target 'BlipTests' do
     inherit! :search_paths

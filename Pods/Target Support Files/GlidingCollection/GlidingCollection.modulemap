@@ -1,6 +1,0 @@
-framework module GlidingCollection {
-  umbrella header "GlidingCollection-umbrella.h"
-
-  export *
-  module * { export * }
-}
