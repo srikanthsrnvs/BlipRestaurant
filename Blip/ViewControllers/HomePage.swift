@@ -20,7 +20,6 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var storeIcon: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableHeader: UIView!
-    private let tableHeaderHeight: CGFloat = 250.0
     var headerView: UIView!
     var navAlphaComponent = CGFloat(0)
     var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
@@ -41,9 +40,9 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     let locationManager = CLLocationManager()
     let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     let itemsPerRow: CGFloat = 2
-    var categoriesStrings = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC"]
-    var categories:[Category] = []
-    var itemsByCategory: [String:[Item]] = [:]
+    var selectedCellImage: UIImage!
+    var selectedCellHeroID: String!
+    var headerViewHeight: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,27 +54,32 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        if segue.identifier == "toItem"{
-//            
-//            let dest = segue.destination as! ItemViewController
-//            dest.itemImage.image = 
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toItem"{
+            
+            let dest = segue.destination as! ItemViewController
+            dest.itemImageVariable = self.selectedCellImage
+            dest.heroIdentifier = selectedCellHeroID
+        }
+    }
     
     func prepareSearch(){
         
         let searchImage = UIImage(icon: .googleMaterialDesign(.search), size: CGSize(width: 35, height: 35)).withRenderingMode(.alwaysTemplate)
-        searchImage.tint(with: UIColor.white)
         self.searchButton.setImage(searchImage, for: .normal)
+        self.searchButton.ApplyCornerRadiusToView()
     }
     
     func setTableHeaderVariable(){
         
+        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        self.tableView.tableHeaderView?.frame.size.height = 184 + navBarHeight! + statusBarHeight
         self.headerView = self.tableView.tableHeaderView
         self.tableView.tableHeaderView = nil
         self.tableView.addSubview(headerView)
+        self.headerViewHeight = headerView.frame.size.height
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,25 +88,25 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
+        print(tableView.contentOffset.y)
+        print(headerViewHeight)
         updateHeaderView()
         let topHeight = (self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height)
         
-        let percentageScrolledForAlphas = (250 + scrollView.contentOffset.y)/(250 - topHeight)
+        let percentageScrolledForAlphas = (self.headerViewHeight + scrollView.contentOffset.y)/(self.headerViewHeight - topHeight)
         self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
         self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
-        self.tableHeader.alpha = 1 - self.navAlphaComponent
-        
+        self.headerView.alpha = 1 - self.navAlphaComponent
     }
     
 
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
-        let topHeight = CGFloat(-250)
+        let topHeight = CGFloat(-self.headerViewHeight)
         if targetContentOffset.pointee.y < 0 && targetContentOffset.pointee.y < topHeight/2{
             
             let path = IndexPath(row: 0, section: 0)
             tableView.scrollToRow(at: path, at: .top, animated: true)
-            print("Came here")
         }
         else if tableView.contentOffset.y < 0 && tableView.contentOffset.y > topHeight/2{
             
@@ -112,10 +116,11 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     
     func updateHeaderView(){
         
-        var headerRect = CGRect(x: 0, y: -tableHeaderHeight, width: tableView.bounds.width, height: tableHeaderHeight)
-        
-        if tableView.contentOffset.y < -tableHeaderHeight {
-            
+        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        var headerRect = CGRect(x: 0, y: -headerView.frame.size.height + (navBarHeight! + statusBarHeight), width: tableView.bounds.width, height: headerView.frame.size.height - (navBarHeight! + statusBarHeight))
+        if tableView.contentOffset.y < -headerView.frame.size.height + (navBarHeight! + statusBarHeight) {
+
             headerRect.origin.y = tableView.contentOffset.y
             headerRect.size.height = -tableView.contentOffset.y
         }
@@ -128,8 +133,8 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         self.storeIcon.layer.cornerRadius = storeIcon.frame.size.width/2
         let navBarHeight = self.navigationController?.navigationBar.frame.size.height
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        self.tableView.contentInset = UIEdgeInsetsMake(250 - (navBarHeight! + statusBarHeight), 0, 0, 0)
-        self.tableView.contentOffset = CGPoint(x: 0, y: -tableHeaderHeight)
+        self.tableView.contentInset = UIEdgeInsetsMake(headerView.frame.size.height - (navBarHeight! + statusBarHeight), 0, 0, 0)
+        self.tableView.contentOffset = CGPoint(x: 0, y: -headerView.frame.size.height + (navBarHeight! + statusBarHeight))
     }
 
     func prepareNavigationBar(){

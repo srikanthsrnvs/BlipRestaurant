@@ -32,6 +32,7 @@ extension UINavigationController{
         let image = UIImage.imageFromColor(color: color)
         self.navigationBar.setBackgroundImage(image, for: .default)
         self.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.barStyle = .default
     }
 }
 

@@ -284,6 +284,11 @@
 			<key>orderHint</key>
 			<integer>41</integer>
 		</dict>
+		<key>SwiftSoup.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>45</integer>
+		</dict>
 		<key>UIImageViewModeScaleAspect.xcscheme</key>
 		<dict>
 			<key>isShown</key>

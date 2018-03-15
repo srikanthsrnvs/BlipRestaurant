@@ -58,9 +58,8 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
         print(cell.categoryImage.image)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let home = getCurrentViewController() as! HomePage
-        let toItem = storyboard.instantiateViewController(withIdentifier: "ItemViewController") as! ItemViewController
-        toItem.itemImageVariable = cell.categoryImage.image!
-        toItem.heroIdentifier = cell.categoryImage.hero.id
+        home.selectedCellImage = cell.categoryImage.image!
+        home.selectedCellHeroID = cell.categoryImage.hero.id!
         home.performSegue(withIdentifier: "toItem", sender: home)
     }
 }
