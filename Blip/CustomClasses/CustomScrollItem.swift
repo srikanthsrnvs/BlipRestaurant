@@ -12,10 +12,11 @@ import SwiftIcons
 
 class CustomScrollItem: UICollectionViewCell {
     
-    @IBOutlet weak var categoryImage: UIImageView!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var addToCartButton: IconButton!
     
+    @IBOutlet weak var nameLabel: UILabel!
     override init(frame: CGRect){
         super.init(frame: frame)
     }

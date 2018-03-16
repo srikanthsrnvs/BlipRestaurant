@@ -85,8 +85,9 @@
             <size key="customSize" width="140" height="165"/>
             <connections>
                 <outlet property="addToCartButton" destination="mOH-cT-gq8" id="sj9-UN-6VM"/>
-                <outlet property="categoryImage" destination="BKX-ES-ZDa" id="Gg3-FX-z5k"/>
-                <outlet property="categoryLabel" destination="Hvx-iF-ft4" id="QCZ-1M-rcm"/>
+                <outlet property="itemImage" destination="BKX-ES-ZDa" id="V59-pX-gim"/>
+                <outlet property="nameLabel" destination="9BY-Gv-WwQ" id="1fo-ab-TBM"/>
+                <outlet property="priceLabel" destination="Hvx-iF-ft4" id="m98-jG-z0Q"/>
             </connections>
             <point key="canvasLocation" x="174" y="89.5"/>
         </collectionViewCell>

@@ -33,9 +33,11 @@ class HomePage: UIViewController {
     var headerViewHeight: CGFloat!
     var dbRef:DatabaseReference!
     var categories = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC", "DELI AND READY-MEALS"]
+    var ind: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ind = 0
         dbRef = Database.database().reference()
         prepareNavigationBar()
         setTableHeaderVariable()
@@ -102,18 +104,18 @@ class HomePage: UIViewController {
         self.setTitleForNavBar(title: "Loading", subtitle: "Tap to change location", gesture: tap)
     }
     
-    func loadItemsFromFirebase(){
-        
-        let itemsRef = dbRef.child("items")
-        for category in categories{
-            
-            itemsRef.child(category).observeSingleEvent(of: .childAdded, with: { (snapshot) in
-                
-                let item = Item(snapshot: snapshot)
-                self.dataSource[category]?.append(item!)
-            })
-        }
-    }
+//    func loadItemsFromFirebase(){
+//        
+//        let itemsRef = dbRef.child("items")
+//        for category in categories{
+//            
+//            itemsRef.child(category).observeSingleEvent(of: .childAdded, with: { (snapshot) in
+//                
+//                let item = Item(snapshot: snapshot)
+//                self.dataSource[category]?.append(item!)
+//            })
+//        }
+//    }
 }
 
 extension HomePage: UIScrollViewDelegate{
@@ -184,9 +186,18 @@ extension HomePage: UITableViewDataSource, UITableViewDelegate{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
         let categoryArray = Array(dataSource.keys)
-        cell.dataSource = self.dataSource[categoryArray[indexPath.row]]!
+        if(ind < categoryArray.count){
+            print(categoryArray[ind])
+            cell.dataSource = self.dataSource[categoryArray[ind]]!
+            ind = ind + 1
+        }
+        
+        
+        
         return cell
     }
+    
+    
 
 }
 

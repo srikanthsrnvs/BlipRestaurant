@@ -23,29 +23,31 @@ class Item: Hashable {
         return (productID?.hashValue)!
     }
     
-    init?(snapshot: DataSnapshot){
-        guard !(snapshot.key.isEmpty),
-            let itemValues = snapshot.value as? [String:AnyObject],
-            let name = itemValues["name"] as? String,
-            let photoUrl = itemValues["photoUrl"] as? String,
-            let price = itemValues["price"] as? Double
-        else{return nil}
-        
-        self.productID = Int(snapshot.key)
+    init(name: String, price: Double, picUrlString: String, productID: Int) {
         self.name = name
-        self.picture = URL(string: photoUrl)
         self.price = price
-    }
-    
-//    init(name: String, price: Double, picUrlString: String, productID: Int, quantity:Float?) {
-//        self.name = name
-//        self.price = price
-//        self.picture = URL(string: picUrlString)
-//        self.productID = productID
+        self.picture = URL(string: picUrlString)
+        self.productID = productID
 //        if quantity != nil {
 //            self.quantity = quantity
 //        }
+    }
+
+    
+//    init?(snapshot: DataSnapshot){
+//        guard !(snapshot.key.isEmpty),
+//            let itemValues = snapshot.value as? [String:AnyObject],
+//            let name = itemValues["name"] as? String,
+//            let photoUrl = itemValues["photoUrl"] as? String,
+//            let price = itemValues["price"] as? Double
+//        else{return nil}
+//
+//        self.productID = Int(snapshot.key)
+//        self.name = name
+//        self.picture = URL(string: photoUrl)
+//        self.price = price
 //    }
+    
 //
 //    /*
 //     Adds this item to the specified cart

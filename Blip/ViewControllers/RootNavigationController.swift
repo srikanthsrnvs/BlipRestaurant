@@ -16,7 +16,6 @@ class RootNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         (self.viewControllers.first as! HomePage).dataSource = datasource
-        print(datasource)
         // Do any additional setup after loading the view.
     }
 
