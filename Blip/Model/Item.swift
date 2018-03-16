@@ -16,7 +16,7 @@ class Item: Hashable {
     var name:String!
     var price: Double!
     var picture: URL!
-    var quantity: Float!
+    var quantity: Int!
     var productID: Int!
     
     var hashValue: Int{
@@ -28,6 +28,7 @@ class Item: Hashable {
         self.price = price
         self.picture = URL(string: picUrlString)
         self.productID = productID
+        self.quantity = 1
 //        if quantity != nil {
 //            self.quantity = quantity
 //        }

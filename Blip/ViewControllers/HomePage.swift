@@ -95,6 +95,7 @@ class HomePage: UIViewController {
         navigationController.datasource = self.dataSource
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))
         let cartButton = IconButton()
+        cartButton.addTarget(self, action: #selector(goToCart), for: .touchUpInside)
         cartButton.setIcon(icon: .googleMaterialDesign(.shoppingCart), color: UIColor.white, forState: .normal)
         let cartBarButton = UIBarButtonItem(customView: cartButton)
         self.navigationItem.rightBarButtonItem = cartBarButton
@@ -104,18 +105,11 @@ class HomePage: UIViewController {
         self.setTitleForNavBar(title: "Loading", subtitle: "Tap to change location", gesture: tap)
     }
     
-//    func loadItemsFromFirebase(){
-//        
-//        let itemsRef = dbRef.child("items")
-//        for category in categories{
-//            
-//            itemsRef.child(category).observeSingleEvent(of: .childAdded, with: { (snapshot) in
-//                
-//                let item = Item(snapshot: snapshot)
-//                self.dataSource[category]?.append(item!)
-//            })
-//        }
-//    }
+
+    @objc func goToCart(){
+        //perform segue
+        self.performSegue(withIdentifier: "goToCartVC", sender: nil)
+    }
 }
 
 extension HomePage: UIScrollViewDelegate{

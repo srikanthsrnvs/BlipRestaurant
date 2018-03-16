@@ -13,11 +13,9 @@ class CartVC: UIViewController{
 
     var dbRef:DatabaseReference!
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var checkoutButton: UIButton!
-    var categoriesStrings = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC", "DELI AND READY-MEALS"]
-    var categories:[Category] = []
-    var itemsByCategory: [String:[Item]] = [:]
+    var cart = Cart.shared
+    let itemsInCart = Array(Cart.shared.items.keys)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,36 +35,36 @@ class CartVC: UIViewController{
         super.viewDidAppear(animated)
 //        self.loadCategories()
 //        self.uploadToFirebase()
-        self.loadItemsByCategory()
+//        self.loadItemsByCategory()
     }
     
     @objc func checkout(){
         //TO-DO
     }
     
-    func loadItemsByCategory(){
-        let itemsRef = dbRef.child("itemsLinks")
-        for cate in categoriesStrings{
-            itemsRef.child(cate).observeSingleEvent(of: .value, with: { (snap) in
-                let val = snap.value as! [String:AnyObject]
-                for (key, http) in val{
-                    guard let myURL = URL(string: http as! String) else {
-                        print("Error: \(http) doesn't seem to be a valid URL")
-                        return
-                    }
-                    do{
-                        let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
-                        let response = try LoblawsResponse(innerHTML: myHTMLString)
-                        self.itemsByCategory[cate] = response.items
-                    }catch let err as NSError{
-                        print(err.localizedDescription)
-                    }
-                }
-                print(self.itemsByCategory)
-            })
-            
-        }
-    }
+//    func loadItemsByCategory(){
+//        let itemsRef = dbRef.child("itemsLinks")
+//        for cate in categoriesStrings{
+//            itemsRef.child(cate).observeSingleEvent(of: .value, with: { (snap) in
+//                let val = snap.value as! [String:AnyObject]
+//                for (key, http) in val{
+//                    guard let myURL = URL(string: http as! String) else {
+//                        print("Error: \(http) doesn't seem to be a valid URL")
+//                        return
+//                    }
+//                    do{
+//                        let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
+//                        let response = try LoblawsResponse(innerHTML: myHTMLString)
+//                        self.itemsByCategory[cate] = response.items
+//                    }catch let err as NSError{
+//                        print(err.localizedDescription)
+//                    }
+//                }
+//                print(self.itemsByCategory)
+//            })
+//
+//        }
+//    }
     
 //    func loadCategories(){
 //        let fileURLProject = Bundle.main.path(forResource: "categories", ofType: "txt")
@@ -121,12 +119,17 @@ class CartVC: UIViewController{
 extension CartVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.categoriesStrings.count
+        
+        return itemsInCart.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemRowCell", for: indexPath) as! ItemRow
-        cell.cellView.itemName.text = categoriesStrings[indexPath.row]
+        let itemDict = self.cart.items[itemsInCart[indexPath.row]]!
+        let item = (Array(itemDict.keys).first)! //Should be an array containing just one Item element
+        cell.cellView.itemName.text = (item.name)!
+        cell.cellView.imageView.kf.setImage(with: item.picture)
+        cell.cellView.price.text = "$\(item.price!)"
         return cell
     }
 }

@@ -516,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8R-b8-jTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2853.5999999999999" y="-1379.4602698650676"/>
+            <point key="canvasLocation" x="714" y="12"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OrQ-o4-WcP">
@@ -710,6 +710,7 @@
                         <outlet property="tableHeaderBackground" destination="vrf-L2-LcM" id="cfT-PZ-WbY"/>
                         <outlet property="tableView" destination="N0O-Xe-uHh" id="Q63-m8-rJl"/>
                         <segue destination="9vr-D5-n7I" kind="show" identifier="toItem" id="7v4-oJ-cmf"/>
+                        <segue destination="Vt7-WN-tXQ" kind="show" identifier="goToCartVC" id="NuH-lf-8mO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRZ-JX-iKF" userLabel="First Responder" sceneMemberID="firstResponder"/>

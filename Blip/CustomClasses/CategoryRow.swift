@@ -46,10 +46,11 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CustomScrollItem
-        myCell.itemImage.kf.setImage(with: dataSource[indexPath.row].picture)
-        myCell.itemImage.hero.id = dataSource[indexPath.row].name
-        myCell.nameLabel.text = dataSource[indexPath.row].name
-        myCell.priceLabel.text = "$\(dataSource[indexPath.row].price!)"
+        myCell.item = dataSource[indexPath.row]
+        myCell.itemImage.kf.setImage(with: myCell.item.picture)
+        myCell.itemImage.hero.id = myCell.item.name
+        myCell.nameLabel.text = myCell.item.name
+        myCell.priceLabel.text = "$\(myCell.item.price!)"
         return myCell
     }
     

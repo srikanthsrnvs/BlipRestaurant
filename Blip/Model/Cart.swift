@@ -14,7 +14,10 @@ import Firebase
  */
 class Cart{
     
-    private static let shared = Cart()
+    private static let _shared = Cart()
+    static var shared:Cart{
+        return _shared
+    }
     var items:[Int:[Item:Int]] = [:]
     private init() {
         //Do some firebase calls to get all items in user's cart
@@ -25,6 +28,10 @@ class Cart{
      */
     func removeItem(item: Item){
         self.items[item.productID!] = nil
+    }
+    
+    func addToCart(item: Item){
+        self.items[item.productID] = [item: item.quantity]
     }
     
     /*
