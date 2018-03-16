@@ -32,7 +32,6 @@ class OnboardingVC: UIViewController {
         if segue.identifier == "toHomePage"{
             let dest = segue.destination as! RootNavigationController
             dest.datasource = datasource
-            print(datasource)
         }
     }
     
