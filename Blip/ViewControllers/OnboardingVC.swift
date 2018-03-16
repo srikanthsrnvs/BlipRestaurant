@@ -9,20 +9,31 @@
 import UIKit
 import Lottie
 import Pastel
-import SpriteKit
+import Firebase
 
 class OnboardingVC: UIViewController {
 
     @IBOutlet var gradientView: PastelView!
-    fileprivate var items = ["Gloves", "Boots", "Bindings", "Hoodie"]
-    var images = [UIImage]()
-
+    
+    var dbRef:DatabaseReference!
+    var datasource: [String: [Item]] = [:]
+    var categories = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC", "DELI AND READY-MEALS"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dbRef = Database.database().reference()
         gradientView.prepareDefaultPastelView()
         gradientView.startAnimation()
-        loadImages()
+//        loadItemsFromFirebase()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toHomePage"{
+            let dest = segue.destination as! RootNavigationController
+            dest.datasource = datasource
+            print(datasource)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,18 +48,33 @@ class OnboardingVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func loadImages(){
+    @IBAction func getStartedPressed(_ sender: Any) {
+        loadItemsFromFirebase {
+            self.performSegue(withIdentifier: "toHomePage", sender: nil)
+        }
         
-        for item in items{
+        
+    }
+    
+    func loadItemsFromFirebase(completion: @escaping ()->()){
+        
+        let itemsRef = dbRef.child("items")
+        for category in categories{
             
-            for number in 1...5{
-                let image = UIImage(named: "\(item)\(number)")
-                images.append(image!)
-            }
-            
+            itemsRef.child(category).observe(.childAdded, with: { (snapshot) in
+                let item = Item(snapshot: snapshot)
+                self.datasource[category] = []
+                self.datasource[category]?.append(item!)
+                completion()
+            })
+//            itemsRef.child(category).observeSingleEvent(of: .childAdded, with: { (snapshot) in
+//
+//                let item = Item(snapshot: snapshot)
+//                self.datasource[category]?.append(item!)
+//                print(snapshot.key)
+//            })
         }
     }
-
+    
 }
 

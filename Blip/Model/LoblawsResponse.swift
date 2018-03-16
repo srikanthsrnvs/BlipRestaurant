@@ -34,15 +34,8 @@ struct LoblawsResponse {
             let imageWithProductid = String(describing: images[i].child(0)).components(separatedBy: "src=")[1]
             let image = imageWithProductid.components(separatedBy: "\"")[1]
             let productId = Int(image.components(separatedBy: "/")[4])
-            let item = Item(name: name, price: price!, picUrlString: image, productID: productId!, quantity: nil)
-            self.items.append(item)
-            print(self.items)
-//            print(name)
-//            print(price)
-//            print(productId)
-//            print(image)
-//            print(" ")
+//            let item = Item(name: name, price: price!, picUrlString: image, productID: productId!, quantity: nil)
+//            self.items.append(item)
         }
-//        print(names.count)
     }
 }

@@ -15,7 +15,7 @@ class CartVC: UIViewController{
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var checkoutButton: UIButton!
-    var categoriesStrings = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC"]
+    var categoriesStrings = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC", "DELI AND READY-MEALS"]
     var categories:[Category] = []
     var itemsByCategory: [String:[Item]] = [:]
     

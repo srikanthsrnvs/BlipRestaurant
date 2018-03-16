@@ -22,7 +22,6 @@
 		3B3B9A762050F8A500EFF47F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A752050F8A500EFF47F /* LoginVC.swift */; };
 		3B3B9A782050FAB300EFF47F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A772050FAB300EFF47F /* SignUpVC.swift */; };
 		3B3B9A7A2051117D00EFF47F /* ServiceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A792051117D00EFF47F /* ServiceCalls.swift */; };
-		3B3B9A812051E76800EFF47F /* TwoDirectionScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3B9A802051E76800EFF47F /* TwoDirectionScroll.swift */; };
 		3B412C402052D25200BB8501 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C3F2052D25200BB8501 /* CustomCollectionCell.swift */; };
 		3B412C4220533B2600BB8501 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C4120533B2600BB8501 /* CartVC.swift */; };
 		3B412C442053417000BB8501 /* CartTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412C432053417000BB8501 /* CartTableViewCellView.swift */; };
@@ -38,6 +37,7 @@
 		5FE1AE002059CE7F008AC309 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */; };
 		5FED45342052006D007BF01A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED45332052006D007BF01A /* CategoryRow.swift */; };
 		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
+		F310D3F0205AE9C400CE9E61 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F310D3EF205AE9C400CE9E61 /* RootNavigationController.swift */; };
 		F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A620486E1500EB2F69 /* AppDelegate.swift */; };
 		F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */; };
 		F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32DB7AA20486E1500EB2F69 /* Main.storyboard */; };
@@ -119,7 +119,6 @@
 		3B3B9A772050FAB300EFF47F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		3B3B9A792051117D00EFF47F /* ServiceCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalls.swift; sourceTree = "<group>"; };
 		3B3B9A7B205122C100EFF47F /* Blip-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blip-Bridging-Header.h"; sourceTree = "<group>"; };
-		3B3B9A802051E76800EFF47F /* TwoDirectionScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDirectionScroll.swift; sourceTree = "<group>"; };
 		3B412C3F2052D25200BB8501 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 		3B412C4120533B2600BB8501 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		3B412C432053417000BB8501 /* CartTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCellView.swift; sourceTree = "<group>"; };
@@ -141,6 +140,7 @@
 		D59B78C38E50AC9D8DE8109D /* Pods-BlipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlipTests/Pods-BlipTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC3FCDE82FC1D672CBF8E5A7 /* Pods-Blip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blip/Pods-Blip.debug.xcconfig"; sourceTree = "<group>"; };
 		E1155A2BCEC1170AF680DF40 /* Pods-BlipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipTests/Pods-BlipTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F310D3EF205AE9C400CE9E61 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		F32DB7A320486E1500EB2F69 /* Blip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32DB7A620486E1500EB2F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32DB7A820486E1500EB2F69 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
@@ -325,10 +325,10 @@
 				F3FC70E8204CD26100A73940 /* HomePage.swift */,
 				3B3B9A752050F8A500EFF47F /* LoginVC.swift */,
 				3B3B9A772050FAB300EFF47F /* SignUpVC.swift */,
-				3B3B9A802051E76800EFF47F /* TwoDirectionScroll.swift */,
 				3B412C4120533B2600BB8501 /* CartVC.swift */,
 				3B412C452053442C00BB8501 /* ItemRow.swift */,
 				5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */,
+				F310D3EF205AE9C400CE9E61 /* RootNavigationController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -855,11 +855,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FED45342052006D007BF01A /* CategoryRow.swift in Sources */,
-				3B3B9A812051E76800EFF47F /* TwoDirectionScroll.swift in Sources */,
 				5F4258882058BAA700511E6F /* CustomScrollItem.swift in Sources */,
 				F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */,
 				3B3B9A782050FAB300EFF47F /* SignUpVC.swift in Sources */,
 				F32DB7E5204879AA00EB2F69 /* PastelExtensions.swift in Sources */,
+				F310D3F0205AE9C400CE9E61 /* RootNavigationController.swift in Sources */,
 				3B412C4220533B2600BB8501 /* CartVC.swift in Sources */,
 				3B3B9A762050F8A500EFF47F /* LoginVC.swift in Sources */,
 				3B3B9A7A2051117D00EFF47F /* ServiceCalls.swift in Sources */,

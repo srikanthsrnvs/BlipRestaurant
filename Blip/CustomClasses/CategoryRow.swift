@@ -8,11 +8,12 @@
 
 import UIKit
 import Hero
+import Kingfisher
 
 class CategoryRow: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var dataSource: [UIImage] = []
+    var dataSource: [Item] = []
     var id: Int = 0
     
     override func awakeFromNib() {
@@ -32,7 +33,6 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let itemsPerRow:CGFloat = 4
         let hardCodedPadding:CGFloat = 10
         let itemWidth = CGFloat(140)
         let itemHeight = collectionView.bounds.height - (2 * hardCodedPadding)
@@ -46,17 +46,14 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CustomScrollItem
-        myCell.categoryImage.image = dataSource[indexPath.row]
-        myCell.categoryImage.hero.id = String(self.id)
-        self.id += 1
+        myCell.categoryImage.kf.setImage(with: dataSource[indexPath.row].picture)
+        myCell.categoryImage.hero.id = dataSource[indexPath.row].name
         return myCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! CustomScrollItem
-        print(cell.categoryImage.image)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let home = getCurrentViewController() as! HomePage
         home.selectedCellImage = cell.categoryImage.image!
         home.selectedCellHeroID = cell.categoryImage.hero.id!
@@ -71,7 +68,7 @@ extension CategoryRow{
         // Otherwise, we must get the root UIViewController and iterate through presented views
         if let rootController = UIApplication.shared.keyWindow?.rootViewController {
             
-            var currentController: UIViewController! = rootController
+            let currentController: UIViewController! = rootController
             
             let navController = currentController.childViewControllers[0] as! UINavigationController
             return navController.topViewController

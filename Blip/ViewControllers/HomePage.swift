@@ -12,8 +12,9 @@ import Hero
 import GooglePlaces
 import PopupDialog
 import SwiftIcons
+import Firebase
 
-class HomePage: UIViewController, UIScrollViewDelegate {
+class HomePage: UIViewController {
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var tableHeaderBackground: UIImageView!
@@ -22,20 +23,7 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var tableHeader: UIView!
     var headerView: UIView!
     var navAlphaComponent = CGFloat(0)
-    var tileImages = [UIImage.init(named: "aubergine"), UIImage.init(named: "milk"), UIImage.init(named: "chips"), UIImage.init(named: "glass"), UIImage.init(named: "grain"), UIImage.init(named: "meat"), UIImage.init(named: "baguette"), UIImage.init(named: "toaster"), UIImage.init(named: "ice-cream"), UIImage.init(named: "pizza")]
-    fileprivate var tileStrings = [
-        "Produce",
-        "Dairy",
-        "Chips & Snacks",
-        "Beverages",
-        "Spices & Pantry",
-        "Meat & Fish",
-        "Bakery & Deli",
-        "Cereals & Breakfast",
-        "Frozen foods",
-        "Microwave meals",
-        "Grains & Bulk",
-        "Household goods"]
+    var dataSource: [String: [Item]] = [:]
     var userAddress: String?
     let locationManager = CLLocationManager()
     let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
@@ -43,11 +31,14 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     var selectedCellImage: UIImage!
     var selectedCellHeroID: String!
     var headerViewHeight: CGFloat!
+    var dbRef:DatabaseReference!
+    var categories = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC", "DELI AND READY-MEALS"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTableHeaderVariable()
+        dbRef = Database.database().reference()
         prepareNavigationBar()
+        setTableHeaderVariable()
         handleLocations()
         prepareTableView()
         prepareSearch()
@@ -85,47 +76,6 @@ class HomePage: UIViewController, UIScrollViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        print(tableView.contentOffset.y)
-        print(headerViewHeight)
-        updateHeaderView()
-        let topHeight = (self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height)
-        
-        let percentageScrolledForAlphas = (self.headerViewHeight + scrollView.contentOffset.y)/(self.headerViewHeight - topHeight)
-        self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
-        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
-        self.headerView.alpha = 1 - self.navAlphaComponent
-    }
-    
-
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        
-        let topHeight = CGFloat(-self.headerViewHeight)
-        if targetContentOffset.pointee.y < 0 && targetContentOffset.pointee.y < topHeight/2{
-            
-            let path = IndexPath(row: 0, section: 0)
-            tableView.scrollToRow(at: path, at: .top, animated: true)
-        }
-        else if tableView.contentOffset.y < 0 && tableView.contentOffset.y > topHeight/2{
-            
-            tableView.setContentOffset(CGPoint(x: 0, y: -((self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height))), animated: true)
-        }
-    }
-    
-    func updateHeaderView(){
-        
-        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        var headerRect = CGRect(x: 0, y: -headerView.frame.size.height + (navBarHeight! + statusBarHeight), width: tableView.bounds.width, height: headerView.frame.size.height - (navBarHeight! + statusBarHeight))
-        if tableView.contentOffset.y < -headerView.frame.size.height + (navBarHeight! + statusBarHeight) {
-
-            headerRect.origin.y = tableView.contentOffset.y
-            headerRect.size.height = -tableView.contentOffset.y
-        }
-        headerView.frame = headerRect
-    }
 
     func prepareTableView(){
 
@@ -139,6 +89,8 @@ class HomePage: UIViewController, UIScrollViewDelegate {
 
     func prepareNavigationBar(){
         
+        let navigationController = self.navigationController as! RootNavigationController
+        navigationController.datasource = self.dataSource
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))
         let cartButton = IconButton()
         cartButton.setIcon(icon: .googleMaterialDesign(.shoppingCart), color: UIColor.white, forState: .normal)
@@ -149,23 +101,78 @@ class HomePage: UIViewController, UIScrollViewDelegate {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.setTitleForNavBar(title: "Loading", subtitle: "Tap to change location", gesture: tap)
     }
+    
+    func loadItemsFromFirebase(){
+        
+        let itemsRef = dbRef.child("items")
+        for category in categories{
+            
+            itemsRef.child(category).observeSingleEvent(of: .childAdded, with: { (snapshot) in
+                
+                let item = Item(snapshot: snapshot)
+                self.dataSource[category]?.append(item!)
+            })
+        }
+    }
+}
+
+extension HomePage: UIScrollViewDelegate{
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        updateHeaderView()
+        let topHeight = (self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height)
+        let percentageScrolledForAlphas = (self.headerViewHeight + scrollView.contentOffset.y)/(self.headerViewHeight - topHeight)
+        self.navAlphaComponent = CGFloat(percentageScrolledForAlphas)
+        self.navigationController?.setColorToNavBar(color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).withAlphaComponent(self.navAlphaComponent))
+        self.headerView.alpha = 1 - self.navAlphaComponent
+    }
+    
+    
+//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//
+//        let topHeight = CGFloat(-self.headerViewHeight)
+//        if targetContentOffset.pointee.y < 0 && targetContentOffset.pointee.y < topHeight/2{
+//
+//            let path = IndexPath(row: 0, section: 0)
+//            tableView.scrollToRow(at: path, at: .top, animated: true)
+//        }
+//        else if tableView.contentOffset.y < 0 && tableView.contentOffset.y > topHeight/2{
+//
+//            tableView.setContentOffset(CGPoint(x: 0, y: -((self.navigationController?.navigationBar.frame.size.height)! + (UIApplication.shared.statusBarFrame.height))), animated: true)
+//        }
+//    }
+    
+    func updateHeaderView(){
+        
+        let navBarHeight = self.navigationController?.navigationBar.frame.size.height
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        var headerRect = CGRect(x: 0, y: -headerView.frame.size.height + (navBarHeight! + statusBarHeight), width: tableView.bounds.width, height: headerView.frame.size.height - (navBarHeight! + statusBarHeight))
+        if tableView.contentOffset.y < -headerView.frame.size.height + (navBarHeight! + statusBarHeight) {
+            
+            headerRect.origin.y = tableView.contentOffset.y
+            headerRect.size.height = -tableView.contentOffset.y
+        }
+        headerView.frame = headerRect
+    }
 }
 
 extension HomePage: UITableViewDataSource, UITableViewDelegate{
     
     func numberOfSections(in tableView: UITableView) -> Int {
     
-        return tileStrings.count
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        return tileStrings[section]
+        let categoryArray = Array(dataSource.keys)
+        return categoryArray[section]
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 185
+        return 200
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -176,7 +183,8 @@ extension HomePage: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
-        cell.dataSource = tileImages as! [UIImage]
+        let categoryArray = Array(dataSource.keys)
+        cell.dataSource = self.dataSource[categoryArray[indexPath.row]]!
         return cell
     }
 
@@ -212,12 +220,11 @@ extension HomePage: CLLocationManagerDelegate, GMSAutocompleteViewControllerDele
     }
     
     func displayLocationInfo(placemark: CLPlacemark) {
-        if placemark != nil {
-            let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))
-            //stop updating location to save battery life
-            self.userAddress = "\(placemark.postalCode!)"
-            self.setTitleForNavBar(title: "Delivering to \(userAddress!)", subtitle: "Tap to change location", gesture: tap)
-        }
+        
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))
+        //stop updating location to save battery life
+        self.userAddress = "\(placemark.postalCode!)"
+        self.setTitleForNavBar(title: "Delivering to \(userAddress!)", subtitle: "Tap to change location", gesture: tap)
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {

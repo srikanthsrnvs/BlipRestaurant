@@ -85,11 +85,11 @@ extension UIViewController{
 
     }
     
-    // Pass in the scroll percentage to get the appropriate color    
-    func scrollColor(percent: Double) -> UIColor {
-        var start = UIColor.clear
-        var end = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-        var perc = percent
+//    // Pass in the scroll percentage to get the appropriate color
+//    func scrollColor(percent: Double) -> UIColor {
+//        var start = UIColor.clear
+//        var end = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+//        var perc = percent
 //        if percent < 0.5 {
 //            // If the scroll percentage is 0.0..<0.5 blend between yellow and green
 //            start = UIColor.yellow
@@ -100,9 +100,9 @@ extension UIViewController{
 //            end = UIColor.blue
 //            perc -= 0.5
 //        }
-        
-        return blend(from: start, to: end, percent: perc * 2.0)!
-    }
+//
+//        return blend(from: start, to: end, percent: perc * 2.0)!
+//    }
     
     func setTitleForNavBar(title:String, subtitle:String, gesture: UIGestureRecognizer?) {
         let titleLabel = UILabel(frame: CGRect(x: 0, y: -2, width: 0, height: 0))
