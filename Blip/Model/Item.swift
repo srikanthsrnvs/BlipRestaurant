@@ -28,7 +28,7 @@ class Item: Hashable {
         self.price = price
         self.picture = URL(string: picUrlString)
         self.productID = productID
-        self.quantity = 1
+        self.quantity = 0
 //        if quantity != nil {
 //            self.quantity = quantity
 //        }

@@ -408,7 +408,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JKb-94-r8A">
+                                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JKb-94-r8A">
                                                             <rect key="frame" x="91" y="71" width="94" height="29"/>
                                                             <connections>
                                                                 <action selector="stepperPressed:" destination="Kb3-Vw-iyQ" eventType="valueChanged" id="QMc-2j-iZ1"/>
@@ -461,7 +461,8 @@
                                                         <outlet property="imageView" destination="DQr-55-Im1" id="DBA-nu-qXg"/>
                                                         <outlet property="itemName" destination="VK3-sz-NWB" id="egG-U7-KFN"/>
                                                         <outlet property="price" destination="II2-LP-0Sd" id="EkC-4r-Mct"/>
-                                                        <outlet property="quantity" destination="wuV-fq-8vv" id="Nor-Xx-zDH"/>
+                                                        <outlet property="quantityLabel" destination="wuV-fq-8vv" id="fe3-PF-q56"/>
+                                                        <outlet property="stepper" destination="JKb-94-r8A" id="uda-Oa-2Ef"/>
                                                     </connections>
                                                 </view>
                                             </subviews>

@@ -127,9 +127,12 @@ extension CartVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemRowCell", for: indexPath) as! ItemRow
         let itemDict = self.cart.items[itemsInCart[indexPath.row]]!
         let item = (Array(itemDict.keys).first)! //Should be an array containing just one Item element
-        cell.cellView.itemName.text = (item.name)!
-        cell.cellView.imageView.kf.setImage(with: item.picture)
-        cell.cellView.price.text = "$\(item.price!)"
+        cell.cellView.item = item
+        cell.cellView.stepper.value = Double(cell.cellView.item.quantity)
+        cell.cellView.itemName.text = cell.cellView.item.name
+        cell.cellView.imageView.kf.setImage(with: cell.cellView.item.picture)
+        cell.cellView.quantityLabel.text = "\(cell.cellView.item.quantity!)"
+        cell.cellView.price.text = "$\((cell.cellView.item.price)! * Double(cell.cellView.item.quantity))"
         return cell
     }
 }

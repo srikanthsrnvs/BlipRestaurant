@@ -32,9 +32,8 @@ class HomePage: UIViewController {
     var selectedCellHeroID: String!
     var headerViewHeight: CGFloat!
     var dbRef:DatabaseReference!
-    var categories = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC", "DELI AND READY-MEALS"]
     var ind: Int!
-    
+    var cart = Cart.shared
     override func viewDidLoad() {
         super.viewDidLoad()
         ind = 0
@@ -50,7 +49,6 @@ class HomePage: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "toItem"{
-            
             let dest = segue.destination as! ItemViewController
             dest.itemImageVariable = self.selectedCellImage
             dest.heroIdentifier = selectedCellHeroID

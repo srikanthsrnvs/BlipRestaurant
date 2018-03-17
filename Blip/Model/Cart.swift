@@ -29,9 +29,31 @@ class Cart{
     func removeItem(item: Item){
         self.items[item.productID!] = nil
     }
-    
+    /*
+     Adds the specified item to cart
+     */
     func addToCart(item: Item){
+        item.quantity = item.quantity + 1
         self.items[item.productID] = [item: item.quantity]
+    }
+    
+    /*
+     Decrease item quantity by 1
+     */
+    func decreaseItem(item: Item){
+        if(self.items[item.productID] != nil){
+            self.items[item.productID]![item]!-=1
+            item.quantity = item.quantity - 1
+            print("HOLLA",self.items[item.productID]![item]!)
+        }
+    }
+    
+    /*
+     Increase item quantity by 1
+     */
+    func increaseItem(item:Item){
+        self.items[item.productID]![item]!+=1
+        item.quantity = item.quantity + 1
     }
     
     /*

@@ -10,15 +10,30 @@ import UIKit
 
 class CartTableViewCellView: UIView {
 
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var itemName: UILabel!
-    @IBOutlet var price: UILabel!
-    @IBOutlet var quantity:UILabel!
-    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var quantityLabel:UILabel!
+    var item: Item!
+    var cart = Cart.shared
+    @IBOutlet weak var stepper:UIStepper!
     
     
     @IBAction func stepperPressed(_ sender: UIStepper) {
-        self.quantity.text = "\(Int(sender.value))"
+        var quantity_num = Double(self.quantityLabel.text!)!
+        if sender.value < quantity_num{ //Checking to see if stepper was decreased
+            cart.decreaseItem(item: self.item)
+        }
+        if sender.value > quantity_num{
+            cart.increaseItem(item: self.item)
+        }
+        self.quantityLabel.text = "\(Int(sender.value))"
+        quantity_num = Double(self.quantityLabel.text!)!
+        let price = self.item.price!
+        self.price.text = "$\(price * quantity_num)"
+        cart.items[self.item.productID]![self.item]! = Int(quantity_num)
+        let d = cart.items[self.item.productID]![self.item]!
+        print(d)
     }
     /*
     // Only override draw() if you perform custom drawing.
