@@ -15,7 +15,7 @@ class CartVC: UIViewController{
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var checkoutButton: UIButton!
     var cart = Cart.shared
-    let itemsInCart = Array(Cart.shared.items.keys)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,11 +120,13 @@ extension CartVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return itemsInCart.count
+        return cart.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemRowCell", for: indexPath) as! ItemRow
+        cell.cellView.tableview = self.tableView
+        let itemsInCart = Array(Cart.shared.items.keys)
         let itemDict = self.cart.items[itemsInCart[indexPath.row]]!
         let item = (Array(itemDict.keys).first)! //Should be an array containing just one Item element
         cell.cellView.item = item
@@ -135,4 +137,5 @@ extension CartVC: UITableViewDataSource, UITableViewDelegate {
         cell.cellView.price.text = "$\((cell.cellView.item.price)! * Double(cell.cellView.item.quantity))"
         return cell
     }
+    
 }

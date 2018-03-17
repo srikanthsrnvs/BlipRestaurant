@@ -435,6 +435,16 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Koo-HJ-vTp">
+                                                            <rect key="frame" x="291" y="8" width="76" height="53"/>
+                                                            <color key="backgroundColor" red="0.27869534141884567" green="0.73775283709686268" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal" title="delete">
+                                                                <color key="titleColor" red="1" green="0.39580548065299381" blue="0.22354887746669738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="deleteItemPresssed:" destination="Kb3-Vw-iyQ" eventType="touchUpInside" id="gJ3-Gc-cbQ"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="0.93400191570000002" blue="0.45265434650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -442,6 +452,8 @@
                                                         <constraint firstAttribute="trailing" secondItem="VK3-sz-NWB" secondAttribute="trailing" constant="92" id="5SR-6i-9UV"/>
                                                         <constraint firstAttribute="trailing" secondItem="II2-LP-0Sd" secondAttribute="trailing" constant="8" id="7Uz-U3-oIn"/>
                                                         <constraint firstItem="JKb-94-r8A" firstAttribute="leading" secondItem="DQr-55-Im1" secondAttribute="trailing" constant="3" id="8Xo-54-Lkc"/>
+                                                        <constraint firstItem="Koo-HJ-vTp" firstAttribute="top" secondItem="Kb3-Vw-iyQ" secondAttribute="top" constant="8" id="HNH-4S-Eo8"/>
+                                                        <constraint firstItem="II2-LP-0Sd" firstAttribute="top" secondItem="Koo-HJ-vTp" secondAttribute="bottom" constant="8" id="Hjg-bm-rf6"/>
                                                         <constraint firstItem="VK3-sz-NWB" firstAttribute="leading" secondItem="DQr-55-Im1" secondAttribute="trailing" constant="3" id="K7A-Y6-9BV"/>
                                                         <constraint firstItem="VK3-sz-NWB" firstAttribute="top" secondItem="Kb3-Vw-iyQ" secondAttribute="top" constant="8" id="KQs-xD-R2I"/>
                                                         <constraint firstAttribute="trailing" secondItem="wuV-fq-8vv" secondAttribute="trailing" constant="206" id="M0n-Jr-o4k"/>
@@ -452,10 +464,12 @@
                                                         <constraint firstItem="JKb-94-r8A" firstAttribute="top" secondItem="wuV-fq-8vv" secondAttribute="bottom" constant="3" id="hxt-oW-NDv"/>
                                                         <constraint firstItem="II2-LP-0Sd" firstAttribute="top" secondItem="Kb3-Vw-iyQ" secondAttribute="top" constant="69" id="jLc-L1-XXw"/>
                                                         <constraint firstItem="wuV-fq-8vv" firstAttribute="top" secondItem="VK3-sz-NWB" secondAttribute="bottom" constant="8" id="kW6-Wg-JiW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Koo-HJ-vTp" secondAttribute="trailing" constant="8" id="kf8-IJ-CcC"/>
                                                         <constraint firstItem="VK3-sz-NWB" firstAttribute="leading" secondItem="DQr-55-Im1" secondAttribute="trailing" constant="3" id="mN6-dr-teO"/>
                                                         <constraint firstItem="II2-LP-0Sd" firstAttribute="leading" secondItem="JKb-94-r8A" secondAttribute="trailing" constant="111" id="sDm-8l-Jds"/>
                                                         <constraint firstItem="wuV-fq-8vv" firstAttribute="leading" secondItem="DQr-55-Im1" secondAttribute="trailing" constant="20" id="wsX-xA-AWo"/>
                                                         <constraint firstAttribute="bottom" secondItem="II2-LP-0Sd" secondAttribute="bottom" id="yIA-93-VjF"/>
+                                                        <constraint firstItem="Koo-HJ-vTp" firstAttribute="leading" secondItem="VK3-sz-NWB" secondAttribute="trailing" constant="8" id="zGC-ri-3wf"/>
                                                     </constraints>
                                                     <connections>
                                                         <outlet property="imageView" destination="DQr-55-Im1" id="DBA-nu-qXg"/>
@@ -517,7 +531,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8R-b8-jTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="12"/>
+            <point key="canvasLocation" x="712.79999999999995" y="11.822660098522167"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OrQ-o4-WcP">

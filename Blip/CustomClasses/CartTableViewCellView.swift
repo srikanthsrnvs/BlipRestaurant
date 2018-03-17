@@ -16,8 +16,8 @@ class CartTableViewCellView: UIView {
     @IBOutlet weak var quantityLabel:UILabel!
     var item: Item!
     var cart = Cart.shared
+    var tableview:UITableView!
     @IBOutlet weak var stepper:UIStepper!
-    
     
     @IBAction func stepperPressed(_ sender: UIStepper) {
         var quantity_num = Double(self.quantityLabel.text!)!
@@ -32,8 +32,15 @@ class CartTableViewCellView: UIView {
         let price = self.item.price!
         self.price.text = "$\(price * quantity_num)"
         cart.items[self.item.productID]![self.item]! = Int(quantity_num)
-        let d = cart.items[self.item.productID]![self.item]!
-        print(d)
+    }
+    
+    @IBAction func deleteItemPresssed(_ sender: UIButton){
+        self.item.quantity = 0
+        cart.items[self.item.productID] = nil
+        UIView.transition(with: self.tableview, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            self.tableview.reloadData()
+        }, completion: nil)
+//        self.tableview.reloadData()
     }
     /*
     // Only override draw() if you perform custom drawing.
