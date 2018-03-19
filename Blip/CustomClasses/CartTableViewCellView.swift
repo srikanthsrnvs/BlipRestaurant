@@ -37,10 +37,10 @@ class CartTableViewCellView: UIView {
     @IBAction func deleteItemPresssed(_ sender: UIButton){
         self.item.quantity = 0
         cart.items[self.item.productID] = nil
+        //Deletes item with animation
         UIView.transition(with: self.tableview, duration: 0.5, options: .transitionCrossDissolve, animations: {
             self.tableview.reloadData()
         }, completion: nil)
-//        self.tableview.reloadData()
     }
     /*
     // Only override draw() if you perform custom drawing.

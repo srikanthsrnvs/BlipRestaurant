@@ -56,6 +56,8 @@ class Cart{
         item.quantity = item.quantity + 1
     }
     
+    
+    
     /*
      Return the total price of the cart
      */
