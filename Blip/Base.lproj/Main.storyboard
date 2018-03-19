@@ -381,12 +381,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-Rr-xSf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-Rr-xSf">
                                 <rect key="frame" x="0.0" y="80" width="375" height="698"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="My2-QZ-0NU">
+                                    <rect key="frame" x="0.0" y="173.33333333333337" width="375" height="89"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoE-73-Ofo" customClass="RaisedButton" customModule="Material">
+                                            <rect key="frame" x="10" y="25" width="355" height="59"/>
+                                            <color key="backgroundColor" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
+                                            <state key="normal" title="Checkout">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Checkout"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                    <color key="value" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="JoE-73-Ofo" firstAttribute="leading" secondItem="My2-QZ-0NU" secondAttribute="leading" constant="10" id="5e1-5N-WxJ"/>
+                                        <constraint firstItem="JoE-73-Ofo" firstAttribute="top" secondItem="My2-QZ-0NU" secondAttribute="top" constant="25" id="KrT-gt-GhJ"/>
+                                        <constraint firstAttribute="height" constant="89" id="Lnp-5C-mM7"/>
+                                        <constraint firstAttribute="trailing" secondItem="JoE-73-Ofo" secondAttribute="trailing" constant="10" id="gfR-FI-d6K"/>
+                                        <constraint firstAttribute="bottom" secondItem="JoE-73-Ofo" secondAttribute="bottom" constant="5" id="uTu-Aq-Rwb"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="itemRowCell" rowHeight="100" id="dgE-iM-avf" customClass="ItemRow" customModule="Blip" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="55.333333333333336" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dgE-iM-avf" id="RE1-ih-cuz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.666666666666671"/>
@@ -446,7 +477,6 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="0.93400191570000002" blue="0.45265434650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="JKb-94-r8A" secondAttribute="bottom" id="2vT-ET-n0G"/>
                                                         <constraint firstAttribute="trailing" secondItem="VK3-sz-NWB" secondAttribute="trailing" constant="92" id="5SR-6i-9UV"/>
@@ -493,34 +523,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="My2-QZ-0NU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoE-73-Ofo">
-                                        <rect key="frame" x="100" y="28" width="175" height="52"/>
-                                        <color key="backgroundColor" red="0.76665823334949756" green="1" blue="0.28584118829184013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Checkout"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.1618668489913585" green="1" blue="0.1018107820994556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="JoE-73-Ofo" firstAttribute="leading" secondItem="My2-QZ-0NU" secondAttribute="leading" constant="100" id="5e1-5N-WxJ"/>
-                                    <constraint firstItem="JoE-73-Ofo" firstAttribute="top" secondItem="My2-QZ-0NU" secondAttribute="top" constant="28" id="KrT-gt-GhJ"/>
-                                    <constraint firstAttribute="height" constant="89" id="Lnp-5C-mM7"/>
-                                    <constraint firstAttribute="trailing" secondItem="JoE-73-Ofo" secondAttribute="trailing" constant="100" id="gfR-FI-d6K"/>
-                                    <constraint firstAttribute="bottom" secondItem="JoE-73-Ofo" secondAttribute="bottom" constant="9" id="uTu-Aq-Rwb"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="My2-QZ-0NU" firstAttribute="trailing" secondItem="A3h-ry-rQk" secondAttribute="trailing" id="7p6-0e-wxr"/>
-                            <constraint firstItem="My2-QZ-0NU" firstAttribute="leading" secondItem="A3h-ry-rQk" secondAttribute="leading" id="RBd-1b-uPl"/>
                             <constraint firstItem="Auf-Rr-xSf" firstAttribute="trailing" secondItem="A3h-ry-rQk" secondAttribute="trailing" id="a47-Xe-Shc"/>
-                            <constraint firstItem="Auf-Rr-xSf" firstAttribute="top" secondItem="My2-QZ-0NU" secondAttribute="bottom" constant="-9" id="e8O-qa-f2m"/>
-                            <constraint firstItem="My2-QZ-0NU" firstAttribute="top" secondItem="Kof-KS-pTm" secondAttribute="top" id="lLh-gT-8ZQ"/>
                             <constraint firstItem="Auf-Rr-xSf" firstAttribute="bottom" secondItem="A3h-ry-rQk" secondAttribute="bottom" id="lqD-lg-iDa"/>
                             <constraint firstItem="Auf-Rr-xSf" firstAttribute="leading" secondItem="A3h-ry-rQk" secondAttribute="leading" id="lzs-J3-gf8"/>
+                            <constraint firstItem="A3h-ry-rQk" firstAttribute="top" secondItem="Auf-Rr-xSf" secondAttribute="top" constant="8" id="tbe-WX-fLf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A3h-ry-rQk"/>
                     </view>
@@ -617,16 +626,27 @@
                                                         <constraint firstAttribute="height" constant="80" id="ynP-Xj-Z9x"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-ab-V1l" customClass="IconButton" customModule="Material">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-ab-V1l" customClass="RaisedButton" customModule="Material">
                                                     <rect key="frame" x="10" y="116" width="355" height="44"/>
-                                                    <color key="backgroundColor" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="fV8-bG-9c4"/>
                                                     </constraints>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="Search.." image="cm_search_white">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleColor" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                                            <color key="value" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                            <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                            <color key="value" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

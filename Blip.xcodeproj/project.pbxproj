@@ -34,6 +34,7 @@
 		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
 		5F4258862058BA9100511E6F /* CustomScrollItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4258852058BA9100511E6F /* CustomScrollItem.xib */; };
 		5F4258882058BAA700511E6F /* CustomScrollItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4258872058BAA700511E6F /* CustomScrollItem.swift */; };
+		5F805A98205DC6A2007A5018 /* addToCart.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F805A97205DC6A2007A5018 /* addToCart.json */; };
 		5FE1AE002059CE7F008AC309 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */; };
 		5FED45342052006D007BF01A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED45332052006D007BF01A /* CategoryRow.swift */; };
 		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
@@ -131,6 +132,7 @@
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4258852058BA9100511E6F /* CustomScrollItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomScrollItem.xib; sourceTree = "<group>"; };
 		5F4258872058BAA700511E6F /* CustomScrollItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollItem.swift; sourceTree = "<group>"; };
+		5F805A97205DC6A2007A5018 /* addToCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addToCart.json; sourceTree = "<group>"; };
 		5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		5FED45332052006D007BF01A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		83073F153649D24442C7B8CC /* Pods_Blip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -358,6 +360,7 @@
 		F32DB7D720486EEC00EB2F69 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				5F805A97205DC6A2007A5018 /* addToCart.json */,
 				F32DB7E020486F7600EB2F69 /* check.json */,
 			);
 			path = Animations;
@@ -602,6 +605,7 @@
 				F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */,
 				F32DB81E2048825E00EB2F69 /* Gloves4.jpeg in Resources */,
 				F32DB81C2048825E00EB2F69 /* Gloves2.jpeg in Resources */,
+				5F805A98205DC6A2007A5018 /* addToCart.json in Resources */,
 				3B210289204CFA0300440A64 /* bakery.jpg in Resources */,
 				5F4258862058BA9100511E6F /* CustomScrollItem.xib in Resources */,
 				3B210292204E580F00440A64 /* GoogleService-Info.plist in Resources */,
@@ -653,6 +657,8 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GMStepper/GMStepper.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
@@ -687,6 +693,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMStepper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",

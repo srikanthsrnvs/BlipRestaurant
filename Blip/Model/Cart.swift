@@ -72,5 +72,12 @@ class Cart{
         return total
     }
     
+    func getCount(item: Item) -> Int{
+        if self.items[item.productID] != nil{
+            return self.items[item.productID]![item]!
+        }
+        return 0
+        
+    }
 }
 

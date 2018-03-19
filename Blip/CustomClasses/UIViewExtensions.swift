@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Lottie
 
 extension UIView{
     
@@ -22,6 +23,55 @@ extension UIView{
     func ApplyCornerRadiusToView(){
         self.layer.cornerRadius = 7
         self.clipsToBounds = true
+    }
+    
+    func handledAnimation(Animation: LOTAnimationView, width: CGFloat, height: CGFloat){
+        
+        self.addSubview(Animation)
+        let yCenterConstraint = NSLayoutConstraint(item: Animation, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0)
+        let xCenterConstraint = NSLayoutConstraint(item: Animation, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: Animation, attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: width, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: Animation, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: height, constant: 0)
+        self.addConstraints([xCenterConstraint,yCenterConstraint,widthConstraint,heightConstraint])
+        Animation.translatesAutoresizingMaskIntoConstraints = false
+        Animation.contentMode = .scaleAspectFill
+        
+    }
+    
+    func returnHandledAnimation(filename: String, subView: UIView, tagNum: Int) -> LOTAnimationView{
+        
+        let animationView = LOTAnimationView(name: filename)
+        subView.addSubview(animationView)
+        let yCenterConstraint = NSLayoutConstraint(item: animationView, attribute: .centerY, relatedBy: .equal, toItem: subView, attribute: .centerY, multiplier: 1, constant: 0)
+        let xCenterConstraint = NSLayoutConstraint(item: animationView, attribute: .centerX, relatedBy: .equal, toItem: subView, attribute: .centerX, multiplier: 1, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: animationView, attribute: .width, relatedBy: .equal, toItem: subView, attribute: .width, multiplier: 1, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: animationView, attribute: .height, relatedBy: .equal, toItem: subView, attribute: .height, multiplier: 1, constant: 0)
+        subView.addConstraints([xCenterConstraint,yCenterConstraint,widthConstraint,heightConstraint])
+        animationView.translatesAutoresizingMaskIntoConstraints = false
+        animationView.contentMode = .scaleAspectFit
+        animationView.tag = tagNum
+        return animationView
+        
+    }
+    
+    func returnHandledAnimationScaleToFill(filename: String, subView: UIView, tagNum: Int) -> LOTAnimationView{
+        
+        let animationView = LOTAnimationView(name: filename)
+        subView.addSubview(animationView)
+        let yCenterConstraint = NSLayoutConstraint(item: animationView, attribute: .centerY, relatedBy: .equal, toItem: subView, attribute: .centerY, multiplier: 1, constant: 0)
+        let xCenterConstraint = NSLayoutConstraint(item: animationView, attribute: .centerX, relatedBy: .equal, toItem: subView, attribute: .centerX, multiplier: 1, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: animationView, attribute: .width, relatedBy: .equal, toItem: subView, attribute: .width, multiplier: 1, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: animationView, attribute: .height, relatedBy: .equal, toItem: subView, attribute: .height, multiplier: 1, constant: 0)
+        subView.addConstraints([xCenterConstraint,yCenterConstraint,widthConstraint,heightConstraint])
+        animationView.translatesAutoresizingMaskIntoConstraints = false
+        animationView.contentMode = .scaleAspectFill
+        animationView.tag = tagNum
+        return animationView
+        
+    }
+    
+    func makeAnimationDissapear(tag: Int){
+        self.viewWithTag(tag)?.removeFromSuperview()
     }
 }
 
