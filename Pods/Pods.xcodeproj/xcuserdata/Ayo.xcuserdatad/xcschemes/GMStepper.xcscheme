@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D3AD9940FA5CE3B78FB728BA9A7C5B08'
-               BlueprintName = 'SHSearchBar'
+               BlueprintIdentifier = '6DB34ADEAC543008FDA771D13AE6F534'
+               BlueprintName = 'GMStepper'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SHSearchBar.framework'>
+               BuildableName = 'GMStepper.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

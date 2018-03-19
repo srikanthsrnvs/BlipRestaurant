@@ -22,7 +22,7 @@ class CustomScrollItem: UICollectionViewCell {
     var item:Item!
     var cart = Cart.shared
     var addAnimation = LOTAnimationView(name: "addToCart")
-    var count = 0
+//    var count = 0
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -39,17 +39,13 @@ class CustomScrollItem: UICollectionViewCell {
     }
 
     @IBAction func addToCartPressed(_ sender: Any) {
-        
         self.cart.addToCart(item: self.item)
-        print(cart.items)
         addAnimation.play()
-        count += 1
-        numberOfItems.text = String(count)
+        numberOfItems.text = String(self.item.quantity)
     }
     
     
     func prepareAddToCartButton(){
-        
         let addAnimationView = UIView(frame: CGRect(x: 0, y: 0, width: addToCartButton.frame
             .size.height, height: addToCartButton.frame
         .size.height))
@@ -62,19 +58,25 @@ class CustomScrollItem: UICollectionViewCell {
     }
     
     func prepareNumberOfItems(){
+        if self.item == nil{
+            numberOfItems.layer.cornerRadius = numberOfItems.frame.size.height/2
+            numberOfItems.text = String(0)
+            numberOfItems.layer.masksToBounds = true
+        }else{
+            numberOfItems.layer.cornerRadius = numberOfItems.frame.size.height/2
+            numberOfItems.text = String(self.item.quantity)
+            numberOfItems.layer.masksToBounds = true
+        }
         
-        numberOfItems.layer.cornerRadius = numberOfItems.frame.size.height/2
-        numberOfItems.text = String(count)
-        numberOfItems.layer.masksToBounds = true
     }
 
-    override func prepareForReuse() {
-        
-        numberOfItems.text = "0"
-        count = 0
-        item = nil
-        itemImage.image = nil
-    }
+//    override func prepareForReuse() {
+//
+//        numberOfItems.text = "0"
+//        count = 0
+//        item = nil
+//        itemImage.image = nil
+//    }
 }
 
 
