@@ -51,6 +51,7 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
         myCell.itemImage.hero.id = myCell.item.name
         myCell.nameLabel.text = myCell.item.name
         myCell.priceLabel.text = "$\(myCell.item.price!)"
+        myCell.numberOfItems.text = String(myCell.cart.getCount(item: dataSource[indexPath.row]))
         return myCell
     }
     
@@ -62,6 +63,7 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
         home.selectedCellHeroID = cell.itemImage.hero.id!
         home.performSegue(withIdentifier: "toItem", sender: home)
     }
+    
 }
 
 extension CategoryRow{

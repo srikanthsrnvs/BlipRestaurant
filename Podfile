@@ -32,6 +32,8 @@ target 'Blip' do
   pod 'SwiftIcons'
   pod "Hero"
   pod 'SwiftSoup'
+  pod 'FontAwesome.swift'
+  pod "GMStepper"
   
   target 'BlipTests' do
     inherit! :search_paths

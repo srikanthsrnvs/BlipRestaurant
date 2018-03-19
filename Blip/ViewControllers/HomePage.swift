@@ -16,7 +16,7 @@ import Firebase
 
 class HomePage: UIViewController {
     
-    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var searchButton: RaisedButton!
     @IBOutlet weak var tableHeaderBackground: UIImageView!
     @IBOutlet weak var storeIcon: UIImageView!
     @IBOutlet weak var tableView: UITableView!
@@ -166,7 +166,7 @@ extension HomePage: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 200
+        return 240
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
