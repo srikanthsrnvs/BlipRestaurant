@@ -113,9 +113,9 @@ PODS:
     - DynamicBlurView (~> 2.0)
   - Protobuf (3.5.0)
   - SnapKit (4.0.0)
-  - Stripe (12.1.1)
+  - Stripe (12.1.2)
   - SwiftIcons (2.0.1)
-  - SwiftSoup (1.6.3)
+  - SwiftSoup (1.6.4)
   - UIImageViewModeScaleAspect (1.5)
 
 DEPENDENCIES:
@@ -189,9 +189,9 @@ SPEC CHECKSUMS:
   PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  Stripe: f8e8feff38ba5caf7b2568c64eab96b0440ecb95
+  Stripe: 3230cdf8a8b0c04902e45e86f222fb82a926239c
   SwiftIcons: e475a56ae2c2da40672dbf16061ca5dd5cee7dbb
-  SwiftSoup: d65d5715e2781392a71f97b9144b4242b9bf671a
+  SwiftSoup: 861cca763c13fe9957a615cd382b4006406f2557
   UIImageViewModeScaleAspect: 11a790a0b9d248a13dc63e3a78991f1463b6d84e
 
 PODFILE CHECKSUM: bf772e5af87a062cfedb5b7bd31bb804f43587c7

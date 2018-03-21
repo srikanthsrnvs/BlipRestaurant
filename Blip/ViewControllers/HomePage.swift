@@ -34,6 +34,7 @@ class HomePage: UIViewController {
     var dbRef:DatabaseReference!
     var ind: Int!
     var cart = Cart.shared
+    var numOfHomeAppearance = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         ind = 0
@@ -46,8 +47,14 @@ class HomePage: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        numOfHomeAppearance = numOfHomeAppearance + 1
+        reloadCollectionCellsToCorrectNum()
+    }
+    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "toItem"{
             let dest = segue.destination as! ItemViewController
             dest.itemImageVariable = self.selectedCellImage
@@ -56,14 +63,12 @@ class HomePage: UIViewController {
     }
     
     func prepareSearch(){
-        
         let searchImage = UIImage(icon: .googleMaterialDesign(.search), size: CGSize(width: 35, height: 35)).withRenderingMode(.alwaysTemplate)
         self.searchButton.setImage(searchImage, for: .normal)
         self.searchButton.ApplyCornerRadiusToView()
     }
     
     func setTableHeaderVariable(){
-        
         let navBarHeight = self.navigationController?.navigationBar.frame.size.height
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         self.tableView.tableHeaderView?.frame.size.height = 184 + navBarHeight! + statusBarHeight
@@ -78,7 +83,6 @@ class HomePage: UIViewController {
     }
 
     func prepareTableView(){
-
         self.tableHeaderBackground.image = UIImage(named: "C-Loblaws-produce-320x200")
         self.storeIcon.layer.cornerRadius = storeIcon.frame.size.width/2
         let navBarHeight = self.navigationController?.navigationBar.frame.size.height
@@ -88,7 +92,6 @@ class HomePage: UIViewController {
     }
 
     func prepareNavigationBar(){
-        
         let navigationController = self.navigationController as! RootNavigationController
         navigationController.datasource = self.dataSource
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))
@@ -101,6 +104,22 @@ class HomePage: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.setTitleForNavBar(title: "Loading", subtitle: "Tap to change location", gesture: tap)
+    }
+    
+    /*
+     This is for the number on each collectioncell to change to appropiate number of quantity in cart
+     */
+    func reloadCollectionCellsToCorrectNum(){
+        for i in 0 ..< dataSource.count{
+            let tableViewCell = (self.tableView.cellForRow(at: IndexPath(row: 0, section: i)) as? CategoryRow)
+            if tableViewCell != nil{
+                tableViewCell?.collectionView.reloadData()
+            }else{
+                // This is because the system thinks the rest of the section is nil cuz it hasnt been
+                // loaded to the screen yet
+                break
+            }
+        }
     }
     
 
@@ -184,9 +203,6 @@ extension HomePage: UITableViewDataSource, UITableViewDelegate{
             cell.dataSource = self.dataSource[categoryArray[ind]]!
             ind = ind + 1
         }
-        
-        
-        
         return cell
     }
     
