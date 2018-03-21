@@ -30,7 +30,7 @@ class OnboardingVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "toHomePage"{
-            let dest = segue.destination as! RootNavigationController
+            let dest = segue.destination as! RootTabBarController
             dest.datasource = datasource
         }
     }
@@ -48,6 +48,7 @@ class OnboardingVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func getStartedPressed(_ sender: Any) {
+        
         loadItemsFromFirebase {
             self.performSegue(withIdentifier: "toHomePage", sender: nil)
         }

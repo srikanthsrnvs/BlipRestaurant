@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import  SwiftIcons
 
 class RootNavigationController: UINavigationController {
 
     var datasource: [String: [Item]] = [:]
-    var categories = ["FRUITS AND VEGETABLES", "NATURAL AND ORGANIC", "DELI AND READY-MEALS"]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         (self.viewControllers.first as! HomePage).dataSource = datasource
+        
         // Do any additional setup after loading the view.
     }
 

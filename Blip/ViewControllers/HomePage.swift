@@ -16,7 +16,6 @@ import Firebase
 
 class HomePage: UIViewController {
     
-    @IBOutlet weak var searchButton: RaisedButton!
     @IBOutlet weak var tableHeaderBackground: UIImageView!
     @IBOutlet weak var storeIcon: UIImageView!
     @IBOutlet weak var tableView: UITableView!
@@ -29,6 +28,8 @@ class HomePage: UIViewController {
     let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     let itemsPerRow: CGFloat = 2
     var selectedCellImage: UIImage!
+    var selectedCellPrice: String!
+    var selectedCellItemLabel: String!
     var selectedCellHeroID: String!
     var headerViewHeight: CGFloat!
     var dbRef:DatabaseReference!
@@ -57,15 +58,17 @@ class HomePage: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toItem"{
             let dest = segue.destination as! ItemViewController
-            dest.itemImageVariable = self.selectedCellImage
-            dest.heroIdentifier = selectedCellHeroID
+            dest.itemImageVariable = selectedCellImage
+            dest.itemDescription = selectedCellItemLabel
+            dest.price = selectedCellPrice
+            dest.heroIdentifierForImage = "\(selectedCellHeroID)image"
+            dest.heroIdentifierForButton = "\(selectedCellHeroID)button"
+            dest.heroIdentifierForItemLabel = "\(selectedCellHeroID)item"
+            dest.heroIdentifierForPrice = "\(selectedCellHeroID)price"
         }
     }
     
     func prepareSearch(){
-        let searchImage = UIImage(icon: .googleMaterialDesign(.search), size: CGSize(width: 35, height: 35)).withRenderingMode(.alwaysTemplate)
-        self.searchButton.setImage(searchImage, for: .normal)
-        self.searchButton.ApplyCornerRadiusToView()
     }
     
     func setTableHeaderVariable(){
@@ -92,8 +95,7 @@ class HomePage: UIViewController {
     }
 
     func prepareNavigationBar(){
-        let navigationController = self.navigationController as! RootNavigationController
-        navigationController.datasource = self.dataSource
+        
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))
         let cartButton = IconButton()
         cartButton.addTarget(self, action: #selector(goToCart), for: .touchUpInside)

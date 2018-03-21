@@ -49,7 +49,10 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! CustomScrollItem
         myCell.item = dataSource[indexPath.row]
         myCell.itemImage.kf.setImage(with: myCell.item.picture)
-        myCell.itemImage.hero.id = myCell.item.name
+        myCell.itemImage.hero.id = "\(myCell.item.name)image"
+        myCell.addToCartButton.hero.id = "\(myCell.item.name)button"
+        myCell.nameLabel.hero.id = "\(myCell.item.name)item"
+        myCell.priceLabel.hero.id = "\(myCell.item.name)price"
         myCell.nameLabel.text = myCell.item.name
         myCell.priceLabel.text = "$\(myCell.item.price!)"
         myCell.numberOfItems.text = String(myCell.cart.getCount(item: dataSource[indexPath.row]))
@@ -61,7 +64,9 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
         let cell = collectionView.cellForItem(at: indexPath) as! CustomScrollItem
         let home = currentVC as! HomePage
         home.selectedCellImage = cell.itemImage.image!
-        home.selectedCellHeroID = cell.itemImage.hero.id!
+        home.selectedCellHeroID = cell.item.name
+        home.selectedCellPrice = cell.priceLabel.text
+        home.selectedCellItemLabel = cell.nameLabel.text
         home.performSegue(withIdentifier: "toItem", sender: home)
     }
     
