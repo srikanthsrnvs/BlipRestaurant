@@ -15,6 +15,7 @@ class CategoryRow: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     var dataSource: [Item] = []
     var id: Int = 0
+    var currentVC: UIViewController!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -58,7 +59,7 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! CustomScrollItem
-        let home = getCurrentViewController() as! HomePage
+        let home = currentVC as! HomePage
         home.selectedCellImage = cell.itemImage.image!
         home.selectedCellHeroID = cell.itemImage.hero.id!
         home.performSegue(withIdentifier: "toItem", sender: home)
@@ -73,10 +74,9 @@ extension CategoryRow{
         // Otherwise, we must get the root UIViewController and iterate through presented views
         if let rootController = UIApplication.shared.keyWindow?.rootViewController {
             
-            let currentController: UIViewController! = rootController
+            let currentController =  rootController as! UINavigationController
             
-            let navController = currentController.childViewControllers[0] as! UINavigationController
-            return navController.topViewController
+            return currentController.topViewController
         }
         return nil
     }
