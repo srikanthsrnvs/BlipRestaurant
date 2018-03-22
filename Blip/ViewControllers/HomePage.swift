@@ -196,6 +196,7 @@ extension HomePage: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CategoryRow
+        cell.currentVC = self
         let categoryArray = Array(dataSource.keys)
         if(ind < categoryArray.count){
             print(categoryArray[ind])
