@@ -34,6 +34,12 @@
 		3F734A3BE0CB660D7A6CEEF2 /* Pods_BlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E409FC8A9CDB74AD9F21F1 /* Pods_BlipTests.framework */; };
 		5F4258862058BA9100511E6F /* CustomScrollItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4258852058BA9100511E6F /* CustomScrollItem.xib */; };
 		5F4258882058BAA700511E6F /* CustomScrollItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4258872058BAA700511E6F /* CustomScrollItem.swift */; };
+		5F6AD72020643F2A00A2FE40 /* ItemSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6AD71F20643F2A00A2FE40 /* ItemSearchController.swift */; };
+		5F6AD7222064403900A2FE40 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6AD7212064403900A2FE40 /* SearchViewController.swift */; };
+		5F6AD7242064487D00A2FE40 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6AD7232064487D00A2FE40 /* ItemData.swift */; };
+		5F6AD726206448F200A2FE40 /* ItemTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6AD725206448F200A2FE40 /* ItemTableViewViewController.swift */; };
+		5F6AD72A20647C8700A2FE40 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6AD72920647C8700A2FE40 /* ItemTableViewCell.xib */; };
+		5F6AD72C20647DC900A2FE40 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6AD72B20647DC900A2FE40 /* ItemTableViewCell.swift */; };
 		5F805A98205DC6A2007A5018 /* addToCart.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F805A97205DC6A2007A5018 /* addToCart.json */; };
 		5F805A9A206305D0007A5018 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F805A99206305D0007A5018 /* RootTabBarController.swift */; };
 		5FE1AE002059CE7F008AC309 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */; };
@@ -133,6 +139,12 @@
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4258852058BA9100511E6F /* CustomScrollItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomScrollItem.xib; sourceTree = "<group>"; };
 		5F4258872058BAA700511E6F /* CustomScrollItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollItem.swift; sourceTree = "<group>"; };
+		5F6AD71F20643F2A00A2FE40 /* ItemSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchController.swift; sourceTree = "<group>"; };
+		5F6AD7212064403900A2FE40 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5F6AD7232064487D00A2FE40 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		5F6AD725206448F200A2FE40 /* ItemTableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewViewController.swift; sourceTree = "<group>"; };
+		5F6AD72920647C8700A2FE40 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		5F6AD72B20647DC900A2FE40 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		5F805A97205DC6A2007A5018 /* addToCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addToCart.json; sourceTree = "<group>"; };
 		5F805A99206305D0007A5018 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
@@ -334,6 +346,8 @@
 				5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */,
 				F310D3EF205AE9C400CE9E61 /* RootNavigationController.swift */,
 				5F805A99206305D0007A5018 /* RootTabBarController.swift */,
+				5F6AD71F20643F2A00A2FE40 /* ItemSearchController.swift */,
+				5F6AD7212064403900A2FE40 /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -347,6 +361,9 @@
 				5FED45332052006D007BF01A /* CategoryRow.swift */,
 				3B412C3F2052D25200BB8501 /* CustomCollectionCell.swift */,
 				3B412C432053417000BB8501 /* CartTableViewCellView.swift */,
+				5F6AD7232064487D00A2FE40 /* ItemData.swift */,
+				5F6AD725206448F200A2FE40 /* ItemTableViewViewController.swift */,
+				5F6AD72B20647DC900A2FE40 /* ItemTableViewCell.swift */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -387,6 +404,7 @@
 			children = (
 				F32DB7EE20487F7400EB2F69 /* Item.xib */,
 				5F4258852058BA9100511E6F /* CustomScrollItem.xib */,
+				5F6AD72920647C8700A2FE40 /* ItemTableViewCell.xib */,
 			);
 			path = CustomXIB;
 			sourceTree = "<group>";
@@ -603,6 +621,7 @@
 				F32DB8172048825E00EB2F69 /* Boots4.jpeg in Resources */,
 				F32DB8262048825E00EB2F69 /* Hoodie6.jpeg in Resources */,
 				F32DB8142048825E00EB2F69 /* Boots1.jpeg in Resources */,
+				5F6AD72A20647C8700A2FE40 /* ItemTableViewCell.xib in Resources */,
 				3B210290204CFA0300440A64 /* dairy-eggs.jpg in Resources */,
 				F32DB8152048825E00EB2F69 /* Boots2.jpeg in Resources */,
 				F32DB7AC20486E1500EB2F69 /* Main.storyboard in Resources */,
@@ -664,6 +683,7 @@
 				"${BUILT_PRODUCTS_DIR}/GMStepper/GMStepper.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Graph/Graph.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -700,6 +720,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMStepper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Graph.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -866,6 +887,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FED45342052006D007BF01A /* CategoryRow.swift in Sources */,
+				5F6AD72C20647DC900A2FE40 /* ItemTableViewCell.swift in Sources */,
 				5F4258882058BAA700511E6F /* CustomScrollItem.swift in Sources */,
 				F32DB7A920486E1500EB2F69 /* OnboardingVC.swift in Sources */,
 				3B3B9A782050FAB300EFF47F /* SignUpVC.swift in Sources */,
@@ -873,6 +895,8 @@
 				F310D3F0205AE9C400CE9E61 /* RootNavigationController.swift in Sources */,
 				3B412C4220533B2600BB8501 /* CartVC.swift in Sources */,
 				3B3B9A762050F8A500EFF47F /* LoginVC.swift in Sources */,
+				5F6AD72020643F2A00A2FE40 /* ItemSearchController.swift in Sources */,
+				5F6AD7242064487D00A2FE40 /* ItemData.swift in Sources */,
 				3B3B9A7A2051117D00EFF47F /* ServiceCalls.swift in Sources */,
 				3B412C962058918A00BB8501 /* LoblawsResponse.swift in Sources */,
 				3B412C9020587ED600BB8501 /* Category.swift in Sources */,
@@ -882,11 +906,13 @@
 				5FE1AE002059CE7F008AC309 /* ItemViewController.swift in Sources */,
 				3B412C402052D25200BB8501 /* CustomCollectionCell.swift in Sources */,
 				F32DB7EA20487B7C00EB2F69 /* BlipUser.swift in Sources */,
+				5F6AD7222064403900A2FE40 /* SearchViewController.swift in Sources */,
 				3B412C9220588D5900BB8501 /* Cart.swift in Sources */,
 				3B412C462053442C00BB8501 /* ItemRow.swift in Sources */,
 				3B412C442053417000BB8501 /* CartTableViewCellView.swift in Sources */,
 				F32DB7A720486E1500EB2F69 /* AppDelegate.swift in Sources */,
 				5F805A9A206305D0007A5018 /* RootTabBarController.swift in Sources */,
+				5F6AD726206448F200A2FE40 /* ItemTableViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

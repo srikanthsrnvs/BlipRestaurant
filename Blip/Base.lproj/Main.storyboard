@@ -536,6 +536,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="nZJ-tI-EsD" kind="relationship" relationship="viewControllers" id="CKu-RS-pqd"/>
+                        <segue destination="0cn-1c-Fe6" kind="relationship" relationship="viewControllers" id="mvT-es-iwV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4a-Ea-Yod" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -704,7 +705,7 @@
         <scene sceneID="5Rr-h4-1cm">
             <objects>
                 <navigationController id="nZJ-tI-EsD" customClass="RootNavigationController" customModule="Blip" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="yDZ-sf-RrS"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="featured" id="yDZ-sf-RrS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8SW-9L-18l">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -719,6 +720,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWJ-Pg-lQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-30" y="12"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="InH-ul-hvR">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="0cn-1c-Fe6" customClass="SearchViewController" customModule="Blip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZZ-kO-4A5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ekq-9P-fvw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="tqM-sR-GF0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64K-pb-DTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1002.4" y="11.822660098522167"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="jsG-ac-jTm">
