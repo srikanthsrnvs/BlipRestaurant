@@ -26,7 +26,6 @@ target 'Blip' do
   pod 'NotificationBannerSwift'
   pod 'Cosmos'
   pod 'AZDialogView'
-  pod 'BSImagePicker'
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'SwiftIcons'
@@ -34,6 +33,7 @@ target 'Blip' do
   pod 'SwiftSoup'
   pod 'FontAwesome.swift'
   pod "GMStepper"
+  pod 'Graph'
   
   target 'BlipTests' do
     inherit! :search_paths

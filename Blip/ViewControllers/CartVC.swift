@@ -132,10 +132,11 @@ extension CartVC: UITableViewDataSource, UITableViewDelegate {
         let itemDict = self.cart.items[itemsInCart[indexPath.row]]!
         let item = (Array(itemDict.keys).first)! //Should be an array containing just one Item element
         cell.cellView.item = item
+        cell.cellView.initial_value_when_loaded = cell.cellView.item.quantity
         cell.cellView.stepper.value = Double(cell.cellView.item.quantity)
         cell.cellView.itemName.text = cell.cellView.item.name
         cell.cellView.imageView.kf.setImage(with: cell.cellView.item.picture)
-        cell.cellView.quantityLabel.text = "\(cell.cellView.item.quantity!)"
+//        cell.cellView.quantityLabel.text = "\(cell.cellView.item.quantity!)"
         cell.cellView.price.text = "$\((cell.cellView.item.price)! * Double(cell.cellView.item.quantity))"
         return cell
     }

@@ -38,6 +38,14 @@ class Cart{
     }
     
     /*
+     Adds the specified item to cart with specified quantity
+     */
+    func addToCartWithQuantity(item: Item, quantity: Int){
+        item.quantity = quantity
+        self.items[item.productID] = [item: quantity]
+    }
+    
+    /*
      Decrease item quantity by 1
      */
     func decreaseItem(item: Item){

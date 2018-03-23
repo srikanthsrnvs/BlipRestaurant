@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GMStepper
 
 class CartTableViewCellView: UIView {
 
@@ -17,22 +18,47 @@ class CartTableViewCellView: UIView {
     var item: Item!
     var cart = Cart.shared
     var tableview:UITableView!
-    @IBOutlet weak var stepper:UIStepper!
+    var initial_value_when_loaded: Int!
+    @IBOutlet weak var stepper:GMStepper!
     
-    @IBAction func stepperPressed(_ sender: UIStepper) {
-        var quantity_num = Double(self.quantityLabel.text!)!
-        if sender.value < quantity_num{ //Checking to see if stepper was decreased
+//    override func awakeFromNib() {
+////        self.initial_value_when_loaded
+//        self.stepper.value = Double(self.initial_value_when_loaded)
+//        print(stepper.value)
+//    }
+    
+    @IBAction func stepperChanged(_ sender: GMStepper){
+        print("init val", initial_value_when_loaded)
+        if Int(sender.value) < initial_value_when_loaded{ //Checking to see if stepper was decreased
             cart.decreaseItem(item: self.item)
+            print("DECREASED")
         }
-        if sender.value > quantity_num{
+        if Int(sender.value) > initial_value_when_loaded{ //Checking to see if stepper was increased
             cart.increaseItem(item: self.item)
+            print("INcreased")
         }
-        self.quantityLabel.text = "\(Int(sender.value))"
-        quantity_num = Double(self.quantityLabel.text!)!
         let price = self.item.price!
-        self.price.text = "$\(price * quantity_num)"
-        cart.items[self.item.productID]![self.item]! = Int(quantity_num)
+        self.price.text = "$\(price * sender.value)"
+        cart.items[self.item.productID]![self.item]! = Int(sender.value)
+        self.initial_value_when_loaded = Int(sender.value)
+        print(cart.items)
     }
+    
+//    @IBAction func stepperPressed(_ sender: UIStepper) {
+//        
+//        var initial_quantity_num = Double(self.quantityLabel.text!)!
+//        if sender.value < initial_quantity_num{ //Checking to see if stepper was decreased
+//            cart.decreaseItem(item: self.item)
+//        }
+//        if sender.value > initial_quantity_num{ //Checking to see if stepper was increased
+//            cart.increaseItem(item: self.item)
+//        }
+//        self.quantityLabel.text = "\(Int(sender.value))"
+//        initial_quantity_num = Double(self.quantityLabel.text!)!
+//        let price = self.item.price!
+//        self.price.text = "$\(price * initial_quantity_num)"
+//        cart.items[self.item.productID]![self.item]! = Int(initial_quantity_num)
+//    }
     
     @IBAction func deleteItemPresssed(_ sender: UIButton){
         self.item.quantity = 0
