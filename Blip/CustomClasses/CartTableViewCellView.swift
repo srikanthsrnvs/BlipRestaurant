@@ -14,29 +14,29 @@ class CartTableViewCellView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var price: UILabel!
-    @IBOutlet weak var quantityLabel:UILabel!
+    @IBOutlet weak var stepper: GMStepper!
     var item: Item!
     var cart = Cart.shared
     var tableview:UITableView!
     var initial_value_when_loaded: Int!
-    @IBOutlet weak var stepper:GMStepper!
     
 //    override func awakeFromNib() {
 ////        self.initial_value_when_loaded
 //        self.stepper.value = Double(self.initial_value_when_loaded)
 //        print(stepper.value)
 //    }
-    
+
     @IBAction func stepperChanged(_ sender: GMStepper){
         print("init val", initial_value_when_loaded)
         if Int(sender.value) < initial_value_when_loaded{ //Checking to see if stepper was decreased
             cart.decreaseItem(item: self.item)
-            print("DECREASED")
+            print("Decreased item quantity")
         }
         if Int(sender.value) > initial_value_when_loaded{ //Checking to see if stepper was increased
             cart.increaseItem(item: self.item)
-            print("INcreased")
+            print("Increased item quantity")
         }
+
         let price = self.item.price!
         self.price.text = "$\(price * sender.value)"
         cart.items[self.item.productID]![self.item]! = Int(sender.value)
