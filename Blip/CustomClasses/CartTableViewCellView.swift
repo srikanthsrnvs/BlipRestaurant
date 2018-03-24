@@ -19,6 +19,7 @@ class CartTableViewCellView: UIView {
     var cart = Cart.shared
     var tableview:UITableView!
     var initial_value_when_loaded: Int!
+    var superViewCartVC:CartVC!
     
 //    override func awakeFromNib() {
 ////        self.initial_value_when_loaded
@@ -41,6 +42,9 @@ class CartTableViewCellView: UIView {
         self.price.text = "$\(price * sender.value)"
         cart.items[self.item.productID]![self.item]! = Int(sender.value)
         self.initial_value_when_loaded = Int(sender.value)
+        if superViewCartVC != nil{
+            superViewCartVC.checkoutButtonLabel.text = "$\(cart.getTotalPrice())"
+        }
         print(cart.items)
     }
     
