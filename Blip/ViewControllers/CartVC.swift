@@ -8,16 +8,20 @@
 
 import UIKit
 import Firebase
+import Stripe
+import SwiftIcons
 
 class CartVC: UIViewController{
     
     
 
     var dbRef:DatabaseReference!
+    @IBOutlet weak var checkoutButtonLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var checkoutButton: UIButton!
     var cart = Cart.shared
-    
+    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var totalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,15 @@ class CartVC: UIViewController{
         self.checkoutButton.addTarget(self, action: #selector(checkout), for: .touchUpInside)
         // Do any additional setup after loading the view.
         dbRef = Database.database().reference()
+        prepareCloseButton()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +51,15 @@ class CartVC: UIViewController{
 //        self.loadCategories()
 //        self.uploadToFirebase()
 //        self.loadItemsByCategory()
+    }
+    
+    func prepareCloseButton(){
+        
+        closeButton.setIcon(icon: .googleMaterialDesign(.close), iconSize: 35, color: UIColor.black, backgroundColor: UIColor.clear, forState: .normal)
+    }
+    
+    @IBAction func closeCart(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func checkout(){
@@ -122,7 +144,16 @@ extension CartVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if cart.items.count == 0{
+            checkoutButton.alpha = 0
+            totalLabel.alpha = 0
+        }
+        else{
+            checkoutButton.alpha = 1
+            totalLabel.alpha = 1
+        }
         return cart.items.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

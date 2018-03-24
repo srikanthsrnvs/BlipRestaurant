@@ -29,10 +29,12 @@ class SearchViewController: UIViewController {
         // Prepare view.
         prepareSearchBar()
         prepareTableView()
+        self.hideKeyboardWhenTappedAround()
         
         // Prepare model.
         prepareGraph()
         prepareSearch()
+        
     }
     
     override func viewWillLayoutSubviews() {

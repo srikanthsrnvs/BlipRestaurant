@@ -37,6 +37,7 @@ class HomePage: UIViewController {
     var ind: Int!
     var cart = Cart.shared
     var numOfHomeAppearance = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ind = 0
@@ -48,6 +49,7 @@ class HomePage: UIViewController {
         prepareSearch()
         // Do any additional setup after loading the view.
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -100,6 +102,7 @@ class HomePage: UIViewController {
 
     func prepareNavigationBar(){
         
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeDeliveryAddress))
         let cartButton = IconButton()
         cartButton.addTarget(self, action: #selector(goToCart), for: .touchUpInside)
