@@ -44,8 +44,6 @@ class StoreSelectorViewController: UIViewController {
         storeSelectorTableView.hero.isEnabled = true
         self.hero.isEnabled = true
         self.hero.modalAnimationType = .auto
-//        self.storeSelectorTableView.hero.modifiers = [.cascade(delta: 2.0, direction: .bottomToTop, delayMatchedViews: true)]
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -115,7 +113,6 @@ extension StoreSelectorViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         for cell in tableView.visibleCells{
-            print("Found a cell")
             cell.hero.modifiers = []
         }
         let storeSelectorCell = tableView.cellForRow(at: indexPath) as! StoreTableViewCell
@@ -123,7 +120,7 @@ extension StoreSelectorViewController: UITableViewDelegate, UITableViewDataSourc
         storeSelectorCell.storeImage.hero.id = "\(storeSelectorCell.store.storeBackground)"
         storeSelectorCell.storeLogo.hero.id = "\(storeSelectorCell.store.storeLogo)"
         selectedCell = storeSelectorCell
-        self.performSegue(withIdentifier: "goToStorePage", sender: self)
+        self.performSegue(withIdentifier: "toStore", sender: self)
     }
 
 }
