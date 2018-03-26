@@ -29,9 +29,13 @@ class OnboardingVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "toHomePage"{
+        if segue.identifier == "toStoreSelector"{
+
             let dest = segue.destination as! RootTabBarController
-            dest.datasource = datasource
+            let walmart = Store(name: "Walmart", storeLogo: UIImage(named: "walmartLogo")!, storeBackground: UIImage(named: "walmart")!, storeCatalog: self.datasource, minOrder: 20.00, description: "What started small, with a single discount store and the simple idea of selling more for less, has grown over the last 50 years into the largest retailer in the world. Each week, over 260 million customers and members visit our 11,695 stores under 59 banners in 28 countries and e-commerce websites in 11 countries.")
+            let freshcoStore = Store(name: "Freshco", storeLogo: UIImage(named: "freshcoLogo")!, storeBackground: UIImage(named: "freshco")!, storeCatalog: self.datasource, minOrder: 30.00, description: "FreshCo. is the discount banner of Sobeys Incorporated (a 100% Canadian owned company established in 1907). Launched in 2010, FreshCo's commitment is to provide the best discount grocery shopping experience by offering quality fresh food at low prices and with less compromise")
+            let loblawsStore = Store(name: "Loblaws", storeLogo: UIImage(named: "loblawsLogo")!, storeBackground: UIImage(named: "loblaws")!, storeCatalog: self.datasource, minOrder: 35.00, description: "Loblaw Companies Limited. Canada's food and pharmacy leader, with a network of corporate and independently- operated stores in communities across the country, and employing close to 200,000 Canadians. Loblaw's purpose – Live Life Well")
+            dest.stores = [walmart, loblawsStore, freshcoStore]
         }
     }
     
@@ -50,7 +54,7 @@ class OnboardingVC: UIViewController {
     @IBAction func getStartedPressed(_ sender: Any) {
         
         loadItemsFromFirebase {
-            self.performSegue(withIdentifier: "toHomePage", sender: nil)
+            self.performSegue(withIdentifier: "toStoreSelector", sender: nil)
         }
         
         

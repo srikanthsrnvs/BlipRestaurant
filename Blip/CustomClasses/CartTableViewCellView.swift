@@ -21,11 +21,6 @@ class CartTableViewCellView: UIView {
     var initial_value_when_loaded: Int!
     var superViewCartVC:CartVC!
     
-//    override func awakeFromNib() {
-////        self.initial_value_when_loaded
-//        self.stepper.value = Double(self.initial_value_when_loaded)
-//        print(stepper.value)
-//    }
 
     @IBAction func stepperChanged(_ sender: GMStepper){
         print("init val", initial_value_when_loaded)
@@ -48,21 +43,6 @@ class CartTableViewCellView: UIView {
         print(cart.items)
     }
     
-//    @IBAction func stepperPressed(_ sender: UIStepper) {
-//        
-//        var initial_quantity_num = Double(self.quantityLabel.text!)!
-//        if sender.value < initial_quantity_num{ //Checking to see if stepper was decreased
-//            cart.decreaseItem(item: self.item)
-//        }
-//        if sender.value > initial_quantity_num{ //Checking to see if stepper was increased
-//            cart.increaseItem(item: self.item)
-//        }
-//        self.quantityLabel.text = "\(Int(sender.value))"
-//        initial_quantity_num = Double(self.quantityLabel.text!)!
-//        let price = self.item.price!
-//        self.price.text = "$\(price * initial_quantity_num)"
-//        cart.items[self.item.productID]![self.item]! = Int(initial_quantity_num)
-//    }
     
     @IBAction func deleteItemPresssed(_ sender: UIButton){
         self.item.quantity = 0
@@ -72,12 +52,6 @@ class CartTableViewCellView: UIView {
             self.tableview.reloadData()
         }, completion: nil)
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+
 
 }
