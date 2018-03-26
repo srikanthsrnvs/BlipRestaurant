@@ -25,6 +25,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>BoringSSL.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
 		<key>CHIPageControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,6 +72,31 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>FirebaseUI-FirebaseAuthUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>40</integer>
+		</dict>
+		<key>FirebaseUI-FirebaseFacebookAuthUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>41</integer>
+		</dict>
+		<key>FirebaseUI-FirebaseGoogleAuthUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
+		<key>FirebaseUI-FirebasePhoneAuthUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>43</integer>
+		</dict>
+		<key>FirebaseUI-FirebaseTwitterAuthUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>44</integer>
+		</dict>
 		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -87,6 +117,11 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>11</integer>
+		</dict>
+		<key>GTMOAuth2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>50</integer>
 		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
@@ -214,6 +249,11 @@
 			<key>orderHint</key>
 			<integer>32</integer>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>51</integer>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -255,6 +295,31 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>38</integer>
+		</dict>
+		<key>gRPC-Core.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>46</integer>
+		</dict>
+		<key>gRPC-ProtoRPC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>48</integer>
+		</dict>
+		<key>gRPC-RxLibrary.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>49</integer>
+		</dict>
+		<key>gRPC-gRPCCertificates.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>47</integer>
+		</dict>
+		<key>gRPC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>45</integer>
 		</dict>
 		<key>leveldb-library.xcscheme</key>
 		<dict>
