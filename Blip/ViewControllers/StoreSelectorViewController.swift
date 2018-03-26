@@ -31,10 +31,6 @@ class StoreSelectorViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
     }
@@ -48,14 +44,17 @@ class StoreSelectorViewController: UIViewController {
         storeSelectorTableView.hero.isEnabled = true
         self.hero.isEnabled = true
         self.hero.modalAnimationType = .auto
+//        self.storeSelectorTableView.hero.modifiers = [.cascade(delta: 2.0, direction: .bottomToTop, delayMatchedViews: true)]
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let dest = segue.destination as! HomePage
-        dest.dataSource = selectedCell.store.catalog
-        dest.store = selectedCell.store
-
+        if segue.identifier == "toStore"{
+            let dest = segue.destination as! HomePage
+            dest.dataSource = selectedCell.store.catalog
+            dest.store = selectedCell.store
+        }
     }
     
     func prepareNavigationBar(){
@@ -94,6 +93,8 @@ extension StoreSelectorViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let storeSelectorCell = tableView.dequeueReusableCell(withIdentifier: "StoreSelectorCell", for: indexPath) as! StoreTableViewCell
         storeSelectorCell.hero.isEnabled = true
+        storeSelectorCell.hero.modifiers = [.duration(0.25 * i),.translate(CGPoint.init(x: 200, y: 400))]
+        i += 1
         storeSelectorCell.store = stores[indexPath.section]
         storeSelectorCell.storeImage.image = stores[indexPath.section].storeBackground
         storeSelectorCell.storeLogo.image = stores[indexPath.section].storeLogo
@@ -112,6 +113,11 @@ extension StoreSelectorViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        for cell in tableView.visibleCells{
+            print("Found a cell")
+            cell.hero.modifiers = []
+        }
         let storeSelectorCell = tableView.cellForRow(at: indexPath) as! StoreTableViewCell
         storeSelectorCell.overlay.hero.id = storeSelectorCell.store.name
         storeSelectorCell.storeImage.hero.id = "\(storeSelectorCell.store.storeBackground)"
@@ -119,6 +125,7 @@ extension StoreSelectorViewController: UITableViewDelegate, UITableViewDataSourc
         selectedCell = storeSelectorCell
         self.performSegue(withIdentifier: "goToStorePage", sender: self)
     }
+
 }
 
 extension StoreSelectorViewController: CLLocationManagerDelegate, GMSAutocompleteViewControllerDelegate{

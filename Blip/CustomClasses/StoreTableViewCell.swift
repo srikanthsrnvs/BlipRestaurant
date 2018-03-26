@@ -28,6 +28,8 @@ class StoreTableViewCell: UITableViewCell {
         let color = UIColor.black.withAlphaComponent(0.70)
         overlay.backgroundColor = color
         storeRating.isHidden = false
+        self.storeImage.ApplyCornerRadiusToView()
+        self.overlay.ApplyCornerRadiusToView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

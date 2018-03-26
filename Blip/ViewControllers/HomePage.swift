@@ -108,9 +108,9 @@ extension HomePage: UIScrollViewDelegate{
     
     func closeCurrentStore(){
         
-        if tableView.contentOffset.y < -100{
+        if tableView.contentOffset.y < -150{
             
-            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }

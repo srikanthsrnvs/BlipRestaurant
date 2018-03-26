@@ -104,6 +104,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="I9j-aN-6Mb"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="gradientView" destination="8bC-Xf-vdC" id="Y1j-fG-LBA"/>
                         <segue destination="3tw-5e-n6j" kind="show" identifier="toStoreSelector" id="Rso-3z-4yt"/>
@@ -252,104 +256,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srm-DJ-8Pj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-646" y="-1658"/>
-        </scene>
-        <!--Two Direction Scroll-->
-        <scene sceneID="Wg5-k3-r4a">
-            <objects>
-                <viewController id="X5O-Ao-56T" customClass="TwoDirectionScroll" customModule="Blip" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ws6-Zb-hel">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="145" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1BQ-Jc-MQP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="145" id="bH6-vb-8HN" customClass="CategoryRow" customModule="Blip" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="375" height="145"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bH6-vb-8HN" id="aXM-vl-D53">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.66666666666666"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y5t-Ps-u7l">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.66666666666666"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="D6j-DB-Iqh">
-                                                        <size key="itemSize" width="109" height="134"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="Ubp-QU-BMg" customClass="CustomCollectionCell" customModule="Blip" customModuleProvider="target">
-                                                            <rect key="frame" x="5" y="5.333333333333333" width="109" height="134"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="109" height="134"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wr4-DO-tgK">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="134"/>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNB-VP-sbh">
-                                                                        <rect key="frame" x="33" y="56.5" width="42" height="21"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </view>
-                                                            <color key="backgroundColor" red="1" green="0.17927439190170358" blue="0.14408267045330769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="Wr4-DO-tgK" secondAttribute="bottom" id="YSr-aI-1IC"/>
-                                                                <constraint firstItem="Wr4-DO-tgK" firstAttribute="leading" secondItem="Ubp-QU-BMg" secondAttribute="leading" id="b6g-mm-ClZ"/>
-                                                                <constraint firstItem="Wr4-DO-tgK" firstAttribute="top" secondItem="Ubp-QU-BMg" secondAttribute="top" id="nBI-2N-7T6"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Wr4-DO-tgK" secondAttribute="trailing" id="t3b-iO-5oR"/>
-                                                            </constraints>
-                                                            <connections>
-                                                                <outlet property="categoryName" destination="JNB-VP-sbh" id="Yu1-Yp-FEv"/>
-                                                                <outlet property="imageView" destination="Wr4-DO-tgK" id="9QS-Rh-GkW"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                    <connections>
-                                                        <outlet property="dataSource" destination="bH6-vb-8HN" id="Yl7-tw-UdK"/>
-                                                        <outlet property="delegate" destination="aXM-vl-D53" id="9bo-ez-vcY"/>
-                                                    </connections>
-                                                </collectionView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Y5t-Ps-u7l" secondAttribute="bottom" id="OYw-Ni-FVy"/>
-                                                <constraint firstItem="Y5t-Ps-u7l" firstAttribute="leading" secondItem="aXM-vl-D53" secondAttribute="leading" id="TK2-ms-DIt"/>
-                                                <constraint firstAttribute="trailing" secondItem="Y5t-Ps-u7l" secondAttribute="trailing" id="Z4o-q0-dEb"/>
-                                                <constraint firstItem="Y5t-Ps-u7l" firstAttribute="top" secondItem="aXM-vl-D53" secondAttribute="top" id="x1D-50-JKD"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="collectionView" destination="Y5t-Ps-u7l" id="4JZ-kV-OCj"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="1BQ-Jc-MQP" firstAttribute="bottom" secondItem="U80-27-QMX" secondAttribute="bottom" id="P4c-SY-Yaj"/>
-                            <constraint firstItem="1BQ-Jc-MQP" firstAttribute="trailing" secondItem="U80-27-QMX" secondAttribute="trailing" id="P6K-G2-geM"/>
-                            <constraint firstItem="1BQ-Jc-MQP" firstAttribute="leading" secondItem="U80-27-QMX" secondAttribute="leading" id="afn-bf-E0V"/>
-                            <constraint firstItem="1BQ-Jc-MQP" firstAttribute="top" secondItem="Ws6-Zb-hel" secondAttribute="top" id="edn-Qe-DD9"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="U80-27-QMX"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="1BQ-Jc-MQP" id="2wV-pK-a8Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="glt-1F-LoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="154" y="-1691"/>
         </scene>
         <!--CartVC-->
         <scene sceneID="4d9-SO-NiJ">
@@ -579,7 +485,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8R-b8-jTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1502" y="-916"/>
+            <point key="canvasLocation" x="282" y="-858"/>
         </scene>
         <!--Root Tab Bar Controller-->
         <scene sceneID="OrQ-o4-WcP">
@@ -594,6 +500,8 @@
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="heroTabBarAnimationTypeString" value="fade"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="nZJ-tI-EsD" kind="relationship" relationship="viewControllers" id="CKu-RS-pqd"/>
@@ -621,7 +529,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILN-ic-v3c" customClass="RaisedButton" customModule="Material">
-                                <rect key="frame" x="20" y="639" width="335" height="60"/>
+                                <rect key="frame" x="20" y="688" width="335" height="60"/>
                                 <color key="backgroundColor" red="0.46666666870000001" green="0.76470589639999997" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="kOG-27-Cso"/>
@@ -687,7 +595,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzj-wL-Lv3" userLabel="stepper" customClass="GMStepper" customModule="GMStepper">
-                                <rect key="frame" x="60" y="562" width="255" height="60"/>
+                                <rect key="frame" x="60" y="611" width="255" height="60"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
@@ -760,7 +668,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1502" y="-195"/>
+            <point key="canvasLocation" x="1156" y="-194"/>
         </scene>
         <!--Root Navigation Controller-->
         <scene sceneID="5Rr-h4-1cm">
@@ -773,6 +681,7 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="heroNavigationAnimationTypeString" value="fade"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="2QD-UQ-s2l" kind="relationship" relationship="rootViewController" id="9hB-Ot-OFG"/>
@@ -885,6 +794,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="YnI-SU-jVO" firstAttribute="width" secondItem="jeN-sK-2AU" secondAttribute="width" id="4Vz-xv-Q4r"/>
                                                 <constraint firstItem="GcM-Lp-aWB" firstAttribute="top" secondItem="jeN-sK-2AU" secondAttribute="top" constant="20" id="CUx-go-98d"/>
@@ -904,6 +814,7 @@
                                                 <constraint firstItem="YnI-SU-jVO" firstAttribute="centerX" secondItem="jeN-sK-2AU" secondAttribute="centerX" id="wmQ-kR-gqz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="orderAmount" destination="2bG-Wa-xjb" id="LMI-KZ-bh7"/>
                                             <outlet property="overlay" destination="ZAy-6T-WpU" id="puq-dv-NTd"/>
@@ -931,10 +842,14 @@
                         <viewLayoutGuide key="safeArea" id="HNO-eu-irv"/>
                     </view>
                     <navigationItem key="navigationItem" id="tfD-Yx-fI5"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="storeSelectorTableView" destination="78G-rq-IaD" id="H3C-V9-VU3"/>
-                        <segue destination="Gjo-Qz-qCp" kind="show" identifier="goToStorePage" id="jqW-yt-sjT"/>
-                        <segue destination="Vt7-WN-tXQ" kind="show" identifier="goToCartVC" id="iUf-FR-zfv"/>
+                        <segue destination="Gjo-Qz-qCp" kind="presentation" identifier="toStore" modalPresentationStyle="overFullScreen" id="jqW-yt-sjT"/>
+                        <segue destination="Vt7-WN-tXQ" kind="show" identifier="toCartVC" id="iUf-FR-zfv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAs-dK-bhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -950,7 +865,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="240" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0O-Xe-uHh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="584"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="633"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="hC1-Xr-BAK">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
@@ -1084,13 +999,16 @@
                     <navigationItem key="navigationItem" id="bKA-kE-Q1k"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="fade"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="searchDisplayController" destination="b2Y-jU-hDp" id="ifv-Af-7nD"/>
                         <outlet property="stretchyTableHeader" destination="Ye9-zN-agm" id="i3F-Fz-3iH"/>
                         <outlet property="tableHeader" destination="hC1-Xr-BAK" id="sjy-Js-SVP"/>
                         <outlet property="tableView" destination="N0O-Xe-uHh" id="Q63-m8-rJl"/>
                         <segue destination="9vr-D5-n7I" kind="show" identifier="toItem" id="7v4-oJ-cmf"/>
-                        <segue destination="Vt7-WN-tXQ" kind="show" identifier="goToCartVC" id="NuH-lf-8mO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRZ-JX-iKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1103,7 +1021,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="320.80000000000001" y="-194.70443349753697"/>
+            <point key="canvasLocation" x="284" y="-194"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3V3-Yo-SkW">
@@ -1124,7 +1042,4 @@
             <point key="canvasLocation" x="-1002" y="-2670"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="iUf-FR-zfv"/>
-    </inferredMetricsTieBreakers>
 </document>
