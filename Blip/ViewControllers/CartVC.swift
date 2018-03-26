@@ -31,6 +31,7 @@ class CartVC: UIViewController{
         // Do any additional setup after loading the view.
         dbRef = Database.database().reference()
         prepareCloseButton()
+        prepareCheckoutButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -60,6 +61,10 @@ class CartVC: UIViewController{
     
     @IBAction func closeCart(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func prepareCheckoutButton(){
+        self.checkoutButtonLabel.text = "$\(cart.getTotalPrice())"
     }
     
     @objc func checkout(){
@@ -163,6 +168,7 @@ extension CartVC: UITableViewDataSource, UITableViewDelegate {
         let itemDict = self.cart.items[itemsInCart[indexPath.row]]!
         let item = (Array(itemDict.keys).first)! //Should be an array containing just one Item element
         cell.cellView.item = item
+        cell.cellView.superViewCartVC = self
         cell.cellView.initial_value_when_loaded = cell.cellView.item.quantity
         cell.cellView.stepper.value = Double(cell.cellView.item.quantity)
         cell.cellView.itemName.text = cell.cellView.item.name
