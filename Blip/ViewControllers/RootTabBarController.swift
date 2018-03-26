@@ -10,14 +10,14 @@ import UIKit
 
 class RootTabBarController: UITabBarController {
 
-    var datasource: [String: [Item]] = [:]
+    var stores = [Store]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         for vc in self.viewControllers!{
             if vc is RootNavigationController{
                 let navController = vc as! RootNavigationController
-                navController.datasource = datasource
+                navController.stores = self.stores
             }
         }
         

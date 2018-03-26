@@ -22,13 +22,16 @@ class ItemViewController: UIViewController {
     @IBOutlet weak var stepper: GMStepper!
     @IBOutlet weak var closeButton: UIButton!
     
-    var itemImageVariable: UIImage!
-    var price: String!
-    var itemDescription: String!
+    var item: Item!
+    var cart = Cart.shared
     
-    var heroIdentifierForImage: String!
-    var heroIdentifierForPrice: String!
-    var heroIdentifierForItemLabel: String!
+//    var itemImageVariable: UIImage!
+//    var price: String!
+//    var itemDescription: String!
+    
+//    var heroIdentifierForImage: String!
+//    var heroIdentifierForPrice: String!
+//    var heroIdentifierForItemLabel: String!
     var heroIdentifierForButton: String!
     
     override func viewDidLoad() {
@@ -58,21 +61,28 @@ class ItemViewController: UIViewController {
     }
     
     func prepareImage(){
+        itemImage.kf.setImage(with: self.item.picture)
+        itemImage.hero.id = "\(self.item.name)image"
         
-        itemImage.image = itemImageVariable
-        itemImage.hero.id = heroIdentifierForImage
+//        itemImage.image = itemImageVariable
+//        itemImage.hero.id = heroIdentifierForImage
     }
     
     func preparePriceLabel(){
         
-        self.priceLabel.text = price
-        priceLabel.hero.id = heroIdentifierForPrice
+        self.priceLabel.text = "$\(self.item.price!)"
+        priceLabel.hero.id = "\(self.item.name)price"
+        
+//        self.priceLabel.text = price
+//        priceLabel.hero.id = heroIdentifierForPrice
     }
     
     func prepareItemLabel(){
+        itemLabel.text = self.item.name
+        itemLabel.hero.id = "\(self.item.name)item"
         
-        itemLabel.text = itemDescription
-        itemLabel.hero.id = heroIdentifierForItemLabel
+//        itemLabel.text = itemDescription
+//        itemLabel.hero.id = heroIdentifierForItemLabel
     }
     
     func prepareAddToCartButton(){
@@ -80,11 +90,20 @@ class ItemViewController: UIViewController {
         let cartImage = UIImage(icon: .googleMaterialDesign(.addShoppingCart), size: CGSize(width: 35, height: 35)).withRenderingMode(.alwaysTemplate)
         addToCartButton.setImage(cartImage, for: .normal)
         addToCartButton.hero.id = heroIdentifierForButton
+        addToCartButton.addTarget(self, action: #selector(addToCartPressed(_:)), for: .touchUpInside)
+    }
+    
+    @objc func addToCartPressed(_ sender: RaisedButton){
+        cart.addToCartWithQuantity(item: self.item, quantity: Int(self.stepper.value))
+        print(cart.items)
     }
     
     func prepareStepper(){
-        
         stepper.hero.id = heroIdentifierForButton
+        if self.item.quantity != 0{
+            self.stepper.value = Double(self.item.quantity)
+        }
+        
     }
     
     func prepareCloseButton(){

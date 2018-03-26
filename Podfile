@@ -26,7 +26,6 @@ target 'Blip' do
   pod 'NotificationBannerSwift'
   pod 'Cosmos'
   pod 'AZDialogView'
-  pod 'BSImagePicker'
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'SwiftIcons'

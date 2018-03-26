@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import Material
 
 class LoginVC: UIViewController {
 
-    @IBOutlet weak var emailTF: UITextField!
-    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var emailTF: TextField!
+    @IBOutlet weak var passwordTF: TextField!
     @IBOutlet weak var loginButton: UIButton!
     
     //Singleton Service call instance
@@ -19,6 +20,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        prepareTextFields()
         self.loginButton.addTarget(self, action: #selector(loginPressed), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
@@ -45,6 +47,22 @@ class LoginVC: UIViewController {
             //One or more fields are empty
             return
         }
+    }
+    
+    func prepareTextFields(){
+        
+        self.emailTF.placeholderLabel.font = UIFont(name: "CenturyGothic", size: 17)
+        self.emailTF.font = UIFont(name: "Century Gothic", size: 17)
+        self.emailTF.textColor = Color.white
+        self.emailTF.placeholder = "Email"
+        self.emailTF.placeholderActiveColor = Color.white
+        self.emailTF.placeholderNormalColor = Color.white
+        self.passwordTF.placeholderLabel.font = UIFont(name: "CenturyGothic", size: 17)
+        self.passwordTF.font = UIFont(name: "Century Gothic", size: 17)
+        self.passwordTF.textColor = Color.white
+        self.passwordTF.placeholder = "Password"
+        self.passwordTF.placeholderActiveColor = Color.white
+        self.passwordTF.placeholderNormalColor = Color.white
     }
 
 }

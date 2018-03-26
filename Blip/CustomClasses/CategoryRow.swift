@@ -31,7 +31,6 @@ class CategoryRow: UITableViewCell {
 
 extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let hardCodedPadding:CGFloat = 10
@@ -63,10 +62,11 @@ extension CategoryRow: UICollectionViewDataSource, UICollectionViewDelegateFlowL
         
         let cell = collectionView.cellForItem(at: indexPath) as! CustomScrollItem
         let home = currentVC as! HomePage
-        home.selectedCellImage = cell.itemImage.image!
-        home.selectedCellHeroID = cell.item.name
-        home.selectedCellPrice = cell.priceLabel.text
-        home.selectedCellItemLabel = cell.nameLabel.text
+        home.selectedItem = cell.item
+//        home.selectedCellImage = cell.itemImage.image!
+//        home.selectedCellHeroID = cell.item.name
+//        home.selectedCellPrice = cell.priceLabel.text
+//        home.selectedCellItemLabel = cell.nameLabel.text
         home.performSegue(withIdentifier: "toItem", sender: home)
     }
     

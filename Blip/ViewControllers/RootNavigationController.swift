@@ -11,11 +11,11 @@ import  SwiftIcons
 
 class RootNavigationController: UINavigationController {
 
-    var datasource: [String: [Item]] = [:]
+    var stores = [Store]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        (self.viewControllers.first as! HomePage).dataSource = datasource
+        (self.viewControllers.first as! StoreSelectorViewController).stores = self.stores
         
         // Do any additional setup after loading the view.
     }
