@@ -41,14 +41,14 @@ extension ItemTableView: TableViewDataSource {
     
     /// Prepares the cells within the tableView.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath)
         
-        guard let category = dataSourceItems[indexPath.row].data as? Entity else {
-            return cell
-        }
-        cell.itemLabel.text = category["ItemName"] as? String
-        cell.itemImage.image = UIImage.image(with: UIColor.black, size: cell.itemImage.frame.size)
-        cell.dividerColor = Color.grey.lighten2
+//        guard let category = dataSourceItems[indexPath.row].data as? Entity else {
+//            return cell
+//        }
+//        cell.itemLabel.text = category["ItemName"] as? String
+//        cell.itemImage.image = UIImage.image(with: UIColor.black, size: cell.itemImage.frame.size)
+//        cell.dividerColor = Color.grey.lighten2
         
         return cell
     }
