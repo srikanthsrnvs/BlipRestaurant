@@ -65,12 +65,12 @@ class OnboardingVC: UIViewController {
                 self.datasource[cate] = []
                 let idDict = val as! [String:AnyObject] //Contains productIDs as keys
                 for (proID, itemVals) in idDict{
-                    let productID = Int(proID)
+                    let productID = proID
                     let values = itemVals as! [String:AnyObject]
                     let name = values["name"] as! String
                     let picUrlStr = values["photoUrl"] as! String
                     let price = values["price"] as! Double
-                    let item = Item(name: name, price: price, picUrlString: picUrlStr, productID: productID!)
+                    let item = Item(name: name, price: price, picUrlString: picUrlStr, productID: productID)
                     self.datasource[cate]?.append(item)
                 }
             }

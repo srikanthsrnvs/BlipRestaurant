@@ -17,13 +17,13 @@ class Item: Hashable {
     var price: Double!
     var picture: URL!
     var quantity: Int!
-    var productID: Int!
+    var productID: String!
     
     var hashValue: Int{
         return (productID?.hashValue)!
     }
     
-    init(name: String, price: Double, picUrlString: String, productID: Int) {
+    init(name: String, price: Double, picUrlString: String, productID: String) {
         self.name = name
         self.price = price
         self.picture = URL(string: picUrlString)
@@ -32,6 +32,10 @@ class Item: Hashable {
 //        if quantity != nil {
 //            self.quantity = quantity
 //        }
+    }
+    
+    func getItemInfoInDict()->[String:String]{
+        return ["name":self.name, "price":"\(self.price)", "picture":self.picture.absoluteString, "quantity":"\(self.quantity)"]
     }
 
     

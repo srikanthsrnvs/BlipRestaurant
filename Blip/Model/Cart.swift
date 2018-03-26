@@ -18,7 +18,7 @@ class Cart{
     static var shared:Cart{
         return _shared
     }
-    var items:[Int:[Item:Int]] = [:]
+    var items:[String:[Item:Int]] = [:]
     private init() {
         //Do some firebase calls to get all items in user's cart
         

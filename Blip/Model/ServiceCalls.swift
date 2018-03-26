@@ -23,6 +23,12 @@ class ServiceCalls{
     static var instance: ServiceCalls{
         return _instance
     }
+    private var emailHash:String!{
+        return MD5(string: (Auth.auth().currentUser?.email)!)
+    }
+    private var dbRef:DatabaseReference!{
+        return Database.database().reference()
+    }
     
 /*
      Create User in Firebase Authentication
@@ -45,9 +51,9 @@ class ServiceCalls{
 */
     func addUserToDB(firstName: String, lastName: String, email: String, phoneNumber: String){
         let dbRef: DatabaseReference = Database.database().reference()
-        let emailHash = MD5(string: email)
+//        let emailHash = MD5(string: email)
         let userValueDict = ["name":"\(firstName) \(lastName)", "email":email, "phoneNumber":phoneNumber]
-        dbRef.child(NORMAL_USER_REFERENCE_STRING).child(emailHash).updateChildValues(userValueDict)
+        dbRef.child(NORMAL_USER_REFERENCE_STRING).child(self.emailHash).updateChildValues(userValueDict)
     }
     
 /*
@@ -64,6 +70,18 @@ class ServiceCalls{
                 //Do whatever is needed
                 completion?(nil, user)
             }
+        }
+    }
+    
+    func addToCartInDatabase(cartItems:[String:[Item:Int]]){
+        if (self.emailHash != nil && self.dbRef != nil){
+            for (productID, itemDict) in cartItems{
+                for (item, _) in itemDict{
+                    dbRef.child(NORMAL_USER_REFERENCE_STRING).child(self.emailHash).child("cart").child(productID).updateChildValues(item.getItemInfoInDict())
+                }
+            }
+        }else{
+            print("EMAILHASH OR DBREF IS NIL")
         }
     }
     
