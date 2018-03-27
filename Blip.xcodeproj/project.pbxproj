@@ -39,6 +39,7 @@
 		5F6AD726206448F200A2FE40 /* ItemTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6AD725206448F200A2FE40 /* ItemTableViewViewController.swift */; };
 		5F805A98205DC6A2007A5018 /* addToCart.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F805A97205DC6A2007A5018 /* addToCart.json */; };
 		5F805A9A206305D0007A5018 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F805A99206305D0007A5018 /* RootTabBarController.swift */; };
+		5FDEF87B206969D500F33733 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDEF87A206969D500F33733 /* MyAPIClient.swift */; };
 		5FE1AE002059CE7F008AC309 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */; };
 		5FED45342052006D007BF01A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED45332052006D007BF01A /* CategoryRow.swift */; };
 		61A41368A473A7E7997ECD34 /* Pods_Blip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83073F153649D24442C7B8CC /* Pods_Blip.framework */; };
@@ -137,6 +138,7 @@
 		3B412C9120588D5900BB8501 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		3B412C9320588D9700BB8501 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3B412C952058918A00BB8501 /* LoblawsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoblawsResponse.swift; sourceTree = "<group>"; };
+		3BC776332069BFA700E1CB00 /* Blip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blip.entitlements; sourceTree = "<group>"; };
 		4306B1EE75D40FFDA4B4BF60 /* Pods-BlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlipUITests/Pods-BlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4258852058BA9100511E6F /* CustomScrollItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomScrollItem.xib; sourceTree = "<group>"; };
 		5F4258872058BAA700511E6F /* CustomScrollItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollItem.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		5F6AD725206448F200A2FE40 /* ItemTableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewViewController.swift; sourceTree = "<group>"; };
 		5F805A97205DC6A2007A5018 /* addToCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addToCart.json; sourceTree = "<group>"; };
 		5F805A99206305D0007A5018 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		5FDEF87A206969D500F33733 /* MyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
 		5FE1ADFF2059CE7F008AC309 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		5FED45332052006D007BF01A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		83073F153649D24442C7B8CC /* Pods_Blip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,6 +304,7 @@
 		F32DB7A520486E1500EB2F69 /* Blip */ = {
 			isa = PBXGroup;
 			children = (
+				3BC776332069BFA700E1CB00 /* Blip.entitlements */,
 				F32DB7F22048825E00EB2F69 /* Images */,
 				F32DB7ED20487F4500EB2F69 /* CustomXIB */,
 				F32DB7E820487B6C00EB2F69 /* Model */,
@@ -399,6 +403,7 @@
 				3B412C9120588D5900BB8501 /* Cart.swift */,
 				3B412C9320588D9700BB8501 /* Item.swift */,
 				F3318AC720686C44006E2D07 /* Store.swift */,
+				5FDEF87A206969D500F33733 /* MyAPIClient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -554,6 +559,11 @@
 					F32DB7A220486E1500EB2F69 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					F32DB7B620486E1600EB2F69 = {
 						CreatedOnToolsVersion = 9.2;
@@ -835,9 +845,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -901,6 +909,7 @@
 				F32DB7E720487AED00EB2F69 /* UIViewExtensions.swift in Sources */,
 				F3FC70E9204CD26100A73940 /* HomePage.swift in Sources */,
 				3B412C9420588D9700BB8501 /* Item.swift in Sources */,
+				5FDEF87B206969D500F33733 /* MyAPIClient.swift in Sources */,
 				5FE1AE002059CE7F008AC309 /* ItemViewController.swift in Sources */,
 				3B412C402052D25200BB8501 /* CustomCollectionCell.swift in Sources */,
 				F3318AC420684BA4006E2D07 /* StoreTableViewCell.swift in Sources */,
@@ -1080,6 +1089,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Blip/Blip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HK4HT64LY7;
 				INFOPLIST_FILE = Blip/Info.plist;
@@ -1098,6 +1108,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Blip/Blip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HK4HT64LY7;
 				INFOPLIST_FILE = Blip/Info.plist;

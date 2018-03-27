@@ -74,7 +74,7 @@ class StoreSelectorViewController: UIViewController {
     
     @objc func goToCart(){
         //perform segue
-        self.performSegue(withIdentifier: "goToCartVC", sender: nil)
+        self.performSegue(withIdentifier: "toCartVC", sender: nil)
     }
     
     @objc func changeDeliveryAddress(){
@@ -117,7 +117,7 @@ extension StoreSelectorViewController: UITableViewDelegate, UITableViewDataSourc
         storeSelectorCell.storeImage.hero.id = "\(storeSelectorCell.store.storeBackground)"
         storeSelectorCell.storeLogo.hero.id = "\(storeSelectorCell.store.storeLogo)"
         selectedCell = storeSelectorCell
-        self.performSegue(withIdentifier: "goToStorePage", sender: self)
+        self.performSegue(withIdentifier: "toStore", sender: self)
     }
 }
 

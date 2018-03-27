@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CenturyGothicBold.ttf">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w65-XK-rah">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPd-ox-1jV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98o-UV-sya">
+                    <rect key="frame" x="122" y="62" width="130" height="76"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JPd-ox-1jV" firstAttribute="width" secondItem="w65-XK-rah" secondAttribute="width" id="998-z8-fFx"/>
+                <constraint firstItem="w65-XK-rah" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Cpg-bS-4F6"/>
+                <constraint firstItem="w65-XK-rah" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="EZs-GT-058"/>
+                <constraint firstItem="w65-XK-rah" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="bIF-5H-gnc"/>
+                <constraint firstItem="JPd-ox-1jV" firstAttribute="centerY" secondItem="w65-XK-rah" secondAttribute="centerY" id="ddM-iH-Y7J"/>
+                <constraint firstItem="JPd-ox-1jV" firstAttribute="height" secondItem="w65-XK-rah" secondAttribute="height" id="fWP-dW-D1S"/>
+                <constraint firstItem="w65-XK-rah" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="oAV-5s-qHq"/>
+                <constraint firstItem="JPd-ox-1jV" firstAttribute="centerX" secondItem="w65-XK-rah" secondAttribute="centerX" id="zL5-4M-rj9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="110.5" y="83"/>
+        </view>
+    </objects>
+</document>

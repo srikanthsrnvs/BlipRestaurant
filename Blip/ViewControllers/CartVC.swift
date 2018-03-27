@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import Stripe
 import SwiftIcons
+import Hero
 
 class CartVC: UIViewController{
     
@@ -19,9 +20,10 @@ class CartVC: UIViewController{
     @IBOutlet weak var checkoutButtonLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var checkoutButton: UIButton!
-    var cart = Cart.shared
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var totalLabel: UILabel!
+    
+     var cart = Cart.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +62,7 @@ class CartVC: UIViewController{
     }
     
     @IBAction func closeCart(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func prepareCheckoutButton(){
